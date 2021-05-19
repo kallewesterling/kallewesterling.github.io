@@ -178,12 +178,14 @@ workshops_organized: # title, type, url, event, event_name, where, when, descrip
 
     - title: Academic Digital Presence
       type: workshop
-      where: The Graduate Center, CUNY, New York City, 2016
+      where: The Graduate Center, CUNY, New York City
+      when: 2016
       organizer: The Doctoral Theatre Students’ Association’s Professionalization Committee
 
     - title: Digital Pedagogy
       type: workshop
-      where: The Graduate Center, CUNY, New York City, 2016
+      where: The Graduate Center, CUNY, New York City
+      when: 2016
       organizer: The Doctoral Theatre Students’ Association’s Professionalization Committee
 
     - title: "Mapping the Futures of Higher Education: Community, Equity and Innovation"
@@ -214,14 +216,15 @@ workshops_organized: # title, type, url, event, event_name, where, when, descrip
       when: 2010
 
     - title: "Performativity: Resistance and Norms in Drag Show and _The Actress_"
-      where: Stockholm, Sweden, 2008
+      where: Stockholm, Sweden
+      when: 2008
       organizer: Dir. Sara Giese, Stockholm City Theatre
       description: Dramaturgical lecture-discussion with the creative team for the production of Anne Charlotte Leffler’s play The Actress.
 
 
 conference_presentations:
 
-    - title: Untitled presentation
+    - title: Spectacular Queerness
       panel: The Queer, Resistant, Historical Bodies of Taylor Mac’s <em>A 24 Decade History of Popular Music</em>
       panel_type: roundtable
       url: http://astr.org/page/17_Conference
@@ -232,7 +235,8 @@ conference_presentations:
       description: A blog post describing the roundtable is available in the blog.
 
     - title: Theorizing and Historicizing (the Absence of) Male-Identified Bodies in Burlesque Archives
-      panel: XXXXX
+      panel: "Sequins, Feathers, And High Heels: Historicizing Burlesque In Las Vegas"
+      url: https://cdn.ymaws.com/www.athe.org/resource/resmgr/2017_conference/documents/2017-Conference-Program.pdf
       panel_type: roundtable
       event: Women in Theatre Working Group Pre-Conference, ATHE Annual Conference
       where: Las Vegas, NV
@@ -240,34 +244,37 @@ conference_presentations:
       event_name: "Spectacle: Balancing Education, Theory, and Practice"
 
     - title: "Kenny Kerr’s ’Boylesque’: Male Femininity as Spectacle"
-      panel: XXXXX
+      panel: Spectacles Of Gender In Musical Theatre, Popular Entertainment, and Performance Art
+      url: https://cdn.ymaws.com/www.athe.org/resource/resmgr/2017_conference/documents/2017-Conference-Program.pdf
       panel_type: panel
       event: ATHE Annual Conference
       where: Las Vegas, NV
       when: 2017
       event_name: "Spectacle: Balancing Education, Theory, and Practice"
 
-    - title: What have I become, my sweetest friend?
-      panel: XXXXX
+    - title: "\"What have I become, my sweetest friend?\": Post-Transgender, Pre-Android Body In Lady J and Joey Arias’ Performance"
+      panel: "Performing With/In Intermedial Spectacles: 21st Century Performativity And Media Interface"
       panel_type: panel
+      url: https://cdn.ymaws.com/www.athe.org/resource/resmgr/2017_conference/documents/2017-Conference-Program.pdf
       event: ATHE Annual Conference
       where: Las Vegas, NV
       when: 2017
       event_name: "Spectacle: Balancing Education, Theory, and Practice"
 
-    - title: XXXXXX
+    - title: "A Hairy Chest in a Beaded Dress: Drag Striptease in Mainstream Burlesque in 1920s and 1930s Culture"
       panel: "Tripping the Light Transtastic: Hidden Histories of Trans Diva Performance"
       panel_type: curated-panel
       event: ASTR Annual Conference
       where: Minneapolis, MN
+      url: https://cdn.ymaws.com/www.astr.org/resource/resmgr/2016_conference/Conference-Program-2016.pdf
       when: 2016
       event_name: Trans-
       description: "More information <a href=\"http://www.boylesque.info/2016/02/18/proposed-panel-at-astr-on-trans/\">here</a>"
 
-    - title: XYZ
+    - title: The Routes and Roots of Boylesque
       panel: An Archive and Repertoire of Digital Humanities and Media Projects in the Performing Arts
       panel_type: roundtable
-      url: "http://www.hastac2016.org"
+      url: http://www.hastac2016.org
       event: HASTAC Annual Conference
       where: Tempe, AZ
       when: 2016
