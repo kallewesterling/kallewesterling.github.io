@@ -16,9 +16,7 @@ theme:
 plugins:
     - markdown-filter
     - search
-    - macros
-    - markdownextradata:
-        data: _data/cv.yml, _data/bio.yml
+    - markdownextradata
     - mknotebooks
 
 markdown_extensions:
