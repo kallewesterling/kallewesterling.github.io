@@ -1,3 +1,8 @@
+---
+title: Title
+template: home.html
+---
+
 # Welcome to MkDocs
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).

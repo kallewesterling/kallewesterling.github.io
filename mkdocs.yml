@@ -1,3 +1,6 @@
 site_name: My site
 theme:
   name: material
+  custom_dir: docs/overrides
+extra_css:
+  - stylesheets/test.css
