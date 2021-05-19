@@ -1,0 +1,48 @@
+:root {
+    /* Teach */
+    --md-admonition-icon--teach: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><path xmlns="http://www.w3.org/2000/svg" d="M20 17a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H9.46c.35.61.54 1.3.54 2h10v11h-9v2m4-10v2H9v13H7v-6H5v6H3v-8H1.5V9a2 2 0 0 1 2-2H15M8 4a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2z"/></svg>');
+    --md-admonition-icon--teach-color: rgb(43, 155, 70);
+    --md-admonition-icon--teach-bg: rgba(43, 155, 70, 0.1);
+    
+    --md-admonition-icon--lecture: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><path xmlns="http://www.w3.org/2000/svg" d="M20 17a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H9.46c.35.61.54 1.3.54 2h10v11h-9v2m4-10v2H9v13H7v-6H5v6H3v-8H1.5V9a2 2 0 0 1 2-2H15M8 4a2 2 0 0 1-2 2 2 2 0 0 1-2-2 2 2 0 0 1 2-2 2 2 0 0 1 2 2z"/></svg>');
+    --md-admonition-icon--lecture-color: rgb(155, 106, 43);
+    --md-admonition-icon--lecture-bg: rgba(155, 106, 43, 0.1);
+}
+
+/* Teach */
+.md-typeset .admonition.teach,
+.md-typeset details.teach {
+        border-color: var(--md-admonition-icon--teach-color);
+}
+
+.md-typeset .teach > .admonition-title,
+.md-typeset .teach > summary {
+    background-color: var(--md-admonition-icon--teach-bg);
+    border-color: var(--md-admonition-icon--teach-color);
+}
+
+.md-typeset .teach > .admonition-title::before,
+.md-typeset .teach > summary::before {
+    background-color: var(--md-admonition-icon--teach-color);
+    -webkit-mask-image: var(--md-admonition-icon--teach);
+            mask-image: var(--md-admonition-icon--teach);
+}
+
+/* Lecture */
+.md-typeset .admonition.lecture,
+.md-typeset details.lecture {
+        border-color: var(--md-admonition-icon--lecture-color);
+}
+
+.md-typeset .lecture > .admonition-title,
+.md-typeset .lecture > summary {
+    background-color:  var(--md-admonition-icon--lecture-bg);
+    border-color: var(--md-admonition-icon--lecture-color);
+}
+
+.md-typeset .lecture > .admonition-title::before,
+.md-typeset .lecture > summary::before {
+    background-color: var(--md-admonition-icon--lecture-color);
+    -webkit-mask-image: var(--md-admonition-icon--lecture);
+            mask-image: var(--md-admonition-icon--lecture);
+}

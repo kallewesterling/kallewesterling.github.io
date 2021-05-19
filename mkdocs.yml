@@ -1,6 +1,84 @@
-site_name: My site
+site_name: Kalle Westerling
+
 theme:
-  name: material
-  custom_dir: docs/overrides
+    name: material
+    custom_dir: docs/_templates
+    font:
+        text: Open Sans
+    features:
+        - navigation.tabs
+        - navigation.tabs.sticky
+        - navigation.sections
+    palette:
+        primary: blue grey
+
+
+plugins:
+    - markdown-filter
+    - search
+    - macros
+    - markdownextradata
+    - mknotebooks
+
+markdown_extensions:
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
+
 extra_css:
-  - stylesheets/test.css
+    - _assets/stylesheets/admonitions.css
+    - _assets/stylesheets/extra.css
+
+extra_javascript:
+    - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+    - _assets/javascripts/tables.js
+
+nav:
+    - Home: index.md
+
+    - About: about.md
+
+    - Blog:
+        - Start: blog/index.md
+        - Recent Posts:
+            - First draft of visualization: blog/first-draft-of-visualization.md
+        - Archive:
+            - 2020:
+                - First draft of visualization: blog/first-draft-of-visualization.md
+            - 2019:
+                - First draft of visualization: blog/first-draft-of-visualization.md
+            - 2018:
+                - First draft of visualization: blog/first-draft-of-visualization.md
+            - 2017:
+                - First draft of visualization: blog/first-draft-of-visualization.md
+
+    - Digital Projects:
+        - Current Digital Projects: digital-projects/index.md
+        - Digital Project Statement: digital-projects/statement.md
+        - Current Projects:
+            - Django Curriculum website: projects/django-curriculum-website/index.md
+            - Expanding Communities of Practice: projects/expanding-communities-of-practice/index.md
+            - Early Traces of Female Impersonation: projects/early-traces-of-female-impersonation/index.md
+            - Instructional Technology Fellowship: projects/instructional-technology-fellowship/index.md
+            - Program Social Media Fellowship Coordinator: projects/program-social-media-fellowship-coordinator/index.md
+
+    - Research:
+        - Current Research: research/index.md
+        - Research Statement: research/statement.md
+        - Current Projects:
+            - Expanding Communities of Practice: projects/expanding-communities-of-practice/index.md
+            - The Routes and Routes of Boylesque: projects/routes-and-routes-of-boylesque/index.md
+            - Early Traces of Female Impersonation: projects/early-traces-of-female-impersonation/index.md
+
+    - Teaching:
+        - Start: teaching/index.md
+        - Teaching Statement: teaching/statement.md
+        - Recent Classes:
+            - Dramatic Vision and Form: teaching/dramatic-vision-and-form/index.md
+            - The History of American Burlesque: teaching/the-history-of-american-burlesque/index.md
+            - Speech Communication: teaching/speech-communication/index.md
+            - Introduction to Theatre: teaching/introduction-to-theatre/index.md
+            - Performance/Activism: teaching/performance-activism/index.md

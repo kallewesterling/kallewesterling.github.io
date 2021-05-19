@@ -1,0 +1,824 @@
+
+courses:
+    - title: The History of American Burlesque
+      level: undergraduate
+      where: Drama Department, New York University, New York City
+      when: 2017–8
+      description: "An elective upper-level class on the history of the genre of American burlesque, and the contemporary forms it has taken: neo-burlesque, boylesque, nerdlesque, etc."
+    - title: Dramatic Vision and Form
+      level: graduate
+      where: M.A. program in Theatre, Villanova University, Philadelphia, PA
+      when: 2017
+      description: This graduate-level course covered the second half of dramatic literature as well as the effect of theory and form on the vision of playwrights and performance artists.
+    - title: The Age of Promiscuity
+      level: public seminar
+      where: The Graduate Center, City University of New York, NY
+      when: 2017
+      description: This seminar explored the gay male sexual subculture that existed in NYC before the AIDS epidemic and examined the impact of HIV/AIDS on gay male sexuality by contrasting the 1970s with the gay male subculture of today. We examined the films, art, and architectural spaces that played an important role in the development of this sexual subculture.
+    - title: The History of American Burlesque
+      level: undergraduate
+      where: Drama Department, New York University, New York City
+      when: 2016
+      description: "In this undergraduate class, co-taught with Dr. Lynn Sally, I was responsible for one class per week in an elective 600-level class on the history of the genre of American burlesque, and its contemporary forms: neo-burlesque, boylesque, nerdlesque, etc."
+    - title: Speech Communication
+      level: undergraduate
+      description: I created a collaborative class from the ground up for teaching public speaking to students from different majors but primarily Business and Accounting.
+      where: Department of Communication Studies, Baruch College, New York City
+      when: 2015–2016
+    - title: Introduction to Theatre
+      level: undergraduate
+      description: In this undergraduate class in Theatre, I was a Teaching Assistant for Profs. Claudia Orenstein, Dongshin Chang, Deepsikha Chatterjea, Louisa Thompson Pregerson, which entailed leading discussion sections for introductory lecture class on the art of theatre for students from different majors.
+      where: Theatre Department, Hunter College, New York City
+      when: 2012–2014
+    - title: Cultural Studies and Gender Studies
+      level: undergraduate
+      description: undergraduate class in Gender Studies, I co-taught one section per semester with Ph.D. student Dirk Gindt. Provided Gender Studies majors with a Cultural Studies perspective on gender and sexuality, as well as performativity in a wider context.
+      where: Center for Gender Studies, Stockholm University, Sweden
+      when: 2006–2008
+    - title: Theatre Activism — Gender, Feminism, and Queer
+      level: undergraduate
+      description: "This class in Performance Studies (Swedish: \"Teateraktivism — Genus, feminism och queer\"), was co-taught with Ph.D. Student Mikael Strömberg."
+      where: Department of Musicology and Performance Studies, Stockholm University, Sweden
+      when: 2009
+
+invited_lectures:
+    - title: A History of Neoburlesque and Boylesque
+      where: Yale University, New Haven
+      when: 2016
+      invitedby: Prof. Jessica Berson
+      description: "A guest lecture in the mixed class of undergraduates and graduate students, “Dancing Desires: Gender and Sexuality in Embodied Performance,” introducing the students to my dissertation topic and situated it within the history of neoburlesque performance and the class theme of representations of gender and sexuality in embodied performance."
+
+    - title: An Introduction to Boylesque
+      where: The New School, New York City
+      when: 2015
+      invitedby: Prof. Joseph Cermatori
+      description: A guest lecture in the seminar Queer Theater and Performance, introducing the students to some contemporary boylesque artists accompanied by some critical readings.
+
+    - title: An Introduction to Comedy
+      where: Hunter College, New York City
+      when: 2014
+      invitedby: Prof. Louisa Thompson Pregerson
+      description: A guest lecture in Introduction to Theatre, introducing the students to the genre of comedy – high and low.
+
+    - title: An Introduction to Queerness in Burlesque
+      where: City College, New York City
+      when: 2014
+      invitedby: Prof. Jasmina Sinanovic
+      description: A guest lecture in Women’s and Gender Studies on queer artists performing in burlesque throughout history.
+
+    - title: Angels in America Contextualized
+      where: Hunter College, New York City
+      when: 2013
+      invitedby: Prof. Deepsikha Chatterjea
+      description: A guest lecture in Introduction to Theatre, contextualizing <em>Angels in America</em> in a longer trajectory of LGBTQ theatre and performance in the United States.
+
+    - title: Brecht and Theatre Audiences
+      where: Hunter College, New York City
+      when: 2013
+      invitedby: Prof. Deepsikha Chatterjea
+      description: A guest lecture together with Jordan Cohen in Introduction to Theatre, contextualizing Bertolt Brecht’s aesthetics and his play <em>Good Person of Schezwan</em> in relation to his politics and perspective on the audiences, incorporating a historical trajectory of perspectives on audiences in the theatre generally.
+
+    - title: Angels in America Contextualized
+      where: Hunter College, New York City
+      when: 2013
+      invitedby: Adjunct Professor Stefanie A. Jones
+      description: A guest lecture in World Theatre III, contextualizing <em>Angels in America</em> in a longer trajectory of LGBTQ theatre and performance in the United States.
+
+    - title: Angels in America Contextualized
+      where: Hunter College, New York City
+      when: 2012 and 2013
+      invitedby: Prof. Claudia Orenstein and Prof. Dongshin Chang
+      description: Guest lectures together with Benjamin Gillespie in Introduction to Theatre, contextualizing <em>Angels in America</em> in a longer trajectory of LGBTQ theatre and performance in the United States.
+
+    - title: Introduction to the Politics of Drag Performance
+      where: Carleton University, Ottawa, Canada
+      when: 2011
+      invitedby: Prof. Christine Ekholst
+      description: A short lecture via Skype for students in Introduction class to Gender and Sexuality, presenting the politics of potentiality in drag show.
+
+    - title: Queer Activism
+      where: In Teateraktivism, an undergraduate class in Performance Studies, Department of Musicology and Performance Studies, Stockholm University, Sweden
+      when: 2008
+      invitedby: Prof. Willmar Sauter
+      description: Contextualized queer activism in the wider scope of the class focusing on how theatre (potentially) functions as activism.
+
+    - title: The Body as Artwork
+      where: Stockholm Academy of Dramatic Arts and Stockholm University of Dance and Circus, Sweden
+      when: 2007
+      invitedby: Dir. Sara Giese, Prof. Karin Helander, and Prof. Lena Hammergren
+      description: Lecture-seminar (in Swedish, “Kroppen som konstverk”) for dancers, mime artists and actors about body modifications and performativity.
+
+lightning_talks:
+
+    - title: The Roots and Routes of Boylesque
+      url: https://asa.press.jhu.edu/program16/sessions.html
+      event: American Studies Association
+      where: Denver, CO
+      when: 2016
+      event_name: Home/Not Home
+      description: "Part of a session on “Digital Shorts: Centering Digital Humanities Projects in American Studies"
+      organizer: American Studies Association’s Digital Caucus
+
+    - title: The Roots and Routes of Boylesque
+      url: http://cunydhi.commons.gc.cuny.edu/2015/11/04/announcing-our-speaker-lineup-for-cuny-dhi-building-a-digital-humanities-community
+      event: "CUNY DHI: Building a Digital Humanities Community"
+      where: New York City
+      when: 2015
+      organizer: CUNY Digital Humanities Initiative
+
+    - title: Building a Student-Centered (Digital) Learning Community
+      url: http://cunydhi.commons.gc.cuny.edu/2015/11/04/announcing-our-speaker-lineup-for-cuny-dhi-building-a-digital-humanities-community/
+      event: "CUNY DHI: Building a Digital Humanities Community"
+      where: New York City
+      when: 2015
+      organizer: CUNY Digital Humanities Initiative
+
+    - title: The Roots and Routes of Boylesque
+      url: http://nycdh.org/groups/nycdh-announcements-71439400/forum/topic/media-res-2-nyc-digital-humanities-lightning-talks
+      event: In Media Res #2
+      where: New York City
+      when: 2015
+      organizer: NYC DH
+
+
+workshops_organized: # title, type, url, event, event_name, where, when, description, organizer
+
+    - title: "Possibilities and Realities of Digital Humanities Across Disciplines"
+      type: roundtable
+      url: http://www.hastac2017.org
+      event: HASTAC Annual Conference
+      where: Orlando, FL
+      when: November 2017
+      event_name: The Possible Worlds of Digital Humanities
+      description: The question that guided the roundtable was "What can other disciplines learn from DH and what can DH learn from other disciplines?"
+
+    - title: Case Studies and Business Plan Development Workshop on Strategies for Creating a Program for Paid Student Internships/Assistantships in the Digital Humanities
+      type: workshop
+      url: http://www.hastac2017.org
+      event: HASTAC Annual Conference
+      where: Orlando, FL
+      when: November 2017
+      event_name: The Possible Worlds of Digital Humanities
+
+    - title: An Archive and Repertoire of Digital Humanities and Media Projects in the Performing Arts
+      type: roundtable
+      url: http://www.hastac2016.org
+      event: HASTAC Annual Conference
+      where: Tempe, AZ
+      when: 2016
+
+    - title: Digital Humanities Mentoring
+      url: https://asa.press.jhu.edu/program16/sessions.html
+      type: workshop
+      event: American Studies Association Annual Conference
+      where: Denver, CO
+      when: 2016
+      event_name: Home/Not Home
+      description: Invited to provide mentorship on digital humanities projects for members of the Digital Humanities Caucus in the ASA.
+
+    - title: Academic Digital Presence
+      type: workshop
+      where: The Graduate Center, CUNY, New York City, 2016
+      organizer: The Doctoral Theatre Students’ Association’s Professionalization Committee
+
+    - title: Digital Pedagogy
+      type: workshop
+      where: The Graduate Center, CUNY, New York City, 2016
+      organizer: The Doctoral Theatre Students’ Association’s Professionalization Committee
+
+    - title: "Mapping the Futures of Higher Education: Community, Equity and Innovation"
+      type: roundtable
+      url: http://www.centerdigitaled.com/events/CUNY-IT-Conference.html?page=home
+      event: CUNY IT Conference
+      where: New York City, NY
+      when: 2015
+
+    - title: "Transforming the Dissertation: Models, Questions, and Next Steps"
+      type: roundtable
+      url: http://www.hastac2015.org
+      event: HASTAC 2015 Conference
+      where: Lansing, MI
+      when: 2015
+      event_name: Art and Science of Digital Humanities
+
+    - title: "Artists and activists: Projects in progress"
+      url: http://www.jgieseking.org/qis2014/
+      event: Queer Internet Studies symposium
+      where: School of Journalism, Columbia University, New York City
+      when: 2014
+      description: "Invited to speak on the topic of the digital community archiving project of CLAGS: The Center for LGBTQ Studies. Recap blog post is available <a href=\"http://jessalingel.tumblr.com/post/81699393951/queer-internet-studies-workshop-recap\">here</a>."
+
+    - title: "After Dark: Entertainment and Politics"
+      organizer: Britt-Marie Bystedt, Rotary
+      where: Stockholm, Sweden
+      when: 2010
+
+    - title: "Performativity: Resistance and Norms in Drag Show and _The Actress_"
+      where: Stockholm, Sweden, 2008
+      organizer: Dir. Sara Giese, Stockholm City Theatre
+      description: Dramaturgical lecture-discussion with the creative team for the production of Anne Charlotte Leffler’s play The Actress.
+
+
+conference_presentations:
+
+    - title: Untitled presentation
+      panel: The Queer, Resistant, Historical Bodies of Taylor Mac’s <em>A 24 Decade History of Popular Music</em>
+      panel_type: roundtable
+      url: http://astr.org/page/17_Conference
+      event: ASTR Annual Conference
+      where: Atlanta, GA
+      when: 2017
+      event_name: "Extra/Ordinary Bodies: Interrogating the Performance and Aesthetics of ’Difference’"
+      description: A blog post describing the roundtable is available in the blog.
+
+    - title: Theorizing and Historicizing (the Absence of) Male-Identified Bodies in Burlesque Archives
+      panel: XXXXX
+      panel_type: roundtable
+      event: Women in Theatre Working Group Pre-Conference, ATHE Annual Conference
+      where: Las Vegas, NV
+      when: 2017
+      event_name: "Spectacle: Balancing Education, Theory, and Practice"
+
+    - title: "Kenny Kerr’s ’Boylesque’: Male Femininity as Spectacle"
+      panel: XXXXX
+      panel_type: panel
+      event: ATHE Annual Conference
+      where: Las Vegas, NV
+      when: 2017
+      event_name: "Spectacle: Balancing Education, Theory, and Practice"
+
+    - title: What have I become, my sweetest friend?
+      panel: XXXXX
+      panel_type: panel
+      event: ATHE Annual Conference
+      where: Las Vegas, NV
+      when: 2017
+      event_name: "Spectacle: Balancing Education, Theory, and Practice"
+
+    - title: XXXXXX
+      panel: "Tripping the Light Transtastic: Hidden Histories of Trans Diva Performance"
+      panel_type: curated-panel
+      event: ASTR Annual Conference
+      where: Minneapolis, MN
+      when: 2016
+      event_name: Trans-
+      description: "More information <a href=\"http://www.boylesque.info/2016/02/18/proposed-panel-at-astr-on-trans/\">here</a>"
+
+    - title: XYZ
+      panel: An Archive and Repertoire of Digital Humanities and Media Projects in the Performing Arts
+      panel_type: roundtable
+      url: "http://www.hastac2016.org"
+      event: HASTAC Annual Conference
+      where: Tempe, AZ
+      when: 2016
+
+    - title: A Digital (N)Ethnographic Journey through the Roots and Routes of Boylesque
+      event: ASTR Annual Conference
+      where: Portland, OR
+      when: 2015
+      event_name: "Debating the Stakes in Theatre and Performance Scholarship
+      description: More information here: http://www.boylesque.info/2015/06/02/a-digital-nethnographic-journey-through-the-roots-and-routes-of-boylesque/"
+
+    - title: "A Hairy Chest In a Beaded Dress: Drag Striptease in Mainstream Burlesque in 1920’s and 1930’s Culture"
+      event: Group Pre-Conference, ATHE Annual Conference
+      where: Washington DC
+      when: 2012
+      event_name: "Marry the Night: Nightlife, Performance + Queer World Making"
+
+    - title: What have I become, my sweetest friend?”
+      event: ATHE Annual Conference
+      where: Chicago, IL
+      when: 2011
+      event_name: "Performance Remains, Global Presence: Memory, Legacy, and Imagined Futures"
+
+    - title: "Material Girls: The Negotiation of Shame in the Material Culture of Contemporary Drag Queens"
+      url: https://web.archive.org/web/20110209074814/http://theurbancatwalk.wordpress.com/
+      event: "The Urban Catwalk: Fashion and Street Culture"
+      where: Yale University, New Haven, CT
+      when: April 2011
+
+    - title: "I Know We’re Not in Kansas: The Meaning of Space as a Radical Democratic Drag Intervention for Cultural Citizenship"
+      event: Association for Cultural Studies Annual Conference
+      where: Lingnan University, Hong Kong
+      when: 2010
+      event_name: Crossroads Conference
+
+    - title: Unintentional Activism or Mere Entertainment? Contemporary Drag Performance in New York
+      event: PSi Annual Conference
+      where: Zagreb, Croatia
+      when: 2009
+      event_name: "Misperformance: Misfiring, Misfitting, Misreading"
+
+    - title: "The Queer Diva: Zarah Leander and the Politics of Shame"
+      event: "Economies of Emotion: Rethinking Affect in Cinema and Media Studies"
+      where: Department of Film Studies, Stockholm University, Stockholm, Sweden
+      when: October 6, 2007
+      description: Keynote together with Prof. Tiina Rosenberg
+
+    - title: The Innocuous Popular Culture? After Dark, Drag Show and It’s ‘Large’ Audience
+      event: "RE: ACT UP—Queerforskningens återväxt"
+      where: Department of Gender Studies, Lund University, Sweden
+      when: November 2006
+      description: Paper presentation in Sweden, "Den ofarliga populärkulturen? After Dark, dragshow och dess ‘breda publik’"
+
+    - title: Beloved Zarah? Zarah Leander in After Dark’s shows
+      url: http://www.riksteatern.se/kallewesterling
+      event: Nation-wide tour with the Swedish National Theatre to Swedish towns
+      when: 2007
+      description: Produced by Christer Uhre at the Swedish National Theatre, I traveled to 10–15 Swedish cities, delivering a lecture on a major popular-cultural icon from the early 20th century in a shame-focused Cultural Studies framework, in a Swedish lecture “Älskade Zarah? Zarah Leander i After Darks shower”.
+
+
+monographs:
+    - title: "La Dolce Vita: Thirty Years in Drag"
+      publisher: Normal
+      where: Stockholm
+      when: 2006
+      description: "The title of the book in Swedish is <i>La Dolce Vita: Trettio år med drag</i>."
+
+reviews:
+    - type: book-review
+      book: "Mainstream Aids Theatre, The Media, and Gay Civil Rights: Making the Radical Palatable"
+      published_in: Theatre Journal
+      vol: 70
+      no: 1
+      month: March
+      year: 2018
+      pages: 127–128
+      doi: 10.1353/tj.2018.0021
+
+    - type: performance-review
+      performance: Taylor Mac’s "A 24-Decade History of Popular Music"
+      title: Subjective Histories of Taylor Mac’s ‘Radical Faerie Realness Ritual’ History
+      published_in: Theatre Journal
+      vol: 69
+      no: 3
+      month: September
+      year: 2017
+      pages: 403–415
+      doi: 10.1353/tj.2017.0048
+      special_issue: Theatre and the Museum/Cultures of Display
+
+    - title: After Sex?
+      type: book-review
+      book: "After Sex?: On Writing since Queer Theory"
+      published_in: lambda nordica
+      no: 3
+      year: 2012
+      pages: 119–122
+
+chapters-articles:
+    - title: "Race for the Money: The Influence of <em>RuPaul’s Drag Race</em> on the Livelihood and Aesthetics of New York City’s Drag Culture"
+      book: "Contemporary Drag Practices and Performers: Drag in a Changing Scene"
+      ed:
+        - Mark Edward
+        - Stephen Farrier
+      city: London
+      publisher: Methuen Drama
+      year: 2020?????
+
+    - title: Burlesque History
+      book: "Burlesque Bastards: The Tale About Hootchy Kootchy Club and the Queer Family at the End of the Rainbow"
+      ed:
+        - Jesper Ims Johansson
+      city: Stockholm
+      publisher: Voltaire Publishing
+      year: 2011
+      description: >
+        The chapter is called \"Burleskhistoria\" in Swedish, and the book's title in Swedish is <i>Burleska bastarder: Sagan om Hootchy Kootchy Club och den udda familjen vid regnbågens ände</i>
+
+    - title: The Wonderful World of Drag Queens
+      book: Kroppsspråk och tankesprång
+      publisher: STUTS
+      city: Stockholm
+      year: 2009
+      description: The chapter is called "Drugornas underbara värld" in Swedish.
+
+    - title: "The Potential of Difference: Drag Show and the Political Aesthetics of Appearing Different"
+      journal: lambda nordica
+      vol: 13
+      no: 1–2
+      pages: 30–49
+      description: "The chapter is called \"Annorlundahetens potential: Dragshow och den politiska estetiken i att framträda annorlunda\" in Swedish"
+
+    - title: "Queen Willmar"
+      book: "Willmar in the World: Young Scholars Exploring the Theatrical Event"
+      city: Stockholm
+      publisher: STUTS
+      year: 2007
+
+
+blog_posts:
+    - title: "Recap: A Tool Kit for Doctoral Student Career Planning"
+      url: https://www.hastac.org/blogs/kallewesterling/2018/01/04/recap-tool-kit-doctoral-student-career-planning
+      site_title: HASTAC
+      date: January 4, 2018
+      description: "Linked to by <a href=\"https://www.facebook.com/TheProfessorIsIn/posts/1646726772040530\"><em>The Professor Is In</em></a>, and <a href=\"https://twitter.com/broodingdiscord/status/950420828360990721\">used in course syllabi</a>."
+    - title: "Queer Pedagogies and Pedagogy for LGBTQ Instructors and Allies"
+      url: https://futuresinitiative.org/blog/2017/09/15/queer-pedagogies-and-pedagogy-for-lgbtq-instructors-and-allies/
+      site_title: The Futures Initiative
+      date: September 15, 2017
+    - title: Crying in Front of My Class for the First Time Ever
+      url: https://www.hastac.org/blogs/kallewesterling/2016/11/09/crying-front-my-class-first-time-ever
+      site_title: HASTAC
+      date: November 9, 2016
+    - title: DH Toolbox
+      url: https://www.hastac.org/blogs/kallewesterling/2015/05/27/dh-toolbox
+      site_title: HASTAC
+      date: May 27, 2015
+
+artistic:
+    - title: Trade2Trade
+      url: https://www.youtube.com/playlist?list=PLo_q7XQUjXpV9gxwMlNGj9TSPbMJvV6U-
+      role: Researcher and co-host with drag queen Monét X Change, famous from <i>RuPaul's Drag Race</i>
+      collaborators:
+        - David Serrano (director)
+        - Sherry Vine/Keith Levy (producer)
+      where: New York City
+      when: 2016–2017
+      description: YouTube show featuring go-go boys, male burlesque performers, and porn stars who have transitioned into other careers.
+    - title: The Pelican
+      url: http://voyagetheatercompany.org/the-pelican-2016/
+      role: Translator and dramaturg
+      collaborators:
+        - Charles C. Bales (director)
+        - Wayne Maugans (director)
+        - Voyage Theatre Company (producer)
+      where: 4th Street Theatre, New York City
+      when: May 5–14, 2016
+    - title: Drag as Art
+      role: Project Manager
+      where: Stockholm, Sweden and New York City
+      when: 2014–2016
+      description: >
+        A project aimed at exploring, producing, and presenting performing arts using drag as an artistic expression, based in Stockholm and New York.<br/><br/>
+        Performances:
+            <ul>
+                <li>June 17, 2016: <em>Icons! Icons! Icons!</em> with almost 20 artists at Scalateatern, Stockholm</li>
+                <li>June 30, 2015: Sherry Vine and Admira Thunderpussy in Concert at Södra Teatern, Stockholm</li>
+                <li>July 27, 2014: Sherry Vine in Concert at Torget, Stockholm</li>
+                <li>June 27, 2014: Prince Poppycock in Concert at Marabouparken, Stockholm</li>
+                <li>June 13, 2014: <em>Queens &amp; Klowns: The Grand Opening Gender Bender Gala</em> at Södra Teatern, Stockholm</li>
+            </ul>
+      collaborator:
+        - Karin Victorin (project manager)
+    - title: "Exhibit Q: Queer Bodies"
+      role: Performer/actor
+      collaborators:
+        - Tim Miller (director)
+      where: The New Museum, New York City
+      when: June 2013
+      description: Week-long workshop leading up to one public performance of autobiographical material.
+
+    - title: KUNQ
+      url: http://www.pellehanaeus.se/kunq/
+      role: Performer and Assistant Director
+      where: Stockholm, Sweden
+      when: 2001–2005
+      description: KUNQ was Sweden’s first youth queer performance art collective, and during my tenure with them, we produced three full-length autobiographical productions.
+
+
+fellowships-awards:
+
+    - name: Instructional Technology Fellowship (3 years)
+      from: Macaulay Honors College, CUNY
+      when: 2018–2021
+      description: Embedded Instructional Technology Fellow at Queens College, CUNY.
+    - name: Dissertation Year Award (1 year)
+      from: The Graduate Center, CUNY, New York City
+      description: Dissertation award provided to assist me in writing my dissertation, 2018–19.
+    - name: Connect New York Award
+      from: The Early Research Initiative/Digital Initiatives, The Graduate Center, CUNY, New York City
+      when: 2018
+    - name: Futures Initiative Provost's Fellowship (4 years)
+      from: Provost’s Office, The Graduate Center, CUNY, provided as a Futures Initiative Fellow, New York City.
+      when: 2014–2018
+      url: http://www.futuresinitiative.org
+    - name: Enhanced Chancellor’s Fellowship (4 years)
+      when: 2011–2014
+      description: $90,450, in tuition and living expenses to write a dissertation in Theatre and Performance, New York City.
+      from: The Graduate Center, CUNY
+    - name: Thord-Gray Memorial Award
+      when: 2010
+      description: $20,000 to conduct research for 12 months in New York City.
+      from: American-Scandinavian Foundation
+      url: http://www.amscan.org/
+    - name: Cultural Studies Fellowship
+      when: 2009
+      description: $17,100 to conduct research for 8 months in New York City.
+      from: The Swedish Foundation for International Cooperation in Research and Higher Education
+      url: http://www.stint.se/en/
+    - name: Private Donation Award
+      description: Awarded $2,300 from Stockholm University to conduct research for three months in New York City
+      when: 2008
+
+professional_experience:
+
+    - title: Coordinator, Program Social Media Fellows
+      employer: The Graduate Center, CUNY
+      where: New York City, NY
+      start_year: 2019
+      end_year: 2020
+
+    - title: Project Manager, Digital Humanities Research Institute
+      employer: CUNY Research Foundation
+      where: New York City, NY
+      start_year: 2018
+      end_year: 2021
+
+    - title: Director, HASTAC Scholars
+      url: https://www.hastac.org/initiatives/hastac-scholars
+      employer: The Futures Initiative, CUNY
+      where: New York City, NY
+      start_year: 2014
+      end_year: 2018
+      bullets:
+        - Lead the international network of graduate and undergraduate students in the HASTAC Scholars network.
+        - Recruited new HASTAC Scholars, especially from members of HASTAC’s leadership, as well as institutions that have been involved in past years.
+        - Communicated regularly with HASTAC Scholars through various communication channels.
+        - Helped Scholars to cultivate project ideas from inception to fruition.
+        - Developed ways that Scholars can connect more deeply with the Futures Initiative’s work and vice versa.
+        - Shared announcements with the Scholars community and encourage Scholars to do the same.
+        - Updated the HASTAC website and social media with new Scholars content as appropriate.
+        - Created, maintained, and archived documentation related to processes and procedures, including Scholars Handbook.
+        - Developed new modes of connecting with and tracking outcomes for alumni.
+    - title: Public Projects Specialist and Graphic Designer
+      url: https://www.futuresinitiative.org
+      employer: The Futures Initiative, CUNY
+      where: New York City, NY
+      start_year: 2014
+      end_year: 2018
+      bullets:
+        - Created a visual identity for the Futures Initiative and HASTAC@CUNY with guidelines for use of logos, fonts, and color palette.
+        - Created promotional and organizational materials in a variety of formats.
+        - Created templates for commonly used materials in order to ensure visual appeal and consistency across digital and analog platforms and media.
+        - Created visualizations of the organization and for informational materials.
+        - Edited and published videos of events.
+        - Served as liaison to university communications department to share important materials and announcements.
+        - Served as liaison to other fellows, offering guidance on representing work in visual media.
+
+    - title: Social Media Director
+      url: http://www.clags.org
+      employer: CLAGS (Center for Lesbian and Gay Studies), CUNY
+      start_year: 2012
+      end_year: 2014
+
+    - title: Global Coordinator, International Resource Network
+      url: http://www.irnweb.org
+      employer: CLAGS (Center for Lesbian and Gay Studies), CUNY
+      start_year: 2012
+      end_year: 2013
+
+    - title: Editor and Designer
+      url: http://www.stuts.nu
+      employer: STUTS (publishing house), Stockholm University
+      start_year: 2008
+      end_year: 2013
+      bullets:
+        - Designed cover art and content in several of the organization’s publications.
+        - Edited print content for marketing.
+        - Co-translated and co-edited <em>An Introduction to Contemporary Circus</em>.
+
+    - title: Assistant Editor, Western European Stages
+      url: http://thesegalcenter.org/publications/journals/wes/
+      employer: Martin E. Segal Center
+      where: New York City
+      start_year: 2011
+      end_year: 2011
+      bullets:
+        - Layout and ensuring that the editorial style of the journal was maintained.
+
+    - title: Research Assistant
+      employer: Theatre and Performance Program, The Graduate Center, CUNY
+      where: New York City
+      start_year: 2011
+      end_year: 2011
+      bullets:
+        - Personal research assistant for Professors David Savran and Marvin Carlson
+        - Providing assistance for the class “Theatre in the 1960s.”
+
+    - title: Editor and Designer
+      url: http://www.lambdanordica.se
+      employer: lambda nordica
+      start_year: 2007
+      end_year: 2008
+      bullets:
+        - Initiated and engaged in the revision of the journal into a peer-reviewed, queer-inclusive, modern source for scholars in the Humanities.
+        - Designed cover art and content.
+
+    - title: Research Assistant
+      start_year: 2006
+      end_year: 2007
+      bullets: 
+        - Personal research assistant for Professor Tiina Rosenberg
+        - Archival research for Rosenberg’s project “Vill ni se en skamstjärna, se på Zarah Leander
+        - Archival research for Rosenberg's book <a href="http://www.bokus.com/bok/9789185505692/bogarnas-zarah-diva-ikon-kult"><em>Bögarnas Zarah</em></a>
+        - Created the lecture series “Älskade Zarah? Zarah Leander i After Darks shower” (mentioned above).
+
+    - title: Marketing Intern
+      url: http://www.stadsteatern.stockholm.se/
+      employer: Stockholm City Theatre
+      where: Stockholm, Sweden
+      start_year: 2005
+      end_year: 2005
+      bullets:
+        - Created digital content according to the visual style guide of the theatre.
+        - Assisted the official press contact
+        - Overall responsibility for the marketing of&nbsp;“Blå timmen a conversation series with contemporary playwrights.
+
+
+event-organizing:
+
+    - role: Program Committee Member
+      event_type: conference
+      url: http://www.astr.org/page/18_Conference
+      event_name: "Arousal: Theatre, Performance, Embodiment"
+      event: ASTR 2018 Conference
+      where: San Diego, CA
+      when: November 2018
+
+    - role: Leader, Social Media Task Force
+      url: http://www.astr.org/page/17_Conference
+      event_name: "Extra/Ordinary Bodies: Interrogating the Performance and Aesthetics of “Difference”"
+      event: ASTR 2017 Conference
+      where: Atlanta, GA
+      when: November 2017
+
+    - role: Leader, Social Media Task Force
+      url: http://www.astr.org/page/16_Conference
+      event_name: Trans-
+      event: ASTR 2016 Conference
+      where: Minneapolis, MN
+      when: 2016
+
+    - role: Organizing Committee Member
+      url: http://www.clags.org/after-marriage
+      event_type: conference
+      event_name: After Marriage Conference
+      where: New York City, NY
+      when: 2016
+      bullets:
+        - Participated in the planning and execution of the conference.
+        - Created and maintained the website.
+        - Designed flyers and programs.
+
+    - role: Organizing Committee Member
+      url: http://www.hastac2016.org
+      event_type: conference
+      event_name: "Impact: Variation, Innovation, Action"
+      event: HASTAC 2016 Conference
+      where: Tempe, AZ
+      when: 2016
+      bullets:
+        - Participated in the planning and execution of the conference.
+        - Led the organization of the HASTAC Scholars Unconference.
+        - Peer-reviewed submitted papers.
+
+    - role: Organizing Committee Member
+      url: http://www.hastac2015.org
+      event_name: Art and Science of Digital Humanities
+      event: HASTAC 2015 Conference
+      where: Lansing, MI
+      when: May 2015
+      bullets:
+        - Participated in the planning and execution of the conference.
+        - Led the organization of the HASTAC Scholars Unconference.
+
+peer_review:
+    - for: Tidskrift för genusvetenskap
+      type: once
+      url: http://tegeve.se
+      where: Karlstad, Sweden
+      start_year: 2016
+      end_year: 2016
+
+    - url: http://www.partakejournal.org
+      for: Partake Journal
+      type: running
+      where: Boulder, CO
+      start_year: 2016
+
+    - url: http://www.framtidenskultur.se/engelska.htm
+      for: The Foundation for the Culture of the Future
+      start_year: 2008
+      end_year: 2010
+      bullets:
+        - Reviewed and recommended grant applications to Steering Committee, with a specific focus on the applications’ approaches to gender inequality.
+
+elected:
+
+    - position: Officer of Digital Initiatives
+      board: Executive Board, Doctoral Theatre Students’ Association
+      where: New York City, NY
+      url: http://www.opencuny.org/dtsa
+      start_year: 2016
+      end_year: 2017
+    - position: Board member
+      board: Executive Board, OpenCUNY
+      url: http://www.opencuny.org
+      where: New York City, NY
+      start_year: 2015
+      end_year: 2017
+    - position: Chair of Events
+      board: "Executive Board, CLAGS: Center for LGBTQ Studies"
+      url: http://www.clags.org
+      where: New York City, NY
+      start_year: 2014
+      end_year: 2017
+    - position: Treasurer
+      board: LGBTQ Focus Group, Association for Theatre in Higher Education
+      url: http://www.athe.org/displaycommon.cfm?an=1&amp;subarticlenbr=67
+      start_year: 2013
+      end_year: 2016
+    - position: Treasurer
+      board: Executive Board, STUTS
+      url: http://www.stuts.nu/
+      start_year: 2008
+      end_year: 2015
+    - position: Treasurer
+      board: Executive Board, Doctoral Theatre Students’ Association
+      where: New York City, NY
+      url: http://www.opencuny.org/dtsa
+      start_year: 2012
+      end_year: 2013
+    - position: Secretary
+      board: LGBTQ Focus Group, Association for Theatre in Higher Education
+      url: http://www.athe.org/displaycommon.cfm?an=1&amp;subarticlenbr=67
+      start_year: 2011
+      end_year: 2013
+    - position: Board member
+      board: National Theatre of Sweden's Stockholm Chapter
+      where: Stockholm, Sweden
+      start_year: 2007
+      end_year: 2008
+    - position: Treasurer
+      board: Executive Board, lambda nordica
+      start_year: 2007
+      end_year: 2010
+    - position: Board member
+      board: Theatre and Dance Studies Student Society, Stockholm University
+      where: Stockholm, Sweden
+      start_year: 2003
+      end_year: 2005
+
+skills:
+    - technology: Adobe Creative Suite (Photoshop, InDesign, Illustrator, Lightroom)
+    - technology: Apple Productivity Suite (Pages, Numbers)
+    - technology: Microsoft Office 365 (Word, Excel, PowerPoint)
+    - technology: MySQL
+    - technology: PHP
+    - technology: HTML 5
+    - technology: CSS
+    - technology: WordPress CMS, theme development, customized plugins
+    - technology: Google Adwords and Analytics (<a href="http://analyticsacademy.withgoogle.com/course02">Google Analytics Platform Principles</a>)
+    - technology: Social media (Eventbrite, Twitter, and Facebook)
+    - technology: RESTful APIs (Twitter, Instagram)
+    
+membership:
+    - organization: ASTR (American Society for Theatre Researchers)
+    - organization: ATHE (Association for Theatre in Higher Education)
+    - organization: MLA (Modern Language Association)
+    - organization: FemTechNet
+    - organization: FemBot
+    - organization: ADHO (Alliance of Digital Humanities Organizations)
+
+
+interviews:
+    - by: Sara Arvidsson
+      media: print
+      url: http://tidningenrepublic.se/de-vill-gora-dragshowen-farlig
+      publication: "Re:Public"
+      date: May 4, 2017
+
+    - by: Thomas Nordegren and Louise Epstein
+      media: radio
+      url: http://sverigesradio.se/sida/artikel.aspx?programid=4058&amp;artikel=5887566
+      title: Dragshow och normbrott
+      show: Nordegren &amp; Epstein, P1, Swedish Radio
+      date: June 12, 2014
+
+    - by: Suzanne Wikström, 
+      media: print
+      url: http://www.genus.se/wp-content/uploads/Genus-3-2010.pdf
+      title: Drag som motstånd,”
+      publication: Genus, no. 3 (2010), p. 24
+
+    - by: Anders Backlund, 
+      media: print
+      url: https://www.qx.se/noje/9936/tre-drug-filmklipp-du-inte-far-missa/
+      title: Tre drug-filmklipp du inte får missa
+      publication: QX
+      date: April 9, 2009
+
+    - by: Siri Lindstad, 
+      media: print
+      url: http://kjonnsforskning.no/nb/2008/09/t-trans?tid=54599
+      title: T for Trans
+      publication: Kilden (Blog, Norwegian Research Council)
+      date: September 26, 2008
+
+    - by: Christina Schilling, 
+      media: print
+      url: http://arkiv.poplight.se/artikel/after-dark-dragshower-och-melodifestivalen
+      title: After Dark, dragshower och Melodifestivalen
+      publication: Poplight (Blog)
+      date: December 19, 2006
