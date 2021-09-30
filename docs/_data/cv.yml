@@ -141,7 +141,7 @@ lightning_talks:
       organizer: NYC DH
 
 
-workshops_organized: # title, type, url, event, event_name, where, when, description, organizer
+workshops_organized:
 
     - title: "Possibilities and Realities of Digital Humanities Across Disciplines"
       type: roundtable
@@ -374,14 +374,26 @@ reviews:
       pages: 119–122
 
 chapters-articles:
+    - title: "Between Power Bombs and Death Drops: Interpellation and Identity in The Elaborate Entrance of Chad Deity and Queer Indie Wrestling"
+      book: "Sports Plays"
+      isbn: 9780367409395
+      doi: 10.4324/9780367810016-9
+      ed:
+        - Eero Laine
+        - Broderick Chow
+      city: London and New York
+      publisher: Routledge
+      year: 2022
+
     - title: "Race for the Money: The Influence of <em>RuPaul’s Drag Race</em> on the Livelihood and Aesthetics of New York City’s Drag Culture"
       book: "Contemporary Drag Practices and Performers: Drag in a Changing Scene"
+      isbn: 9781350082946
       ed:
         - Mark Edward
         - Stephen Farrier
       city: London
       publisher: Methuen Drama
-      year: 2020?????
+      year: 2020
 
     - title: Burlesque History
       book: "Burlesque Bastards: The Tale About Hootchy Kootchy Club and the Queer Family at the End of the Rainbow"

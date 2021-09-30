@@ -12,7 +12,6 @@ theme:
     palette:
         primary: blue grey
 
-
 plugins:
     - markdown-filter
     - search
@@ -24,8 +23,8 @@ markdown_extensions:
     - pymdownx.details
     - pymdownx.superfences
     - pymdownx.emoji:
-        emoji_index: !!python/name:materialx.emoji.twemoji
-        emoji_generator: !!python/name:materialx.emoji.to_svg
+          emoji_index: !!python/name:materialx.emoji.twemoji
+          emoji_generator: !!python/name:materialx.emoji.to_svg
 
 extra_css:
     - _assets/stylesheets/admonitions.css
@@ -41,43 +40,82 @@ nav:
     - About: about.md
 
     - Blog:
-        - Start: blog/index.md
-        - Recent Posts:
-            - First draft of visualization: blog/first-draft-of-visualization.md
-        - Archive:
-            - 2020:
-                - First draft of visualization: blog/first-draft-of-visualization.md
-            - 2019:
-                - First draft of visualization: blog/first-draft-of-visualization.md
-            - 2018:
-                - First draft of visualization: blog/first-draft-of-visualization.md
-            - 2017:
-                - First draft of visualization: blog/first-draft-of-visualization.md
+          - Start: blog/index.md
+          - Recent Posts:
+                - First draft of visualization: blog/xyz.md
+          - Archive:
+                - 2020:
+                      - First draft of visualization: blog/xyz.md
+                - 2019:
+                      - First draft of visualization: blog/xyz.md
+                - 2018:
+                      - First draft of visualization: blog/xyz.md
+                - 2017:
+                      - First draft of visualization: blog/xyz.md
 
     - Digital Projects:
-        - Current Digital Projects: digital-projects/index.md
-        - Digital Project Statement: digital-projects/statement.md
-        - Current Projects:
-            - Django Curriculum website: projects/django-curriculum-website/index.md
-            - Expanding Communities of Practice: projects/expanding-communities-of-practice/index.md
-            - Early Traces of Female Impersonation: projects/early-traces-of-female-impersonation/index.md
-            - Instructional Technology Fellowship: projects/instructional-technology-fellowship/index.md
-            - Program Social Media Fellowship Coordinator: projects/program-social-media-fellowship-coordinator/index.md
+          - Current Digital Projects: digital-projects/index.md
+          - Digital Project Statement: digital-projects/statement.md
+          - Current Projects:
+                - Django Curriculum website: projects/django-curriculum-website/index.md
+                - Expanding Communities of Practice: projects/expanding-communities-of-practice/index.md
+                - Early Traces of Female Impersonation: projects/early-traces-of-female-impersonation/index.md
+                - Instructional Technology Fellowship: projects/instructional-technology-fellowship/index.md
+                - Program Social Media Fellowship Coordinator: projects/program-social-media-fellowship-coordinator/index.md
 
     - Research:
-        - Current Research: research/index.md
-        - Research Statement: research/statement.md
-        - Current Projects:
-            - Expanding Communities of Practice: projects/expanding-communities-of-practice/index.md
-            - The Routes and Routes of Boylesque: projects/routes-and-routes-of-boylesque/index.md
-            - Early Traces of Female Impersonation: projects/early-traces-of-female-impersonation/index.md
+          - Current Research: research/index.md
+          - Research Statement: research/statement.md
+          - Current Projects:
+                - Expanding Communities of Practice: projects/expanding-communities-of-practice/index.md
+                - The Routes and Routes of Boylesque: projects/routes-and-routes-of-boylesque/index.md
+                - Early Traces of Female Impersonation: projects/early-traces-of-female-impersonation/index.md
 
     - Teaching:
-        - Start: teaching/index.md
-        - Teaching Statement: teaching/statement.md
-        - Recent Classes:
-            - Dramatic Vision and Form: teaching/dramatic-vision-and-form/index.md
-            - The History of American Burlesque: teaching/the-history-of-american-burlesque/index.md
-            - Speech Communication: teaching/speech-communication/index.md
-            - Introduction to Theatre: teaching/introduction-to-theatre/index.md
-            - Performance/Activism: teaching/performance-activism/index.md
+          - Start: teaching/index.md
+          - Teaching Statement: teaching/statement.md
+          - Recent Classes:
+                - Dramatic Vision and Form: teaching/dramatic-vision-and-form/index.md
+                - The History of American Burlesque: teaching/the-history-of-american-burlesque/index.md
+                - Speech Communication: teaching/speech-communication/index.md
+                - Introduction to Theatre: teaching/introduction-to-theatre/index.md
+                - Performance/Activism: teaching/performance-activism/index.md
+# TODO: Add content related to
+#
+#  - Data Science
+#       - High proficiency in multiple development languages (Python, JavaScript, PHP) and web technologies (HTML, CSS, jQuery)
+#       - Proficiency in data/network visualization (D3js, Pandas, Gephi)
+#       - Great data analysis skills, handling data formats (JSON, XML) as well as databases (Oracle, MySQL)
+#       - Experienced in developing and utilizing RESTful API for multiple purposes (Flask, Django REST Framework)
+#       - Utilization of modern data processing techniques (sentiment analysis and supervised machine learning) as well as technologies for those (Jupyter Notebooks)
+#       - Skilled in different web/data scraping techniques (selenium, and Python's built-in requests library)
+#  - Archival Research/Data Management      <-- research statement + dissertation
+#       - Intimately knowledgeable of research landscape (research databases, peer review processes, etc.) and academic writing (notations, citations, etc.).
+#       - Experienced in data collecting, scraping, and literature review from different repositories/libraries
+#       - Efficient in data management of large/complex data of vastly different types
+#       - Proficiency in technical writing (training, install and operation instructions)
+#  - Teaching and Research in Higher Education      <-- research statement + dissertation + teaching experience
+#  - Academic/Science Communication/Graphics      <-- layout experience (from STUTS, CLAGS, Futures Initiative) + photography/video skills
+#       - Graphics (printed, video, web media) – multiple packages
+#       - Multiple Social Media management for organizations/institutes
+#       - Technical and admin proficiency in major CMS systems (WordPress and Drupal)
+#       - Deep knowledge in efficiently utilizing multiple academic research databases (PLOS, JSTOR, Project MUSE, ProQuest, Google Scholar, SpringerLink)
+#  - Community Building       <----- DHRI + PSMF + HASTAC Scholars + teaching experience
+#       - Strong skills and examples in Community Building in research/academia
+#  - Project Management      <-- DHRI + HASTAC Scholars
+#       - Experienced in running projects in Academia with diverse teams (i.e.: Digital Humanities Institute)
+#       - Conceptualizing, planning, and executing events geared towards education and networking
+#
+#
+#
+#
+#
+#  - On my horizon/reading list
+#       - Go
+#       - Hadoop
+#       - Increased knowledge around machine learning
+#       - Mathematical notation
+#       - Data management: https://guides.nyu.edu/data_management/dmp
+#       - SAP
+#       - R
+
