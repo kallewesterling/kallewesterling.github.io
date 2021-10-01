@@ -6,7 +6,7 @@ description: Humanist first. Digital second. Always <a href="https://www.marxist
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: kalle-westerling.png
   #address: >
   #  <p>Reading, United Kingdom</p>
 
