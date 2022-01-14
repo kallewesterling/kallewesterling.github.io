@@ -8,9 +8,8 @@ middle_name: ""
 last_name: Westerling
 email: kalle.westerling@gmail.com
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Kalle Westerling is a ...
+  Kalle Westerling is a performance scholar and historian. His doctoral research focused on itinerant drag performers around New York and along the Eastern Seaboard in the 1930s as part of a collective art form that brought queerness with them to towns and cities around the area. He has also written on topics ranging from queer indie wrestlers, boylesque and male-identified strippers in neo-burlesque, and the influence of RuPaul’s Drag Race on the livelihood and aesthetics of contemporary New York City drag queens.
 footer_text: ""
-
 icon: 🤷‍♂️ # the emoji used as the favicon
 url: "" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
@@ -62,7 +61,7 @@ dblp_url: # your DBLP profile url
 
 contact_note: If you want to get in touch with me quickly, send me a DM on Twitter.
 
-google_analytics: UA-XXXXXXXXX # out your google-analytics code
+google_analytics: UA-10206554-1 # out your google-analytics code
 panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 
 # -----------------------------------------------------------------------------
