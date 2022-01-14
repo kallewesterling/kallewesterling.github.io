@@ -11,7 +11,7 @@
   Kalle  Westerling
 
 
-  | blog
+  | Mapping Drag
 
 </title>
 <meta name="description" content="Kalle Westerling is a performance scholar and historian. His doctoral research focused on itinerant drag performers around New York and along the Eastern Seaboard in the 1930s as part of a collective art form that brought queerness with them to towns and cities around the area. He has also written on topics ranging from queer indie wrestlers, boylesque and male-identified strippers in neo-burlesque, and the influence of RuPaul’s Drag Race on the livelihood and aesthetics of contemporary New York City drag queens.
@@ -37,7 +37,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤷‍♂️</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/portfolio/code-mapping-drag/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -90,18 +90,14 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
-              
-              <span class="sr-only">(current)</span>
               
             </a>
           </li>
           
           <!-- Other pages -->
-          
-          
           
           
           
@@ -200,60 +196,21 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>my thoughts</h1>
-    <h2>this is the section of the site where I drop my random thoughts.</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Mapping Drag</h1>
+    <p class="post-description"></p>
+  </header>
 
+  <article>
+    <p class="lead">My current research examines boylesque, a contemporary genre of neo-burlesque performance, which I argue is a culmination of a history of a gender-nonconforming style of burlesque that stretches back through the 20th century. Engaging a speculative historiographic investigation of drag performers in burlesque history, in one of my dissertation chapters, I am pursuing research inquiries into historical data, attempting to find queer foundational structures in popular entertainment through social network analysis.</p>
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/making-a-search-library-for-selected-text-button/">Making a “Search library for selected text” button</a></h3>
-        <p class="post-meta">November 2, 2021</p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/theatre-and-performance-in-covid-quarantine/">Theatre and Performance in COVID Quarantine</a></h3>
-        <p class="post-meta">March 26, 2020</p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/things-i-learned-from-joan-bolker/">Things I learned from Joan Bolker</a></h3>
-        <p class="post-meta">September 29, 2018</p>
-        <p></p>
-      </li>
-    
-  </ul>
+<p>“Mapping Female Impersonators in Billboard’s and Variety’s Archives” was funded through <a href="https://connectny.commons.gc.cuny.edu/2018/08/20/kalle-westerling">a Connect New York (CNY) research grant in Summer 2018</a>. With this funding, I was able to begin creating a dataset that linked drag and “pansy” performers in New York City to burlesque theatres and nightclubs in the 1920s–30s. The research was primarily based on the archives of Billboard and Variety as they exist in their entire runs in ProQuest’s Entertainment Archive database. I also started mapping theatres and other venues where such performers regularly appeared.</p>
 
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blog - page 3">3</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/4/index.html" title="blog - page 4">4</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/5/index.html" title="blog - page 5">5</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+<p>As I was browsing through the database, I was continuously blocked because ProQuest’s system perceived me as a bot causing too much traffic. To be able to sift through the search results in a database format without interruption, I constructed a script that created a local database consisting of the metadata from the thousands of articles in the search result files. During the grant’s research time, I was able to learn some foundational Python programming skills and wrote a program that used BeautifulSoup to traverse ProQuest’s search results and generated an easily navigable Pandas DataFrame: <a href="https://github.com/kallewesterling/process-entertainment-archive">github.com/kallewesterling/process-entertainment-archive</a>.</p>
 
+<p>The tedious process made it clear that I should make available the entire dataset in a repository. Moving the data from my local storage to GitHub is still in progress because I have concerns with the privacy of the performers in the dataset. Regardless of whether they are still alive or not, there are prejudiced opinions about professions in art forms such as female impersonations, burlesque, and striptease. I want to make sure that the project provides some context to the data. The dataset, above all, will live in the digital component of my dissertation, which is still under construction: <a href="https://github.com/kallewesterling/early-female-impersonators">github.com/kallewesterling/early-female-impersonators</a>.</p>
 
+  </article>
 
 </div>
 

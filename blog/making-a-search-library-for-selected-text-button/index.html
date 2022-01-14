@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Kalle  Westerling
+
+
+  | Making a “Search library for selected text” button
+
+</title>
+<meta name="description" content="Kalle Westerling is a performance scholar and historian. His doctoral research focused on itinerant drag performers around New York and along the Eastern Seaboard in the 1930s as part of a collective art form that brought queerness with them to towns and cities around the area. He has also written on topics ranging from queer indie wrestlers, boylesque and male-identified strippers in neo-burlesque, and the influence of RuPaul’s Drag Race on the livelihood and aesthetics of contemporary New York City drag queens.
+">
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<!-- <link rel="stylesheet" href="https://gitcdn.xyz/repo/jwarby/jekyll-pygments-themes/master/github.css" /> -->
+
+<!-- Styles -->
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤷‍♂️</text></svg>">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="canonical" href="/blog/making-a-search-library-for-selected-text-button/">
+
+<!-- JQuery -->
+<!-- jQuery -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+
+<!-- Theming-->
+
+<script src="/assets/js/theme.js"></script>
+<script src="/assets/js/dark_mode.js"></script>
+
+
+
+
+
+
+    
+
+  </head>
+
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+    <div class="container">
+      
+      <a class="navbar-brand title font-weight-lighter" href="/">
+       <span class="font-weight-bold">Kalle</span>   Westerling
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              about
+              
+            </a>
+          </li>
+          
+          <!-- Blog -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/blog/">
+              blog
+              
+            </a>
+          </li>
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/portfolio/">
+                portfolio
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/publications/">
+                publications
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/teaching/">
+                teaching
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+            <div class = "toggle-container">
+              <a id = "light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+              </a>
+            </div>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Making a “Search library for selected text” button</h1>
+    <p class="post-meta">November 2, 2021</p>
+  </header>
+
+  <article class="post-content">
+    <p>I have made a handy little shortcut for myself in my browser, which may be of use to anyone doing academic research. Here’s the “use case”:</p>
+
+<p>We tend to navigate to the library website a lot, to search for books, etc. What if there was a quick way to do so, using a button that would pick up on (a) any selected text on the current page, or (b) any headers on the current page, and take you automatically to the search page for the library?</p>
+
+<p>Let’s make it happen.</p>
+
+<h2 id="step-1">Step 1</h2>
+
+<p>In a text editor (I’m going to use VS Code), we’re going to start a short JavaScript code block. We start it by constructing the surrounding elements. We know we want the browser to know that there’s JavaScript code a-coming, and that we want to execute it immediately:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">javascript</span><span class="p">:(</span>
+ <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="p">...</span>
+ <span class="p">}</span>
+<span class="p">)();</span>
+</code></pre></div></div>
+
+<p>On line 1, we tell the browser in a call that the following lines should be interpreted as JavaScript, and on line 5, we close out the JavaScript section, and using the final <code class="language-plaintext highlighter-rouge">()</code>, we tell the browser to execute the code immediately. (We could add it inside the code block as well, after the ending <code class="language-plaintext highlighter-rouge">}</code> for the unnamed function, but let’s keep it here for clarity.)</p>
+
+<p>Line 2 and 4 are essentially just an unnamed function being returned to our call.</p>
+
+<h2 id="step-2">Step 2</h2>
+
+<p>Next, we want to check whether the browser has text selected. If it does, that should be our automatically filled out text (<code class="language-plaintext highlighter-rouge">autoFill</code>) in our popup. If we have no text selected, it should join together any <code class="language-plaintext highlighter-rouge">&lt;h1&gt;...&lt;/h1&gt;</code> html elements together with a space. Thus:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">javascript</span><span class="p">:(</span>
+  <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">autoFill</span> <span class="o">=</span> <span class="nx">getSelection</span><span class="p">().</span><span class="nx">toString</span><span class="p">();</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">autoFill</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">autoFill</span> <span class="o">=</span> <span class="p">[...</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">"</span><span class="s2">h1</span><span class="dl">"</span><span class="p">)]</span>
+                    <span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">elem</span><span class="o">=&gt;</span><span class="nx">elem</span><span class="p">.</span><span class="nx">innerText</span><span class="p">)</span>
+     <span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="dl">'</span><span class="s1"> </span><span class="dl">'</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">)();</span>
+</code></pre></div></div>
+
+<p>On line 3, we set up our <code class="language-plaintext highlighter-rouge">autoFill</code> variable to the selection of the window by using JavaScript’s built-in function <code class="language-plaintext highlighter-rouge">getSelection</code>. In one go, we convert it into a string by using the window selection’s built-in method <code class="language-plaintext highlighter-rouge">toString</code>.</p>
+
+<p>On line 4, we check whether the <code class="language-plaintext highlighter-rouge">autoFill</code> variable has been set, and if it has not, in line 5, we start our logic for getting the text from all of the <code class="language-plaintext highlighter-rouge">h1</code> html elements. We do so first by querying the document for all the elements using the <code class="language-plaintext highlighter-rouge">querySelectorAll</code> function. Since it returns a collection of HTML elements and we want an array, we can use the <code class="language-plaintext highlighter-rouge">[...list]</code> syntax from JavaScript, which creates an array from any list.</p>
+
+<p>On line 6 and 7, using JavaScript’s convenient chaining (having many functions following each other using a period in-between), we use the array’s <code class="language-plaintext highlighter-rouge">map</code> function to extract each of the <code class="language-plaintext highlighter-rouge">innerText</code> properties from the <code class="language-plaintext highlighter-rouge">h1</code> elements in the array. This will result in an array, which can be joined together using the <code class="language-plaintext highlighter-rouge">join</code> method of any array in JavaScript. We simply pass a space <code class="language-plaintext highlighter-rouge">' '</code> to the function, to have all the elements joined by a space.</p>
+
+<h2 id="step-3">Step 3</h2>
+
+<p>Now, we want the script to verify with us, before it takes us to the library catalog, what it is about to search for. If it isn’t correct, we want to have the option to press “Cancel” in a popup, and stop any further action.</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">javascript</span><span class="p">:(</span>
+  <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">autoFill</span> <span class="o">=</span> <span class="nx">getSelection</span><span class="p">().</span><span class="nx">toString</span><span class="p">();</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">autoFill</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">autoFill</span> <span class="o">=</span> <span class="p">[...</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">"</span><span class="s2">h1</span><span class="dl">"</span><span class="p">)]</span>
+                    <span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">elem</span><span class="o">=&gt;</span><span class="nx">elem</span><span class="p">.</span><span class="nx">innerText</span><span class="p">)</span>
+                    <span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="dl">'</span><span class="s1"> </span><span class="dl">'</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="kd">const</span> <span class="nx">searchFor</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="dl">'</span><span class="s1">Search for?</span><span class="dl">'</span><span class="p">,</span> <span class="nx">autoFill</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">searchFor</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">`https://library.website.here/search_script?query=</span><span class="p">${</span><span class="nb">encodeURIComponent</span><span class="p">(</span><span class="nx">searchFor</span><span class="p">)}</span><span class="s2">`</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">)();</span>
+</code></pre></div></div>
+
+<p>On line 9, we set up a new constant (since this will only be changed once), which comes from a prompt presented to us. The prompt will ask what we want to “Search for?” And it will come pre-filled with our <code class="language-plaintext highlighter-rouge">autoFill</code> (which you will remember from the script above is either set to the current selection or a joined string of all the page’s headers).</p>
+
+<p>Now, if we press “Cancel” in this prompt, we don’t want the script to continue any action. Thus, on line 10, we check to make sure that  the <code class="language-plaintext highlighter-rouge">searchFor</code> constant is set to anything (it will be <code class="language-plaintext highlighter-rouge">null</code> if “Cancel” was pressed and an empty string, <code class="language-plaintext highlighter-rouge">''</code>, if the field was left empty).</p>
+
+<p>On line 11, you will have to do some research. Go to your library website (or whichever search engine you will want to query using this script), do a search for “TERM” (in all-caps), and copy the url into the angled single quotation marks <code class="language-plaintext highlighter-rouge">...</code>. The result, say, if you are at the University of Chicago, would be:</p>
+
+<p>window.open(<code class="language-plaintext highlighter-rouge">https://catalog.lib.uchicago.edu/vufind/Search/Results?lookfor=TERM&amp;type=AllFields</code>);</p>
+
+<p>Since we don’t want the script to search for “TERM” every time that we execute it, we will replace TERM in the URL with the expression <code class="language-plaintext highlighter-rouge">${encodeURIComponent(searchFor)}</code>. The built-in <code class="language-plaintext highlighter-rouge">encodeURIComponent</code> function will make sure that any string that we have put into <code class="language-plaintext highlighter-rouge">searchFor</code> will be encoded correctly for any URL string to interpret it correctly (so spaces will be converted to “%20,” the at-sign @ will be converted to “%40” etc.). So, the above example would be:</p>
+
+<p>window.open(<code class="language-plaintext highlighter-rouge">https://catalog.lib.uchicago.edu/vufind/Search/Results?lookfor=${encodeURIComponent(searchFor)}&amp;type=AllFields</code>);</p>
+
+<p>Note that this URL will be very different, depending on your university. For example, for New York University, the same line would read:</p>
+
+<p>window.open(<code class="language-plaintext highlighter-rouge">http://bobcat.library.nyu.edu/primo-explore/search?institution=NYU&amp;vid=NYU&amp;tab=all&amp;search_scope=all&amp;mode=basic&amp;displayMode=full&amp;bulkSize=10&amp;highlight=true&amp;dum=true&amp;displayField=all&amp;primoQueryTemp=TERM&amp;query=any,contains,${encodeURIComponent(searchFor)}&amp;sortby=rank&amp;lang=en_US</code>);</p>
+
+<p>And for CUNY, the line would read:</p>
+
+<p>window.open(<code class="language-plaintext highlighter-rouge">https://cuny-gc.primo.exlibrisgroup.com/discovery/search?vid=01CUNY_GC:CUNY_GC&amp;query=any,contains,{encodeURIComponent(searchFor)}&amp;tab=Everything&amp;search_scope=MyInst_and_CI&amp;sortby=rank&amp;mfacet=rtype,include,books,1&amp;mfacet=rtype,include,book_chapters,1&amp;lang=en_US&amp;mode=basic&amp;offset=0</code>);</p>
+
+<h1 id="step-4">Step 4</h1>
+
+<p>Our script is now complete:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">javascript</span><span class="p">:(</span>
+  <span class="kd">function</span><span class="p">(){</span>
+    <span class="kd">var</span> <span class="nx">autoFill</span> <span class="o">=</span> <span class="nx">getSelection</span><span class="p">().</span><span class="nx">toString</span><span class="p">();</span>
+    <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nx">autoFill</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">autoFill</span> <span class="o">=</span> <span class="p">[...</span><span class="nb">document</span><span class="p">.</span><span class="nx">querySelectorAll</span><span class="p">(</span><span class="dl">"</span><span class="s2">h1</span><span class="dl">"</span><span class="p">)]</span>
+                    <span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">elem</span><span class="o">=&gt;</span><span class="nx">elem</span><span class="p">.</span><span class="nx">innerText</span><span class="p">)</span>
+                    <span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="dl">'</span><span class="s1"> </span><span class="dl">'</span><span class="p">);</span>
+    <span class="p">}</span>
+    <span class="kd">const</span> <span class="nx">searchFor</span> <span class="o">=</span> <span class="nx">prompt</span><span class="p">(</span><span class="dl">'</span><span class="s1">Search for?</span><span class="dl">'</span><span class="p">,</span> <span class="nx">autoFill</span><span class="p">);</span>
+    <span class="k">if</span> <span class="p">(</span><span class="nx">searchFor</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nb">window</span><span class="p">.</span><span class="nx">open</span><span class="p">(</span><span class="s2">`https://catalog.lib.uchicago.edu/vufind/Search/Results?lookfor=</span><span class="p">${</span><span class="nb">encodeURIComponent</span><span class="p">(</span><span class="nx">searchFor</span><span class="p">)}</span><span class="s2">&amp;type=AllFields`</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">)();</span>
+</code></pre></div></div>
+
+<p>(Remember to replace your <code class="language-plaintext highlighter-rouge">window.open</code> line with the correct URL for your university or service!)</p>
+
+<p>Now, all that’s missing is to put the script to work. In your browser, add a new bookmark in your toolbar. In Chrome, for example, right click on the toolbar and select “Add Page…”</p>
+
+<p>In the popup, under “URL,” copy and paste the entire script. (Bonus point, you can remove all the spaces in the script to make it neater, but it is not necessary.) Under “Title,” you can put whatever you want the button to read in the toolbar. “Search library,” for instance.</p>
+
+  </article>
+
+  
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    &copy; Copyright 2022 Kalle  Westerling.
+    
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- Bootsrap & MDB scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.4/umd/popper.min.js" integrity="sha512-eUQ9hGdLjBjY3F41CScH3UX+4JDSI9zXeroz7hJ+RteoCaY+GP/LDoM8AO+Pt+DRFw3nXqsjh9Zsts8hnYv8/A==" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha512-M5KW3ztuIICmVIhjSqXe01oV2bpe248gOxqmlcYrEzAvws7Pw3z6BK0iGbrwvdrUQUhi3eXgtxp5I8PDo9YfjQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js" integrity="sha512-Mug9KHKmroQFMLm93zGrjhibM2z2Obg9l6qFG2qKjXEXkMp/VDkI4uju9m4QKPjWSwQ6O2qzZEnJDEeCw0Blcw==" crossorigin="anonymous"></script>
+
+  
+<!-- Mansory & imagesLoaded -->
+<script defer src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script defer src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script defer src="/assets/js/mansory.js" type="text/javascript"></script>
+
+
+  
+
+
+<!-- Medium Zoom JS -->
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.6/dist/medium-zoom.min.js" integrity="sha256-EdPgYcPk/IIrw7FYeuJQexva49pVRZNmt3LculEr7zM=" crossorigin="anonymous"></script>
+<script src="/assets/js/zoom.js"></script>
+
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+</html>

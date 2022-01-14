@@ -11,7 +11,7 @@
   Kalle  Westerling
 
 
-  | blog
+  | Social Media Research
 
 </title>
 <meta name="description" content="Kalle Westerling is a performance scholar and historian. His doctoral research focused on itinerant drag performers around New York and along the Eastern Seaboard in the 1930s as part of a collective art form that brought queerness with them to towns and cities around the area. He has also written on topics ranging from queer indie wrestlers, boylesque and male-identified strippers in neo-burlesque, and the influence of RuPaul’s Drag Race on the livelihood and aesthetics of contemporary New York City drag queens.
@@ -37,7 +37,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤷‍♂️</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/portfolio/code-social-media/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -90,18 +90,14 @@
           </li>
           
           <!-- Blog -->
-          <li class="nav-item active">
+          <li class="nav-item ">
             <a class="nav-link" href="/blog/">
               blog
-              
-              <span class="sr-only">(current)</span>
               
             </a>
           </li>
           
           <!-- Other pages -->
-          
-          
           
           
           
@@ -200,60 +196,22 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>my thoughts</h1>
-    <h2>this is the section of the site where I drop my random thoughts.</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Social Media Research</h1>
+    <p class="post-description"></p>
+  </header>
+
+  <article>
+    <p class="lead">In my research, I have inquired into the changing art forms of boylesque and drag in contemporary social media platforms, particularly the fraught tension between social media platforms and artists working in the overlap between burlesque, drag, and striptease.</p>
+
+<p>To facilitate these analyses, I have built some rudimentary understanding of libraries that help visualize and analyze related data points such as NetworkX, Matplotlib, and seaborn. The data points come from public post data aggregated around specific hashtags on Twitter and Instagram.</p>
+
+<p>However, since Instagram notoriously closed down their API, I had to write my own package for accessing the JSON information available in the web rendering of the Instagram app, available on GitHub: <a href="https://github.com/kallewesterling/instagram">github.com/kallewesterling/instagram</a>.</p>
+
+<p>To access data from Twitter, I have long used Martin Hawksey’s TAGS as a tool to download tweets continuously. However, TAGS generates a static format without the complete information needed to create the datasets for my research. I am in the progress of moving from TAGS into my own package, which I am currently building as in two parts. The first uses the tweet IDs from the TAGS documents to download all of the tweets and the user information using TweetScraper: <a href="https://github.com/kallewesterling/process-tags">github.com/kallewesterling/process-tags</a>. The second generates content based on a Twitter username using Tweepy and an internally constructed cache system: <a href="https://github.com/kallewesterling/twitter-analysis">github.com/kallewesterling/twitter-analysis</a>.</p>
 
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/making-a-search-library-for-selected-text-button/">Making a “Search library for selected text” button</a></h3>
-        <p class="post-meta">November 2, 2021</p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/theatre-and-performance-in-covid-quarantine/">Theatre and Performance in COVID Quarantine</a></h3>
-        <p class="post-meta">March 26, 2020</p>
-        <p></p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/things-i-learned-from-joan-bolker/">Things I learned from Joan Bolker</a></h3>
-        <p class="post-meta">September 29, 2018</p>
-        <p></p>
-      </li>
-    
-  </ul>
-
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blog - page 3">3</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/4/index.html" title="blog - page 4">4</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/5/index.html" title="blog - page 5">5</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
-
-
+  </article>
 
 </div>
 
