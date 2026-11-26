@@ -61,12 +61,13 @@
     <li class="card" data-color="{{ .color }}">
       <p class="card-kind">{{ .kind }}</p>
       <h3 class="card-title">
-        {{- if or .docs .repo }}<a href="{{ or .docs .repo }}">{{ .name }}</a>{{ else }}{{ .name }}{{ end -}}
+        {{- if or .app .docs .repo }}<a href="{{ or .app .docs .repo }}">{{ .name }}</a>{{ else }}{{ .name }}{{ end -}}
       </h3>
       <p class="card-body">{{ .summary }}</p>
       <ul class="stack">{{ range .stack }}<li>{{ . }}</li>{{ end }}</ul>
-      {{- if or .docs .repo }}
+      {{- if or .app .docs .repo }}
       <p class="card-links">
+        {{- with .app }}<a href="{{ . }}">Try it<span class="arrow" aria-hidden="true">↗</span></a>{{ end }}
         {{- with .docs }}<a href="{{ . }}">Docs<span class="arrow" aria-hidden="true">↗</span></a>{{ end }}
         {{- with .repo }}<a href="{{ . }}">GitHub<span class="arrow" aria-hidden="true">↗</span></a>{{ end }}
       </p>

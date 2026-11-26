@@ -1,5 +1,5 @@
 # color: violet | coral | teal | sun | sky
-# repo: GitHub URL. docs: documentation site, if there is one.
+# repo: GitHub URL. docs: documentation site. app: hosted version you can try.
 - name: cvediff
   kind: Security
   color: coral
@@ -36,6 +36,8 @@
     A presenter view for timed talks, workshops and demos. Shows the notes for
     the current section, tells you when you're behind, and suggests what to
     cut.
+  repo: https://github.com/kallewesterling/session-pacer
+  app: https://westerling.nu/session-pacer/
   stack: [HTML, JavaScript]
 
 - name: syncjar
