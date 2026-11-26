@@ -1,0 +1,57 @@
+name: Kalle Westerling
+role: Staff Developer Relations Engineer
+company: Chainguard
+companyURL: https://www.chainguard.dev
+status: Building developer education at Chainguard
+email: kallewesterling@gmail.com
+headshot: img/kalle-westerling-highres.jpg
+
+intro: >-
+  I teach developers how to ship secure software, and I build the tools that
+  make that teaching hold up. At Chainguard I create courses, hands-on labs,
+  workshops and live demos on container images, open-source libraries and
+  software supply chain security.
+
+intro2: >-
+  I came to developer relations by way of the classroom and the research lab: a
+  PhD in digital humanities, coding curricula for faculty across the
+  United States, and research software at the Alan Turing Institute. I still
+  design learning the same way: start from where people get stuck, and remove
+  that step.
+
+focus:
+  - Developer education
+  - Supply chain security
+  - Containers
+  - Hands-on labs
+  - Docs as code
+  - Python
+
+social:
+  - name: GitHub
+    url: https://github.com/kallewesterling
+  - name: LinkedIn
+    url: https://linkedin.com/in/kallewesterling
+  - name: Chainguard Academy
+    url: https://edu.chainguard.dev
+  - name: ORCID
+    url: https://orcid.org/0000-0002-2014-332X
+
+contactBlurb: >-
+  For talks, workshops, podcasts and anything about developer education or
+  software supply chain security.
+
+shortBio: >-
+  Kalle Westerling is a Staff Developer Relations Engineer at Chainguard, where
+  he builds courses, labs and workshops on software supply chain security.
+
+fullBio: >-
+  Kalle Westerling is a Staff Developer Relations Engineer at Chainguard, where
+  he creates courses, hands-on labs, workshops and live demos that help
+  developers adopt secure container images and open-source libraries. He also
+  builds open-source tools for developer educators, from testing code examples
+  in published courses to pacing live sessions. Before Chainguard he was a
+  research software engineer and research application manager at the Alan
+  Turing Institute, and before that he led national coding and research
+  training programs at CUNY, where he earned a PhD in digital humanities. He
+  still approaches technical education as a teacher first.

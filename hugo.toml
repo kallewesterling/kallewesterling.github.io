@@ -1,0 +1,29 @@
+baseURL = "https://westerling.nu/"
+title = "Kalle Westerling, Staff Developer Relations Engineer"
+enableEmoji = true
+disableKinds = ["taxonomy", "term"]
+
+[frontmatter]
+  date = [":filename", ":default"]
+
+[permalinks]
+  [permalinks.page]
+    posts = "/blog/:slug/"
+  [permalinks.section]
+    posts = "/blog/"
+
+[outputFormats.RSS]
+  baseName = "feed"
+
+[pagination]
+  pagerSize = 20
+
+[params]
+  description = "Kalle Westerling is a Staff Developer Relations Engineer at Chainguard. He builds courses, labs, workshops and tools that help developers ship secure software."
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false

@@ -1,0 +1,92 @@
+# Each chapter is one era of the career. color: violet | coral | teal | sun | sky
+chapters:
+  - name: Developer relations
+    years: "2025–now"
+    color: teal
+    carried: >-
+      Everything below, pointed at developers: teaching that starts where people
+      get stuck, and engineering that makes the teaching hold up.
+    roles:
+      - title: Staff Developer Relations Engineer
+        org: Chainguard
+        years: "Feb 2025–now"
+        current: true
+        highlights:
+          - Courses and certifications for Chainguard Academy, from first draft to badge.
+          - Operation Lockdown, a capture-the-flag format run for customers and partners in Paris, Dresden and London.
+          - Talks, demos and monthly Learning Labs on container images, libraries and secure agent workflows.
+          - Open-source tooling that tests course code and scripts course operations.
+
+  - name: Research software
+    years: "2021–2025"
+    color: sky
+    carried: >-
+      Shipping real software with researchers as users, and documenting it so
+      other people can pick it up.
+    roles:
+      - title: Research Application Manager
+        org: Alan Turing Institute, Research and Innovation Cluster in Digital Twins
+        years: "2023–2025"
+        highlights:
+          - Kept the user perspective at the centre of research software development.
+          - Worked on the longevity and open-source sustainability of the cluster's tools.
+      - title: Research Software Engineer
+        org: Living with Machines, British Library and Alan Turing Institute
+        years: "2021–2023"
+        highlights:
+          - Built four Python packages and documented three of them end to end.
+          - Made 40+ data visualisations in JavaScript and D3.
+          - Visualisations shown at Leeds City Museum, seen by more than 40,000 visitors.
+
+  - name: Teaching and community
+    years: "2011–2021"
+    color: violet
+    carried: >-
+      Curriculum design, running workshops at scale, and building communities of
+      practice across many institutions at once.
+    roles:
+      - title: Project Manager, Digital Humanities Research Institutes
+        org: The Graduate Center, CUNY
+        years: "2018–2021"
+        highlights:
+          - Ran the NEH-funded "Expanding Communities of Practice" program for faculty and librarians across the U.S.
+          - Co-wrote the open DHRI coding curriculum, with over 2,000 commits.
+      - title: Scholars Program Manager and Steering Committee member
+        org: HASTAC
+        highlights:
+          - Managed a fellowship network of graduate students across many universities.
+      - title: Instructor
+        org: CUNY, NYU and Villanova University
+        highlights:
+          - Taught theatre history, performance and digital media courses.
+
+# value/label pairs; use "auto:talks" or "auto:projects" to count from data files.
+stats:
+  - value: auto:talks
+    label: talks, demos and workshops listed here
+  - value: "40,000+"
+    label: museum visitors saw my Living with Machines visualisations
+  - value: "2,000+"
+    label: commits to an open coding curriculum
+  - value: auto:projects
+    label: open-source tools for developer educators
+
+certifications:
+  - name: Supply Chain Sentinel
+    issuer: Chainguard
+    year: 2026
+  - name: Skilljar Professional, Administrator
+    issuer: Skilljar
+    year: 2026
+  - name: Credly Credential Expert
+    issuer: Credly
+    year: 2025
+  - name: Understanding the EU Cyber Resilience Act
+    issuer: The Linux Foundation
+    year: 2025
+
+education:
+  - degree: Ph.D., Digital Humanities
+    org: The Graduate Center, CUNY
+
+languages: [Swedish, English, Portuguese, Spanish, French]

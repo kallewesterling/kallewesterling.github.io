@@ -1,0 +1,35 @@
+{{ define "main" }}
+<section class="wrap-narrow list-page">
+  <header class="page-head">
+    <p class="eyebrow"><a href="/archive/">Archive</a></p>
+    <h1>Publications</h1>
+    {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+  </header>
+  {{ .Content }}
+  {{- $pubs := sort hugo.Data.publications "date" "desc" }}
+  {{- $years := slice }}
+  {{- range $pubs }}{{ if not (in $years .date) }}{{ $years = $years | append .date }}{{ end }}{{ end }}
+  {{- range $years }}
+  {{- $y := . }}
+  <h2 class="year">{{ $y }}</h2>
+  <ul class="pub-list">
+    {{- range where $pubs "date" $y }}
+    <li class="pub{{ if .selected }} is-selected{{ end }}">
+      {{ with .abbr }}<span class="tag">{{ . }}</span>{{ end }}
+      <div>
+        <p class="pub-title">{{ if .html }}<a href="{{ .html }}">{{ .title }}</a>{{ else }}{{ .title }}{{ end }}</p>
+        <p class="meta">{{ .author }}</p>
+        <p class="meta">
+          {{- if eq .type "article" }}<em>{{ .journal }}</em>{{ with .volume }}, {{ . }}{{ end }}{{ with .number }}({{ . }}){{ end }}{{ with .pages }}, pp. {{ . }}{{ end }}
+          {{- else if eq .type "incollection" }}In <em>{{ .booktitle }}</em>{{ with .editor }}, ed. {{ . }}{{ end }}{{ with .pages }}, pp. {{ . }}{{ end }}{{ with .publisher }}. {{ . }}{{ end }}
+          {{- else if eq .type "book" }}{{ .publisher }}{{ with .location }}, {{ . }}{{ end }}
+          {{- end }}
+          {{ with .doi }} · <a href="https://doi.org/{{ . }}">doi:{{ . }}</a>{{ end }}
+        </p>
+      </div>
+    </li>
+    {{- end }}
+  </ul>
+  {{- end }}
+</section>
+{{ end }}

@@ -1,0 +1,32 @@
+{{ define "main" }}
+<section class="wrap-narrow list-page">
+  <header class="page-head">
+    <p class="eyebrow"><a href="/archive/">Archive</a></p>
+    <h1>{{ .Title | strings.FirstUpper }}</h1>
+    {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+  </header>
+  {{ .Content }}
+  {{- if eq .Section "posts" }}
+    {{- range .Pages.GroupByDate "2006" }}
+    <h2 class="year">{{ .Key }}</h2>
+    <ul class="post-list">
+      {{- range .Pages }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a><span class="meta">{{ .Date.Format "Jan 2" }}</span></li>
+      {{- end }}
+    </ul>
+    {{- end }}
+  {{- else }}
+  <ul class="tile-list">
+    {{- range .Pages.ByParam "importance" }}
+    <li>
+      <a href="{{ .RelPermalink }}">
+        {{ with .Params.img }}<img src="{{ . }}" alt="" loading="lazy">{{ end }}
+        <span class="tile-title">{{ .Title }}</span>
+        {{ with .Params.category }}<span class="meta">{{ . }}</span>{{ end }}
+      </a>
+    </li>
+    {{- end }}
+  </ul>
+  {{- end }}
+</section>
+{{ end }}

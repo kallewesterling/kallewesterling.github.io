@@ -1,0 +1,65 @@
+# One-off events use `date` (add `monthOnly: true` if the day isn't known). Recurring series use `from` and `to` (years).
+# Sorted on the page by end year, then start year, then date, all descending.
+# kind: Talk | Demo | Workshop | Webinar | Panel | Keynote
+- date: 2026-12-17
+  title: "Learning Lab: Fewer CVEs in agent-built code"
+  event: Chainguard Learning Labs · Online
+  kind: Workshop
+  upcoming: true
+
+- date: 2026-11-19
+  title: "Learning Lab: Secure-by-default agent workflows"
+  event: Chainguard Learning Labs · Online
+  kind: Workshop
+
+- date: 2026-11-12
+  title: "Faithful by Default: a capture-the-flag workshop"
+  event: Chainguard × Somerford · London
+  kind: Workshop
+
+- date: 2026-11-10
+  title: "Operation Lockdown CTF, advanced edition"
+  event: SVA partner event · Dresden
+  kind: Workshop
+
+- date: 2026-10-22
+  title: Fixing a critical CVE without the major-version upgrade
+  event: JFrog swampUP Europe · Barcelona
+  kind: Talk
+
+- date: 2026-10-19
+  title: Operation Lockdown CTF
+  event: Customer event · Paris
+  kind: Workshop
+
+- date: 2026-10-14
+  title: "From source to agent: building a secure AI development pipeline"
+  event: Chainguard Assemble · London, with Peter Fitch (Cursor)
+  kind: Talk
+
+- date: 2026-10-01
+  title: When AI becomes the attack surface
+  event: BTMI webinar · Online
+  kind: Webinar
+
+- date: 2026-09-30
+  title: Software supply chain security, hands-on
+  event: Chainguard × Tjejer Kodar · Stockholm
+  kind: Workshop
+
+- date: 2026-09-15
+  title: Build apps without CVEs and malware
+  event: Chainguard 20-Minute Demo · Online
+  kind: Demo
+
+- date: 2026-08-01
+  monthOnly: true
+  title: "Attacker Shift Left: developer workstations as the new attack surface"
+  event: Black Hat USA, AWS theater · Las Vegas
+  kind: Demo
+
+- from: 2025
+  to: 2026
+  title: Hands-on workshops on hardened container images
+  event: Chainguard customer and partner workshops · EMEA
+  kind: Workshop

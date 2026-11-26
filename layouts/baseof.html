@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{- $title := cond .IsHome site.Title (printf "%s · %s" .Title hugo.Data.profile.name) }}
+  {{- $desc := or .Description .Summary site.Params.description | plainify | truncate 200 }}
+  <title>{{ $title }}</title>
+  <meta name="description" content="{{ $desc }}">
+  <meta property="og:title" content="{{ $title }}">
+  <meta property="og:description" content="{{ $desc }}">
+  <meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  {{- with resources.Get hugo.Data.profile.headshot }}{{ $og := .Fill "1200x630 Smart q80 jpg" }}
+  <meta property="og:image" content="{{ $og.Permalink }}">
+  {{- end }}
+  <link rel="canonical" href="{{ .Permalink }}">
+  <script>
+    (function () {
+      var t = localStorage.getItem("theme");
+      if (!t) t = matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.dataset.theme = t;
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap">
+  {{- $css := resources.Get "css/site.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+</head>
+<body class="{{ if .IsHome }}is-home{{ end }}">
+  <div class="backdrop" aria-hidden="true"></div>
+  {{ partial "header.html" . }}
+  <main id="main">
+    {{ block "main" . }}{{ end }}
+  </main>
+  {{ partial "footer.html" . }}
+  {{- $js := resources.Get "js/site.js" | minify | fingerprint }}
+  <script src="{{ $js.RelPermalink }}" defer></script>
+</body>
+</html>

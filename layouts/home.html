@@ -1,0 +1,188 @@
+{{ define "main" }}
+{{- $p := hugo.Data.profile }}
+{{- $xp := hugo.Data.experience }}
+{{- $photo := resources.Get $p.headshot }}
+
+<section class="hero wrap">
+  <div class="hero-text">
+    <p class="status"><span class="pulse" aria-hidden="true"></span>{{ $p.status }}</p>
+    <h1 class="display">{{ $p.name }}</h1>
+    <p class="role">
+      {{ $p.role }} at <a href="{{ $p.companyURL }}">{{ $p.company }}</a>
+    </p>
+    <p class="lede">{{ $p.intro }}</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="#contact">Get in touch</a>
+      <a class="btn btn-ghost" href="#projects">See what I build</a>
+    </div>
+    <ul class="chips" aria-label="Focus areas">
+      {{- range $i, $f := $p.focus }}
+      <li class="chip c{{ mod $i 5 }}">{{ $f }}</li>
+      {{- end }}
+    </ul>
+  </div>
+  <figure class="hero-photo">
+    {{- with $photo }}{{ $sq := .Fill "720x720 Smart q85 webp" }}
+    <img src="{{ $sq.RelPermalink }}" alt="Portrait of {{ $p.name }}" width="360" height="360">
+    {{- end }}
+  </figure>
+</section>
+
+<section id="projects" class="section wrap" data-accent="violet">
+  <header class="section-head">
+    <p class="eyebrow">01 · Projects</p>
+    <h2>Tools I build for developers and educators</h2>
+    <p class="section-sub">Small, sharp tools that came out of real friction in courses, demos and docs.</p>
+  </header>
+  <ul class="cards">
+    {{- range hugo.Data.projects }}
+    <li class="card" data-color="{{ .color }}">
+      <p class="card-kind">{{ .kind }}</p>
+      <h3 class="card-title">
+        {{- if or .docs .repo }}<a href="{{ or .docs .repo }}">{{ .name }}</a>{{ else }}{{ .name }}{{ end -}}
+      </h3>
+      <p class="card-body">{{ .summary }}</p>
+      <ul class="stack">{{ range .stack }}<li>{{ . }}</li>{{ end }}</ul>
+      {{- if or .docs .repo }}
+      <p class="card-links">
+        {{- with .docs }}<a href="{{ . }}">Docs<span class="arrow" aria-hidden="true">↗</span></a>{{ end }}
+        {{- with .repo }}<a href="{{ . }}">GitHub<span class="arrow" aria-hidden="true">↗</span></a>{{ end }}
+      </p>
+      {{- end }}
+    </li>
+    {{- end }}
+  </ul>
+</section>
+
+<section id="talks" class="section wrap" data-accent="coral">
+  <header class="section-head">
+    <p class="eyebrow">02 · Talks and workshops</p>
+    <h2>On stage, on screen and in the room</h2>
+    <p class="section-sub">Live demos, hands-on workshops and the occasional capture-the-flag event.</p>
+  </header>
+  <ol class="talks">
+    {{- range sort (partial "talks-sorted.html" .) "key" "desc" }}
+    {{- $t := .talk }}
+    <li class="talk{{ if $t.upcoming }} is-upcoming{{ end }}">
+      <span class="talk-when">
+        <span class="talk-year">{{ .label }}</span>
+        {{- with $t.date }}<span class="talk-month">{{ (time .).Format (cond $t.monthOnly "January" "Jan 2") }}</span>{{ end }}
+      </span>
+      <div class="talk-main">
+        <p class="talk-title">{{ if $t.url }}<a href="{{ $t.url }}">{{ $t.title }}</a>{{ else }}{{ $t.title }}{{ end }}</p>
+        <p class="talk-event">{{ $t.event }}</p>
+      </div>
+      <span class="talk-tags">
+        {{- if $t.upcoming }}<span class="tag tag-upcoming">Upcoming</span>{{ end }}
+        <span class="tag tag-{{ lower $t.kind }}">{{ $t.kind }}</span>
+      </span>
+    </li>
+    {{- end }}
+  </ol>
+</section>
+
+<section id="experience" class="section wrap" data-accent="teal">
+  <header class="section-head">
+    <p class="eyebrow">03 · Experience</p>
+    <h2>From the classroom to developer relations</h2>
+    <p class="section-sub">{{ $p.intro2 }}</p>
+  </header>
+  <ul class="stats">
+    {{- range $xp.stats }}
+    {{- $v := .value }}
+    {{- if eq $v "auto:talks" }}{{ $v = len hugo.Data.talks }}{{ else if eq $v "auto:projects" }}{{ $v = len hugo.Data.projects }}{{ end }}
+    <li><span class="stat-n">{{ $v }}</span><span class="stat-l">{{ .label }}</span></li>
+    {{- end }}
+  </ul>
+
+  <div class="xp">
+    <ol class="chapters">
+      {{- range $xp.chapters }}
+      <li class="chapter" data-color="{{ .color }}">
+        <header class="chapter-head">
+          <span class="chapter-years">{{ .years }}</span>
+          <h3 class="chapter-name">{{ .name }}</h3>
+          {{ with .carried }}<p class="chapter-carried">{{ . }}</p>{{ end }}
+        </header>
+        <ol class="roles">
+          {{- range .roles }}
+          <li class="role-item{{ if .current }} is-current{{ end }}">
+            <div class="role-head">
+              <h4>{{ .title }}</h4>
+              {{ with .years }}<span class="role-years">{{ . }}</span>{{ end }}
+            </div>
+            <p class="role-org">{{ .org }}</p>
+            {{- with .highlights }}
+            <ul class="role-highlights">
+              {{- range . }}<li>{{ . }}</li>{{ end }}
+            </ul>
+            {{- end }}
+          </li>
+          {{- end }}
+        </ol>
+      </li>
+      {{- end }}
+    </ol>
+
+    <aside class="xp-side">
+      {{- with $xp.education }}
+      <div class="side-card">
+        <p class="eyebrow">Education</p>
+        {{- range . }}<p><strong>{{ .degree }}</strong><br>{{ .org }}{{ with .years }}, {{ . }}{{ end }}</p>{{ end }}
+      </div>
+      {{- end }}
+      {{- with $xp.certifications }}
+      <div class="side-card">
+        <p class="eyebrow">Recent certifications</p>
+        <ul class="cert-list">
+          {{- range . }}<li><strong>{{ .name }}</strong><span>{{ .issuer }} · {{ .year }}</span></li>{{ end }}
+        </ul>
+      </div>
+      {{- end }}
+      {{- with $xp.languages }}
+      <div class="side-card">
+        <p class="eyebrow">Languages</p>
+        <ul class="lang-list">{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+      </div>
+      {{- end }}
+    </aside>
+  </div>
+</section>
+
+<section id="archive" class="section wrap" data-accent="sun">
+  <header class="section-head">
+    <p class="eyebrow">04 · Before DevRel</p>
+    <h2>The academic archive</h2>
+    <p class="section-sub">Research on drag, burlesque and queer performance history, digital humanities pedagogy, and a decade of teaching. It all still lives here.</p>
+  </header>
+  {{ partial "archive-tiles.html" . }}
+</section>
+
+<section id="contact" class="section wrap" data-accent="sky">
+  <div class="contact">
+    <header class="section-head">
+      <p class="eyebrow">05 · Contact</p>
+      <h2>Let's talk</h2>
+      <p class="section-sub">{{ $p.contactBlurb }}</p>
+    </header>
+    <div class="email-row">
+      <a class="email" href="mailto:{{ $p.email }}">{{ $p.email }}</a>
+      <button class="btn btn-small copy" type="button" data-copy="{{ $p.email }}">Copy</button>
+    </div>
+    <div class="bios">
+      <p class="eyebrow">For organisers</p>
+      <div class="bio">
+        <div class="bio-head"><h3>Short bio</h3><button class="btn btn-small copy" type="button" data-copy-target="bio-short">Copy</button></div>
+        <p id="bio-short">{{ $p.shortBio }}</p>
+      </div>
+      <div class="bio">
+        <div class="bio-head"><h3>Full bio</h3><button class="btn btn-small copy" type="button" data-copy-target="bio-full">Copy</button></div>
+        <p id="bio-full">{{ $p.fullBio }}</p>
+      </div>
+      {{- with $photo }}{{ $dl := .Resize "1600x q85 jpg" }}
+      <p class="bio-photo"><a href="{{ $dl.RelPermalink }}" download="kalle-westerling-headshot.jpg">Download headshot (JPG, 1600px)</a></p>
+      {{- end }}
+    </div>
+  </div>
+</section>
+{{ end }}

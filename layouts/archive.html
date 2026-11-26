@@ -1,0 +1,10 @@
+{{ define "main" }}
+<section class="wrap-narrow list-page">
+  <header class="page-head">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+  </header>
+  {{ partial "archive-tiles.html" . }}
+  {{ .Content }}
+</section>
+{{ end }}

@@ -1,0 +1,21 @@
+{{ define "main" }}
+<article class="prose-page wrap-narrow">
+  <header class="page-head">
+    {{- with .Section }}<p class="eyebrow"><a href="/{{ . }}/">{{ . }}</a></p>{{ end }}
+    <h1>{{ .Title | strings.FirstUpper }}</h1>
+    {{- if and (eq .Section "posts") (not .Date.IsZero) }}
+    <p class="meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read</p>
+    {{- end }}
+    {{- with .Params.img }}<img class="page-hero" src="{{ . }}" alt="">{{ end }}
+  </header>
+  <div class="prose">
+    {{ .Content }}
+  </div>
+  {{- if eq .Section "posts" }}
+  <nav class="pager">
+    {{ with .NextInSection }}<a href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ else }}<span></span>{{ end }}
+    {{ with .PrevInSection }}<a href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}
+  </nav>
+  {{- end }}
+</article>
+{{ end }}

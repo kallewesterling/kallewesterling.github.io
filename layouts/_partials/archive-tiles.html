@@ -1,0 +1,6 @@
+<div class="archive-grid">
+  <a class="archive-tile" href="/publications/"><span class="archive-n">{{ len hugo.Data.publications }}</span><span>Publications</span></a>
+  <a class="archive-tile" href="/blog/"><span class="archive-n">{{ len (where site.RegularPages "Section" "posts") }}</span><span>Blog posts</span></a>
+  <a class="archive-tile" href="/portfolio/"><span class="archive-n">{{ len (where site.RegularPages "Section" "portfolio") }}</span><span>Research projects</span></a>
+  <a class="archive-tile" href="/teaching/"><span class="archive-n" aria-hidden="true">✎</span><span>Teaching</span></a>
+</div>

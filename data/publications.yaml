@@ -1,0 +1,175 @@
+- id: westerlingQueerMaximalism2022
+  type: incollection
+  title: "Queer Maximalism, Wildness, and Machine Dazzle's A 24-Decade of Popular Music"
+  author: "Westerling, Kalle"
+  editor: "Auther, Elissa"
+  date: 2022
+  booktitle: "Queer Maximalism Exhibition Catalog"
+  publisher: "Rizzoli"
+  location: "New York, NY"
+  language: English
+  abbr: Chapter
+  selected: true
+
+- id: westerlingExpandingDHCommunities2022
+  type: incollection
+  title: "Expanding DH Communities of Practice through Andragogy, Critical Pedagogy, and Carework"
+  author: "Westerling, Kalle and Lisa Marie Rhody"
+  editor: "Croxall, Brian and Jakacki, Diane"
+  date: 2022
+  booktitle: "What We Teach When We Teach DH: Digital Humanities in the Classroom"
+  publisher: "University of Minnesota Press"
+  location: "Minneapolis, MN"
+  language: English
+  abbr: Chapter
+  selected: true
+
+- id: westerlingPowerBombsDeath2021
+  type: incollection
+  title: "Between Power Bombs and Death Drops: Interpellation and Identity in The Elaborate Entrance of Chad Deity and Queer Indie Wrestling"
+  shorttitle: "Between Power Bombs and Death Drops"
+  author: "Westerling, Kalle"
+  editor: "Laine, Eero and Chow, Broderick"
+  date: 2021
+  booktitle: "Sports Plays"
+  pages: "150-168"
+  publisher: "Routledge"
+  location: "New York and London"
+  isbn: "978-0-367-81001-6"
+  doi: "10.4324/9780367810016-13"
+  html: "https://dx.doi.org/10.4324/9780367810016-13"
+  language: English
+  abbr: Chapter
+  selected: true
+  abstract: "In Kristoffer Díaz's widely celebrated and award-winning The Elaborate Entrance of Chad Deity, audiences are double-whammied with an introduction to the world of professional wrestling and a critique of American neoliberal capitalism."
+
+- id: westerlingRaceMoneyInfluence2020
+  type: incollection
+  title: "Race for the Money: The Influence of RuPaul's Drag Race on the Livelihood and Aesthetics of New York City's Drag Culture"
+  author: "Westerling, Kalle"
+  editor: "Edward, Mark and Farrier, Stephen"
+  date: 2020
+  booktitle: "Contemporary Drag Practices and Performers: Drag in a Changing Scene"
+  volume: 1
+  pages: "33-44"
+  publisher: "Bloomsbury Publishing"
+  isbn: "978-1-350-08296-0"
+  doi: "10.5040/9781350082977.ch-003"
+  html: "https://dx.doi.org/10.5040/9781350082977.ch-003"
+  language: English
+  abbr: Chapter
+  selected: true
+
+- id: westerlingSubjectiveHistoriesTaylor2017
+  type: article
+  title: "Subjective Histories of Taylor Mac's \"Radical Faerie Realness Ritual\" History"
+  author: "Westerling, Kalle and Román, David and Venning, Dan and Buckley, Jennifer and Felton-Dansky, Miriam and Marra, Kim and Alvarez, César and Patterson, Erik"
+  date: 2017
+  journal: "Theatre Journal"
+  volume: 69
+  number: 3
+  pages: "403-415"
+  publisher: "Johns Hopkins University Press"
+  issn: "1086-332X"
+  doi: "10.1353/tj.2017.0048"
+  html: "https://muse.jhu.edu/article/670584"
+  language: English
+  abbr: TJ
+
+- id: westerlingDisciplineDesireSurveillance2018
+  type: article
+  title: "Discipline and Desire: Surveillance Technologies in Performance by Elise Morrison, and: Dark Matters: On the Surveillance of Blackness by Simone Browne (Review)"
+  shorttitle: "Discipline and Desire"
+  author: "Westerling, Kalle"
+  date: 2018
+  journal: "TDR: The Drama Review"
+  volume: 62
+  number: 3
+  pages: "181-184"
+  publisher: "Cambridge University Press"
+  issn: "1531-4715"
+  html: "https://muse.jhu.edu/article/702234"
+  language: English
+  abbr: TDR
+
+- id: westerlingMainstreamAidsTheatre2018
+  type: article
+  title: "Mainstream Aids Theatre, The Media, and Gay Civil Rights: Making the Radical Palatable by Jacob Juntunen (Review)"
+  shorttitle: "Mainstream Aids Theatre, The Media, and Gay Civil Rights"
+  author: "Westerling, Kalle"
+  date: 2018
+  journal: "Theatre Journal"
+  volume: 70
+  number: 1
+  pages: "127-128"
+  publisher: "Johns Hopkins University Press"
+  issn: "1086-332X"
+  doi: "10.1353/tj.2018.0021"
+  html: "https://muse.jhu.edu/article/691806"
+  language: English
+  abbr: TJ
+
+- id: westerlingSex2012
+  type: article
+  title: "After sex?"
+  author: "Westerling, Kalle"
+  date: 2012
+  journal: "lambda nordica"
+  volume: 17
+  number: 3
+  pages: "119-122"
+  issn: "2001-7286"
+  html: "https://www.lambdanordica.org/index.php/lambdanordica/article/view/353"
+  language: Swedish
+  abbr: ln
+
+- id: westerlingBurleskhistoria2011
+  type: incollection
+  title: "Burleskhistoria"
+  author: "Westerling, Kalle"
+  editor: "Imam, Shang and Ahlberg, Martin and Johansson, Jesper Ims"
+  date: 2011
+  booktitle: "Burleska bastarder: sagan om Hootchy Kootchy Club och den udda familjen vid regnbågens ände"
+  publisher: "Voltaire Publishing"
+  location: "Stockholm"
+  isbn: "978-91-86515-28-7"
+  language: Swedish
+  abbr: Chapter
+
+- id: westerlingAnnorlundahetensPotentialDragshow2008
+  type: article
+  title: "Annorlundahetens potential: Dragshow och den politiska estetiken i att framträda annorlunda"
+  shorttitle: "Kungar och drottningar"
+  author: "Westerling, Kalle"
+  date: 2008
+  journal: "lambda nordica"
+  volume: 13
+  number: "1-2"
+  pages: "30-49"
+  issn: "1100-2573"
+  language: Swedish
+  abbr: ln
+
+- id: westerlingWillmarWorldYoung2007
+  type: book
+  title: "Willmar in the World: Young Scholars Exploring the Theatrical Event: A Festschrift for Willmar Sauter on His 60th Birthday"
+  shorttitle: "Willmar in the World"
+  author: "Westerling, Kalle and Feiler, Yael and Hoogland, Rikard and Sauter, Willmar"
+  date: 2007
+  publisher: "Stiftelsen för utgivning av teatervetenskapliga studier (STUTS)"
+  location: "Stockholm"
+  isbn: "978-91-976743-0-0"
+  language: English
+  abbr: Editor
+
+- id: westerlingDolceVitaTrettio2006
+  type: book
+  title: "La dolce vita: trettio år med drag"
+  shorttitle: "La dolce vita"
+  author: "Westerling, Kalle"
+  date: 2006
+  publisher: "Normal"
+  location: "Stockholm"
+  isbn: "978-91-85505-15-9"
+  language: Swedish
+  abbr: Book

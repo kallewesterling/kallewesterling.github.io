@@ -1,0 +1,59 @@
+# color: violet | coral | teal | sun | sky
+# repo: GitHub URL. docs: documentation site, if there is one.
+- name: cvediff
+  kind: Security
+  color: coral
+  summary: >-
+    Compares the known CVEs in two container images side by side in the
+    terminal. Answers one question fast: what changes if we swap this base
+    image for a hardened one?
+  repo: https://github.com/kallewesterling/cvediff
+  stack: [Python, Grype, CLI]
+
+- name: errata
+  kind: Docs quality
+  color: violet
+  summary: >-
+    Finds broken code examples inside published course content, and keeps a
+    dated record of the ones you can't fix yet. Courses stay live; the code in
+    them shouldn't rot.
+  repo: https://github.com/kallewesterling/errata
+  stack: [TypeScript, CI]
+
+- name: CodexMachina
+  kind: Docs as code
+  color: teal
+  summary: >-
+    Extracts, runs and lints the code blocks in Markdown and HTML
+    documentation, with output verification, so every example in the docs is
+    one you can trust.
+  stack: [Go, Markdown]
+
+- name: session-pacer
+  kind: Speaking
+  color: sun
+  summary: >-
+    A presenter view for timed talks, workshops and demos. Shows the notes for
+    the current section, tells you when you're behind, and suggests what to
+    cut.
+  stack: [HTML, JavaScript]
+
+- name: syncjar
+  kind: Course ops
+  color: sky
+  summary: >-
+    Edit, preview and sync Skilljar course content locally, so course authors
+    get a real git workflow instead of a web form.
+  repo: https://github.com/kallewesterling/syncjar
+  docs: https://westerling.nu/syncjar/
+  stack: [Node.js, Skilljar API]
+
+- name: credjar
+  kind: Course ops
+  color: violet
+  summary: >-
+    Inspect, issue and revoke Credly badges from the command line, for
+    certification programs that outgrow spreadsheets.
+  repo: https://github.com/kallewesterling/credjar
+  docs: https://westerling.nu/credjar/
+  stack: [Node.js, Credly API]
