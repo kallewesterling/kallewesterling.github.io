@@ -2,7 +2,7 @@
 # Sorted on the page by end year, then start year, then date, all descending.
 # url: event page or recording. recording: true marks a video.
 # role: e.g. Moderator. earlier: true moves a talk under "See earlier talks".
-# kind: Talk | Demo | Workshop | Webinar | Panel | Keynote
+# kind: Talk | Demo | Workshop | Webinar | Panel | Keynote | Activation
 - date: 2026-12-17
   title: "Learning Lab: Fewer CVEs in agent-built code"
   event: Chainguard Learning Labs · Online
@@ -49,7 +49,7 @@
   kind: Webinar
 
 - date: 2026-09-30
-  title: Software supply chain security, hands-on
+  title: "Start coding safely: an Operation Lockdown CTF"
   event: Chainguard × Tjejer Kodar · Stockholm
   kind: Workshop
 
@@ -59,13 +59,25 @@
   event: Chainguard 20-Minute Demo · Online
   kind: Demo
 
-- date: 2026-08-01
+- date: 2026-08-07
+  monthOnly: true
+  title: Cards Against Vulnerabilities
+  event: DEF CON 34 · Las Vegas, about 200 players
+  kind: Activation
+
+- date: 2026-08-04
   monthOnly: true
   title: "Attacker Shift Left: developer workstations as the new attack surface"
   event: Black Hat USA, AWS theater · Las Vegas
   kind: Demo
 
-- date: 2026-02-01
+- date: 2026-03-24
+  monthOnly: true
+  title: Cards Against Vulnerabilities, first edition
+  event: RSA Conference 2026, AppSec Village · San Francisco
+  kind: Activation
+
+- date: 2026-02-05
   monthOnly: true
   title: Building and consuming open source securely
   event: NOSIS, Open Ireland Network · Dublin
@@ -73,14 +85,13 @@
   url: https://www.youtube.com/watch?v=kRH4sJKXh6I
   recording: true
 
-- date: 2026-02-01
+- date: 2026-02-05
   monthOnly: true
   title: Open source in financial services
   event: NOSIS · Dublin, with NatWest and Fidelity
   kind: Panel
 
-- date: 2026-02-01
-  monthOnly: true
+- date: 2026-02-05
   title: Governance for academic open source
   event: CURIOSS Gathering · Dublin, with the Eclipse Foundation and UC Santa Cruz OSPO
   kind: Panel

@@ -283,11 +283,17 @@ a:hover { color: var(--accent); }
 .tag-upcoming { --c: var(--sun); }
 .tag-recording { --c: var(--coral); text-decoration: none; }
 .tag-role { --c: var(--violet); }
+.tag-activation { --c: var(--sun); }
 .tag-recording:hover { color: #fff; background: var(--coral); }
 .talk-title a { text-decoration: none; }
 .talk-title a:hover { color: var(--coral); }
 .talk-title .arrow { color: var(--coral); }
 
+.circuit { margin-top: 2.25rem; }
+.circuit .eyebrow { color: var(--coral); }
+.circuit-list { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: .5rem; }
+.circuit-list .chip { display: inline-flex; gap: .4rem; align-items: baseline; font-size: .8rem; }
+.circuit-list .chip span { color: var(--muted); font-size: .72rem; }
 .more-talks { margin-top: 1.5rem; }
 .more-talks summary {
   display: inline-flex; align-items: center; gap: .6rem; cursor: pointer; list-style: none;

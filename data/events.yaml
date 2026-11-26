@@ -1,0 +1,33 @@
+# Conferences where I worked the booth or ran activations, shown under the talks list.
+year: 2026
+items:
+  - name: NOSIS
+    city: Dublin
+  - name: RSA Conference
+    city: San Francisco
+  - name: AWS Summit
+    city: Warsaw
+  - name: AWS Summit
+    city: Stockholm
+  - name: AWS Summit
+    city: Hamburg
+  - name: AWS Summit
+    city: Amsterdam
+  - name: AWS Summit
+    city: Madrid
+  - name: Google Cloud Summit
+    city: London
+  - name: PlatformCon
+    city: London
+  - name: Open Source in Finance Forum
+    city: London
+  - name: WeAreDevelopers
+    city: Berlin
+  - name: Black Hat USA
+    city: Las Vegas
+  - name: DEF CON 34
+    city: Las Vegas
+  - name: ContainerDays
+    city: Hamburg
+  - name: JFrog swampUP
+    city: Barcelona

@@ -14,7 +14,10 @@ chapters:
         highlights:
           - Courses, learning paths and certifications on Chainguard Courses, from first draft to badge.
           - Operation Lockdown, a capture-the-flag format run for customers and partners in Paris, Dresden and London.
-          - Talks, demos and monthly Learning Labs on container images, libraries and secure agent workflows.
+          - Designed Cards Against Vulnerabilities, a security card game first played at the RSA Conference AppSec Village and scaled to about 200 players at DEF CON 34.
+          - Talks, demos and monthly Learning Labs on container images, libraries and secure agent workflows, plus a full 2026 conference circuit across Europe and the U.S.
+          - Partner certification paths and hands-on enablement workshops for customers.
+          - Convened a cross-company training council to align customer, partner and internal training.
           - Open-source tooling that tests course code and scripts course operations.
 
   - name: Research software

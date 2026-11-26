@@ -95,6 +95,16 @@
   <ol class="talks">
     {{- range $recent }}{{ partial "talk-item.html" . }}{{ end }}
   </ol>
+  {{- with hugo.Data.events }}
+  <div class="circuit">
+    <p class="eyebrow">Also on the {{ .year }} conference circuit</p>
+    <ul class="circuit-list">
+      {{- range $i, $e := .items }}
+      <li class="chip c{{ mod $i 5 }}">{{ $e.name }}<span>{{ $e.city }}</span></li>
+      {{- end }}
+    </ul>
+  </div>
+  {{- end }}
   {{- with $earlier }}
   <details class="more-talks">
     <summary>See earlier talks <span class="more-count">{{ len . }}</span></summary>
