@@ -89,26 +89,20 @@
     <h2>On stage, on screen and in the room</h2>
     <p class="section-sub">Live demos, hands-on workshops and the occasional capture-the-flag event.</p>
   </header>
+  {{- $talks := sort (partial "talks-sorted.html" .) "key" "desc" }}
+  {{- $recent := where $talks "talk.earlier" "!=" true }}
+  {{- $earlier := where $talks "talk.earlier" true }}
   <ol class="talks">
-    {{- range sort (partial "talks-sorted.html" .) "key" "desc" }}
-    {{- $t := .talk }}
-    <li class="talk{{ if $t.upcoming }} is-upcoming{{ end }}">
-      <span class="talk-when">
-        <span class="talk-year">{{ .label }}</span>
-        {{- with $t.date }}<span class="talk-month">{{ (time .).Format (cond $t.monthOnly "January" "Jan 2") }}</span>{{ end }}
-      </span>
-      <div class="talk-main">
-        <p class="talk-title">{{ if $t.url }}<a href="{{ $t.url }}">{{ $t.title }}<span class="arrow" aria-hidden="true">↗</span></a>{{ else }}{{ $t.title }}{{ end }}</p>
-        <p class="talk-event">{{ $t.event }}</p>
-      </div>
-      <span class="talk-tags">
-        {{- if $t.upcoming }}<span class="tag tag-upcoming">Upcoming</span>{{ end }}
-        {{- if $t.recording }}<a class="tag tag-recording" href="{{ $t.url }}">▶ Recording</a>{{ end }}
-        <span class="tag tag-{{ lower $t.kind }}">{{ $t.kind }}</span>
-      </span>
-    </li>
-    {{- end }}
+    {{- range $recent }}{{ partial "talk-item.html" . }}{{ end }}
   </ol>
+  {{- with $earlier }}
+  <details class="more-talks">
+    <summary>See earlier talks <span class="more-count">{{ len . }}</span></summary>
+    <ol class="talks">
+      {{- range . }}{{ partial "talk-item.html" . }}{{ end }}
+    </ol>
+  </details>
+  {{- end }}
 </section>
 
 <section id="experience" class="section wrap" data-accent="teal">

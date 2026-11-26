@@ -1,6 +1,6 @@
-{{- /* Returns talks with a sort key: end year, then start year, then date. */ -}}
+{{- /* Returns talks with a sort key: end year, then start year, then date, then file order. */ -}}
 {{- $out := slice }}
-{{- range hugo.Data.talks }}
+{{- range $i, $_ := hugo.Data.talks }}
   {{- $date := "" }}
   {{- $from := .from }}
   {{- $to := .to }}
@@ -12,7 +12,7 @@
   {{- end }}
   {{- $to = or $to $from }}
   {{- $label := cond (eq $from $to) (string $to) (printf "%d–%s" $from (substr (string $to) 2)) }}
-  {{- $key := printf "%04d-%04d-%s" (int $to) (int $from) (or $date "0000-00-00") }}
+  {{- $key := printf "%04d-%04d-%s-%04d" (int $to) (int $from) (or $date "0000-00-00") (sub 9999 $i) }}
   {{- $out = $out | append (dict "key" $key "label" $label "talk" .) }}
 {{- end }}
 {{- return $out }}

@@ -1,6 +1,7 @@
 # One-off events use `date` (add `monthOnly: true` if the day isn't known). Recurring series use `from` and `to` (years).
 # Sorted on the page by end year, then start year, then date, all descending.
 # url: event page or recording. recording: true marks a video.
+# role: e.g. Moderator. earlier: true moves a talk under "See earlier talks".
 # kind: Talk | Demo | Workshop | Webinar | Panel | Keynote
 - date: 2026-12-17
   title: "Learning Lab: Fewer CVEs in agent-built code"
@@ -64,8 +65,50 @@
   event: Black Hat USA, AWS theater · Las Vegas
   kind: Demo
 
+- date: 2026-02-01
+  monthOnly: true
+  title: Building and consuming open source securely
+  event: NOSIS, Open Ireland Network · Dublin
+  kind: Keynote
+  url: https://www.youtube.com/watch?v=kRH4sJKXh6I
+  recording: true
+
+- date: 2026-02-01
+  monthOnly: true
+  title: Open source in financial services
+  event: NOSIS · Dublin, with NatWest and Fidelity
+  kind: Panel
+
+- date: 2026-02-01
+  monthOnly: true
+  title: Governance for academic open source
+  event: CURIOSS Gathering · Dublin, with the Eclipse Foundation and UC Santa Cruz OSPO
+  kind: Panel
+  url: https://www.youtube.com/watch?v=UgHGbp6yn1o
+  recording: true
+
 - from: 2025
   to: 2026
   title: Hands-on workshops on hardened container images
   event: Chainguard customer and partner workshops · EMEA
   kind: Workshop
+
+# Earlier talks, shown under "See earlier talks".
+- date: 2024-03-01
+  monthOnly: true
+  title: "Imagined futures: how will society, science and AI shape tomorrow?"
+  event: AI UK 2024, Alan Turing Institute · London
+  kind: Panel
+  role: Moderator
+  url: https://www.youtube.com/watch?v=XMpg_s5ZrdM
+  recording: true
+  earlier: true
+
+- date: 2024-03-01
+  monthOnly: true
+  title: Queer representations of AI
+  event: School of Advanced Study, AI UK Fringe · London
+  kind: Panel
+  url: https://www.youtube.com/watch?v=rOvg73Ek1UA
+  recording: true
+  earlier: true

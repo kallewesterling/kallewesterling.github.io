@@ -282,10 +282,24 @@ a:hover { color: var(--accent); }
 .tag-panel, .tag-podcast, .tag-webinar { --c: var(--sky); }
 .tag-upcoming { --c: var(--sun); }
 .tag-recording { --c: var(--coral); text-decoration: none; }
+.tag-role { --c: var(--violet); }
 .tag-recording:hover { color: #fff; background: var(--coral); }
 .talk-title a { text-decoration: none; }
 .talk-title a:hover { color: var(--coral); }
 .talk-title .arrow { color: var(--coral); }
+
+.more-talks { margin-top: 1.5rem; }
+.more-talks summary {
+  display: inline-flex; align-items: center; gap: .6rem; cursor: pointer; list-style: none;
+  padding: .7rem 1.2rem; border-radius: 999px; border: 1px solid var(--line); background: var(--surface);
+  font-weight: 600; font-size: .95rem; transition: border-color .18s var(--ease);
+}
+.more-talks summary::-webkit-details-marker { display: none; }
+.more-talks summary::after { content: "↓"; color: var(--coral); transition: transform .2s var(--ease); }
+.more-talks[open] summary::after { transform: rotate(180deg); }
+.more-talks summary:hover { border-color: var(--coral); }
+.more-count { font: 500 .75rem/1 var(--font-mono); padding: .3rem .5rem; border-radius: 999px; background: color-mix(in srgb, var(--coral) 14%, transparent); color: color-mix(in srgb, var(--coral) 80%, var(--text)); }
+.more-talks .talks { margin-top: 1.25rem; }
 
 /* Experience */
 .stats { list-style: none; padding: 0; margin: 0 0 3rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
