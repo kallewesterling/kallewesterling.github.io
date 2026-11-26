@@ -193,6 +193,35 @@ a:hover { color: var(--accent); }
 }
 .section-sub { margin: 1rem 0 0; color: var(--muted); font-size: 1.08rem; }
 
+/* Featured: courses */
+#courses { border-top: 0; padding-top: 1rem; }
+.feature {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: start;
+  padding: clamp(1.6rem, 4.5vw, 3rem); border-radius: 28px; position: relative; overflow: hidden;
+  background:
+    radial-gradient(28rem 20rem at 0% 0%, color-mix(in srgb, var(--sun) 26%, transparent), transparent 70%),
+    radial-gradient(26rem 20rem at 100% 100%, color-mix(in srgb, var(--coral) 18%, transparent), transparent 70%),
+    var(--surface);
+  border: 1px solid color-mix(in srgb, var(--sun) 35%, var(--line)); box-shadow: var(--shadow);
+}
+.feature .eyebrow { color: color-mix(in srgb, var(--sun) 70%, var(--text)); }
+.feature h2 { margin: 0; font: 800 clamp(2rem, 1.3rem + 2.6vw, 3.2rem)/1.02 var(--font-display); letter-spacing: -.03em; }
+.feature h2 a { text-decoration: none; }
+.feature h2 a:hover { color: var(--coral); }
+.feature-stats { list-style: none; padding: 0; margin: 1.6rem 0 1.8rem; display: flex; flex-wrap: wrap; gap: 1.75rem; }
+.feature-stats li { display: flex; flex-direction: column; gap: .2rem; }
+.feature-stats .stat-n { color: color-mix(in srgb, var(--coral) 80%, var(--text)); font-size: 2.2rem; }
+.course-list { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; }
+.course-item a {
+  display: flex; flex-direction: column; gap: .2rem; padding: .7rem 1rem; border-radius: 12px; text-decoration: none;
+  background: color-mix(in srgb, var(--bg) 75%, transparent); border: 1px solid var(--line);
+  transition: transform .18s var(--ease), border-color .18s var(--ease);
+}
+.course-item a:hover { color: inherit; transform: translateX(4px); border-color: var(--coral); }
+.course-type { font: 500 .7rem/1 var(--font-mono); text-transform: uppercase; letter-spacing: .07em; color: var(--muted); }
+.course-item.is-path .course-type { color: color-mix(in srgb, var(--coral) 80%, var(--text)); }
+.course-title { font-weight: 600; font-size: .97rem; line-height: 1.3; }
+
 /* Project cards */
 .cards { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 1.1rem; }
 .card {
@@ -252,6 +281,11 @@ a:hover { color: var(--accent); }
 .tag-keynote { --c: var(--sun); }
 .tag-panel, .tag-podcast, .tag-webinar { --c: var(--sky); }
 .tag-upcoming { --c: var(--sun); }
+.tag-recording { --c: var(--coral); text-decoration: none; }
+.tag-recording:hover { color: #fff; background: var(--coral); }
+.talk-title a { text-decoration: none; }
+.talk-title a:hover { color: var(--coral); }
+.talk-title .arrow { color: var(--coral); }
 
 /* Experience */
 .stats { list-style: none; padding: 0; margin: 0 0 3rem; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
@@ -387,6 +421,7 @@ a:hover { color: var(--accent); }
 .tile-list .meta { padding: 0 1rem 1rem; margin-top: .25rem; }
 
 @media (max-width: 960px) {
+  .feature { grid-template-columns: 1fr; }
   .xp { grid-template-columns: 1fr; }
   .xp-side { position: static; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 }

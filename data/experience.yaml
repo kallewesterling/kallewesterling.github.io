@@ -12,7 +12,7 @@ chapters:
         years: "Feb 2025–now"
         current: true
         highlights:
-          - Courses and certifications for Chainguard Academy, from first draft to badge.
+          - Courses, learning paths and certifications on Chainguard Courses, from first draft to badge.
           - Operation Lockdown, a capture-the-flag format run for customers and partners in Paris, Dresden and London.
           - Talks, demos and monthly Learning Labs on container images, libraries and secure agent workflows.
           - Open-source tooling that tests course code and scripts course operations.

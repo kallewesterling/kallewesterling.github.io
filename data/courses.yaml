@@ -1,0 +1,43 @@
+name: Chainguard Courses
+url: https://courses.chainguard.dev
+summary: >-
+  Where most of my work happens. Free, self-paced courses, learning paths and
+  certifications for developers, security teams and platform engineers who want
+  to secure their software supply chain with Chainguard Containers, Libraries
+  and VMs.
+
+# type: course | path
+items:
+  - title: Complete guide to Chainguard Containers
+    slug: path/linkys-guide-to-chainguard-images-1
+    type: path
+  - title: Getting started with Chainguard Libraries
+    slug: path/getting-started-with-chainguard-libraries
+    type: path
+  - title: Painless vulnerability management
+    slug: path/painless-vulnerability-management
+    type: path
+  - title: Chainguard Containers crash course
+    slug: linkys-crash-course-on-chainguard-images
+    type: course
+  - title: "Build safely with AI: securing your agentic engineering"
+    slug: build-safely-with-ai-securing-your-agentic-engineering
+    type: course
+  - title: Securing the AI/ML supply chain
+    slug: securing-ai
+    type: course
+  - title: Get spicy with SLSA
+    slug: get-spicy-with-slsa-securing-your-supply-chain-one-level-at-a-time
+    type: course
+  - title: Getting started with Chainguard's FIPS images
+    slug: getting-started-with-chainguards-fips-images
+    type: course
+  - title: Getting started with Chainguard's Dockerfile Converter
+    slug: getting-started-with-chainguards-dockerfile-converter
+    type: course
+  - title: Getting started with Chainguard's Custom Assembly
+    slug: getting-started-with-chainguards-custom-assembly
+    type: course
+  - title: Painless vulnerability management, certification course
+    slug: vulnerability-management-certification
+    type: course

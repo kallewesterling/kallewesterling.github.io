@@ -1,5 +1,6 @@
 # One-off events use `date` (add `monthOnly: true` if the day isn't known). Recurring series use `from` and `to` (years).
 # Sorted on the page by end year, then start year, then date, all descending.
+# url: event page or recording. recording: true marks a video.
 # kind: Talk | Demo | Workshop | Webinar | Panel | Keynote
 - date: 2026-12-17
   title: "Learning Lab: Fewer CVEs in agent-built code"
@@ -9,6 +10,7 @@
 
 - date: 2026-11-19
   title: "Learning Lab: Secure-by-default agent workflows"
+  url: https://www.chainguard.dev/events/learning-labs-secure-by-default-agent-workflows
   event: Chainguard Learning Labs · Online
   kind: Workshop
 
@@ -34,11 +36,14 @@
 
 - date: 2026-10-14
   title: "From source to agent: building a secure AI development pipeline"
+  url: https://www.youtube.com/watch?v=hE962TtlLTA
+  recording: true
   event: Chainguard Assemble · London, with Peter Fitch (Cursor)
   kind: Talk
 
 - date: 2026-10-01
-  title: When AI becomes the attack surface
+  title: "When AI becomes the attack surface: securing your ML pipeline"
+  url: https://www.pmi-live.com/events/when-ai-becomes-the-attack-surface-securing-your-ml-pipeline/
   event: BTMI webinar · Online
   kind: Webinar
 
@@ -49,6 +54,7 @@
 
 - date: 2026-09-15
   title: Build apps without CVEs and malware
+  url: https://www.chainguard.dev/events/20-minute-demo-build-apps-without-cves-and-malware
   event: Chainguard 20-Minute Demo · Online
   kind: Demo
 

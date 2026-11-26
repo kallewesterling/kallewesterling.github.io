@@ -13,7 +13,7 @@
     <p class="lede">{{ $p.intro }}</p>
     <div class="actions">
       <a class="btn btn-primary" href="#contact">Get in touch</a>
-      <a class="btn btn-ghost" href="#projects">See what I build</a>
+      <a class="btn btn-ghost" href="#courses">See what I build</a>
     </div>
     <ul class="chips" aria-label="Focus areas">
       {{- range $i, $f := $p.focus }}
@@ -28,9 +28,38 @@
   </figure>
 </section>
 
+<section id="courses" class="section wrap" data-accent="sun">
+  {{- $c := hugo.Data.courses }}
+  {{- $paths := where $c.items "type" "path" }}
+  {{- $courses := where $c.items "type" "course" }}
+  <div class="feature">
+    <div class="feature-text">
+      <p class="eyebrow">01 · Featured</p>
+      <h2><a href="{{ $c.url }}">{{ $c.name }}</a></h2>
+      <p class="section-sub">{{ $c.summary }}</p>
+      <ul class="feature-stats">
+        <li><span class="stat-n">{{ len $courses }}</span><span class="stat-l">courses</span></li>
+        <li><span class="stat-n">{{ len $paths }}</span><span class="stat-l">learning paths</span></li>
+        <li><span class="stat-n">Free</span><span class="stat-l">and self-paced</span></li>
+      </ul>
+      <a class="btn btn-primary" href="{{ $c.url }}">Browse the catalog<span aria-hidden="true">↗</span></a>
+    </div>
+    <ul class="course-list">
+      {{- range $c.items }}
+      <li class="course-item is-{{ .type }}">
+        <a href="{{ $c.url }}/{{ .slug }}">
+          <span class="course-type">{{ cond (eq .type "path") "Learning path" "Course" }}</span>
+          <span class="course-title">{{ .title }}</span>
+        </a>
+      </li>
+      {{- end }}
+    </ul>
+  </div>
+</section>
+
 <section id="projects" class="section wrap" data-accent="violet">
   <header class="section-head">
-    <p class="eyebrow">01 · Projects</p>
+    <p class="eyebrow">02 · Projects</p>
     <h2>Tools I build for developers and educators</h2>
     <p class="section-sub">Small, sharp tools that came out of real friction in courses, demos and docs.</p>
   </header>
@@ -56,7 +85,7 @@
 
 <section id="talks" class="section wrap" data-accent="coral">
   <header class="section-head">
-    <p class="eyebrow">02 · Talks and workshops</p>
+    <p class="eyebrow">03 · Talks and workshops</p>
     <h2>On stage, on screen and in the room</h2>
     <p class="section-sub">Live demos, hands-on workshops and the occasional capture-the-flag event.</p>
   </header>
@@ -69,11 +98,12 @@
         {{- with $t.date }}<span class="talk-month">{{ (time .).Format (cond $t.monthOnly "January" "Jan 2") }}</span>{{ end }}
       </span>
       <div class="talk-main">
-        <p class="talk-title">{{ if $t.url }}<a href="{{ $t.url }}">{{ $t.title }}</a>{{ else }}{{ $t.title }}{{ end }}</p>
+        <p class="talk-title">{{ if $t.url }}<a href="{{ $t.url }}">{{ $t.title }}<span class="arrow" aria-hidden="true">↗</span></a>{{ else }}{{ $t.title }}{{ end }}</p>
         <p class="talk-event">{{ $t.event }}</p>
       </div>
       <span class="talk-tags">
         {{- if $t.upcoming }}<span class="tag tag-upcoming">Upcoming</span>{{ end }}
+        {{- if $t.recording }}<a class="tag tag-recording" href="{{ $t.url }}">▶ Recording</a>{{ end }}
         <span class="tag tag-{{ lower $t.kind }}">{{ $t.kind }}</span>
       </span>
     </li>
@@ -83,7 +113,7 @@
 
 <section id="experience" class="section wrap" data-accent="teal">
   <header class="section-head">
-    <p class="eyebrow">03 · Experience</p>
+    <p class="eyebrow">04 · Experience</p>
     <h2>From the classroom to developer relations</h2>
     <p class="section-sub">{{ $p.intro2 }}</p>
   </header>
@@ -151,7 +181,7 @@
 
 <section id="archive" class="section wrap" data-accent="sun">
   <header class="section-head">
-    <p class="eyebrow">04 · Before DevRel</p>
+    <p class="eyebrow">05 · Before DevRel</p>
     <h2>The academic archive</h2>
     <p class="section-sub">Research on drag, burlesque and queer performance history, digital humanities pedagogy, and a decade of teaching. It all still lives here.</p>
   </header>
@@ -161,7 +191,7 @@
 <section id="contact" class="section wrap" data-accent="sky">
   <div class="contact">
     <header class="section-head">
-      <p class="eyebrow">05 · Contact</p>
+      <p class="eyebrow">06 · Contact</p>
       <h2>Let's talk</h2>
       <p class="section-sub">{{ $p.contactBlurb }}</p>
     </header>
