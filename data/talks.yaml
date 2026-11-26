@@ -1,7 +1,7 @@
 # One-off events use `date` (add `monthOnly: true` if the day isn't known). Recurring series use `from` and `to` (years).
 # Sorted on the page by end year, then start year, then date, all descending.
 # url: event page or recording. recording: true marks a video.
-# role: e.g. Moderator. earlier: true moves a talk under "See earlier talks".
+# role: e.g. Moderator. earlier: true moves a talk under "See more talks".
 # kind: Talk | Demo | Workshop | Webinar | Panel | Keynote | Activation
 - date: 2026-12-17
   title: "Learning Lab: Fewer CVEs in agent-built code"
@@ -104,7 +104,21 @@
   event: Chainguard customer and partner workshops · EMEA
   kind: Workshop
 
-# Earlier talks, shown under "See earlier talks".
+# Research and academic talks, shown under "See more talks".
+- date: 2026-03-31
+  title: "Cultural heritage under attack: saving cultural data in times of crisis"
+  event: School of Advanced Study, The Fragile Record series · Online, with Michael Weinberg (NYU) and Pakhee Kumar (UCL)
+  kind: Seminar
+  url: https://www.sas.ac.uk/digital-humanities-research-hub/events/cultural-heritage-under-attack-saving-cultural-data-times-crisis
+  earlier: true
+
+- date: 2024-09-25
+  title: "MapReader workshop: using machine learning to analyse large collections of digitised maps"
+  event: Spatial Humanities 2024 · Bamberg, with Katherine McDonough and Rosie Wood
+  kind: Workshop
+  url: https://pretalx.com/spathum24/speaker/HWJKS7/
+  earlier: true
+
 - date: 2024-03-01
   monthOnly: true
   title: "Imagined futures: how will society, science and AI shape tomorrow?"

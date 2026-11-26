@@ -83,9 +83,47 @@
   </ul>
 </section>
 
+<section id="opensource" class="section wrap" data-accent="teal">
+  {{- $os := hugo.Data.opensource }}
+  <header class="section-head">
+    <p class="eyebrow">03 · Open source and research</p>
+    <h2>Research software I helped build</h2>
+    <p class="section-sub">{{ $os.intro }}</p>
+  </header>
+  <ul class="cards">
+    {{- range $os.software }}
+    <li class="card" data-color="{{ .color }}">
+      <p class="card-kind">{{ .role }}</p>
+      <h3 class="card-title"><a href="{{ or .site .docs .repo }}">{{ .name }}</a></h3>
+      <p class="card-body">{{ .summary }}</p>
+      <ul class="stack"><li>{{ .commits }} commits</li></ul>
+      <p class="card-links">
+        {{- with .site }}<a href="{{ . }}">Website<span class="arrow" aria-hidden="true">↗</span></a>{{ end }}
+        {{- with .docs }}<a href="{{ . }}">Docs<span class="arrow" aria-hidden="true">↗</span></a>{{ end }}
+        {{- with .repo }}<a href="{{ . }}">GitHub<span class="arrow" aria-hidden="true">↗</span></a>{{ end }}
+      </p>
+    </li>
+    {{- end }}
+  </ul>
+  <div class="papers">
+    <p class="eyebrow">Papers about the software</p>
+    <ul class="pub-list">
+      {{- range $os.papers }}
+      <li class="paper">
+        <span class="tag tag-{{ lower .kind }}">{{ .kind }}</span>
+        <div>
+          <p class="pub-title"><a href="{{ .url }}">{{ .title }}<span class="arrow" aria-hidden="true">↗</span></a></p>
+          <p class="meta">{{ .venue }} · {{ .year }}</p>
+        </div>
+      </li>
+      {{- end }}
+    </ul>
+  </div>
+</section>
+
 <section id="talks" class="section wrap" data-accent="coral">
   <header class="section-head">
-    <p class="eyebrow">03 · Talks and workshops</p>
+    <p class="eyebrow">04 · Talks and workshops</p>
     <h2>On stage, on screen and in the room</h2>
     <p class="section-sub">Live demos, hands-on workshops and the occasional capture-the-flag event.</p>
   </header>
@@ -107,7 +145,7 @@
   {{- end }}
   {{- with $earlier }}
   <details class="more-talks">
-    <summary>See earlier talks <span class="more-count">{{ len . }}</span></summary>
+    <summary>See more talks: research and academia <span class="more-count">{{ len . }}</span></summary>
     <ol class="talks">
       {{- range . }}{{ partial "talk-item.html" . }}{{ end }}
     </ol>
@@ -117,7 +155,7 @@
 
 <section id="experience" class="section wrap" data-accent="teal">
   <header class="section-head">
-    <p class="eyebrow">04 · Experience</p>
+    <p class="eyebrow">05 · Experience</p>
     <h2>From the classroom to developer relations</h2>
     <p class="section-sub">{{ $p.intro2 }}</p>
   </header>
@@ -185,7 +223,7 @@
 
 <section id="archive" class="section wrap" data-accent="sun">
   <header class="section-head">
-    <p class="eyebrow">05 · Before DevRel</p>
+    <p class="eyebrow">06 · Before DevRel</p>
     <h2>The academic archive</h2>
     <p class="section-sub">Research on drag, burlesque and queer performance history, digital humanities pedagogy, and a decade of teaching. It all still lives here.</p>
   </header>
@@ -195,7 +233,7 @@
 <section id="contact" class="section wrap" data-accent="sky">
   <div class="contact">
     <header class="section-head">
-      <p class="eyebrow">06 · Contact</p>
+      <p class="eyebrow">07 · Contact</p>
       <h2>Let's talk</h2>
       <p class="section-sub">{{ $p.contactBlurb }}</p>
     </header>

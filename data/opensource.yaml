@@ -1,0 +1,70 @@
+intro: >-
+  Before Chainguard I spent four years building and maintaining research
+  software at the Alan Turing Institute: open-source Python tools, their
+  documentation, and the communities around them.
+
+# color: violet | coral | teal | sun | sky
+# docs: documentation site. site: project website. repo: GitHub.
+software:
+  - name: MapReader
+    color: teal
+    summary: >-
+      A computer vision pipeline for exploring and analysing large collections
+      of digitised maps. Winner of the 2023 Roy Rosenzweig Prize for Innovation
+      in Digital History.
+    role: Documentation and community
+    commits: 95
+    repo: https://github.com/maps-as-data/MapReader
+    docs: https://mapreader.readthedocs.io/en/latest/
+
+  - name: AutoEmulate
+    color: sky
+    summary: >-
+      A Python package for semi-automated emulation of complex simulations,
+      built for digital twin research.
+    role: Contributor
+    commits: 49
+    repo: https://github.com/alan-turing-institute/autoemulate
+
+  - name: TEA Platform
+    color: violet
+    summary: >-
+      The Trustworthy and Ethical Assurance platform, a collaborative tool for
+      building structured arguments that an AI system was developed
+      responsibly.
+    role: Contributor
+    commits: 83
+    repo: https://github.com/alan-turing-institute/AssurancePlatform
+    site: https://assuranceplatform.turing.ac.uk/
+
+# Papers about the software. kind: JOSS | Chapter | Preprint
+papers:
+  - year: 2026
+    title: "AutoEmulate: a PyTorch tool for end-to-end emulation workflows"
+    venue: Journal of Open Source Software
+    kind: JOSS
+    url: https://doi.org/10.21105/joss.10087
+
+  - year: 2025
+    title: "MapReader: software and principles for computational map studies"
+    venue: Living with Machines, University of London Press
+    kind: Chapter
+    url: https://read.uolpress.co.uk/read/7526964a-e6de-41e8-8769-2b0df46b4a25/section/e85a784b-c363-4478-b92e-bee17c5dc6ff
+
+  - year: 2025
+    title: "AutoEmulate: a Python package for semi-automated emulation"
+    venue: Journal of Open Source Software
+    kind: JOSS
+    url: https://doi.org/10.21105/joss.07626
+
+  - year: 2024
+    title: "MapReader: open software for the visual analysis of maps"
+    venue: Journal of Open Source Software
+    kind: JOSS
+    url: https://doi.org/10.21105/joss.06434
+
+  - year: 2024
+    title: "Fair by design: a sociotechnical approach to justifying the fairness of AI-enabled systems across the lifecycle"
+    venue: arXiv
+    kind: Preprint
+    url: https://arxiv.org/abs/2406.09029

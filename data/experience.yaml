@@ -28,11 +28,12 @@ chapters:
       other people can pick it up.
     roles:
       - title: Research Application Manager
-        org: Alan Turing Institute, Research and Innovation Cluster in Digital Twins
+        org: Alan Turing Institute, Data/Culture and Digital Twins research
         years: "2023–2025"
         highlights:
+          - Built sustainable communities around open-source research tools, including MapReader, AutoEmulate and the TEA Platform.
+          - Co-authored three papers in the Journal of Open Source Software.
           - Kept the user perspective at the centre of research software development.
-          - Worked on the longevity and open-source sustainability of the cluster's tools.
       - title: Research Software Engineer
         org: Living with Machines, British Library and Alan Turing Institute
         years: "2021–2023"

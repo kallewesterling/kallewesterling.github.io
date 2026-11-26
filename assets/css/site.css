@@ -253,6 +253,13 @@ a:hover { color: var(--accent); }
 .stack { list-style: none; padding: 0; margin: auto 0 0; display: flex; flex-wrap: wrap; gap: .4rem; position: relative; z-index: 1; }
 .stack li { font: 500 .72rem/1 var(--font-mono); padding: .35rem .55rem; border-radius: 6px; background: var(--surface-2); color: var(--muted); }
 
+.papers { margin-top: 2.5rem; }
+.paper { display: grid; grid-template-columns: 6.5rem 1fr; gap: 1rem; padding: .9rem 0; border-bottom: 1px solid var(--line); }
+.paper .tag { justify-self: start; align-self: start; }
+.paper .pub-title a { text-decoration: none; }
+.paper .pub-title a:hover { color: var(--teal); }
+.paper .arrow { color: var(--teal); }
+
 /* Talks */
 .talks { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
 .talk {
@@ -284,6 +291,10 @@ a:hover { color: var(--accent); }
 .tag-recording { --c: var(--coral); text-decoration: none; }
 .tag-role { --c: var(--violet); }
 .tag-activation { --c: var(--sun); }
+.tag-joss { --c: var(--teal); }
+.tag-chapter { --c: var(--violet); }
+.tag-preprint { --c: var(--sky); }
+.tag-seminar { --c: var(--violet); }
 .tag-recording:hover { color: #fff; background: var(--coral); }
 .talk-title a { text-decoration: none; }
 .talk-title a:hover { color: var(--coral); }
@@ -452,7 +463,7 @@ a:hover { color: var(--accent); }
   .hero-photo { order: -1; width: 150px; }
   .talk { grid-template-columns: 1fr auto; gap: .35rem 1rem; }
   .talk-when { grid-column: 1 / -1; flex-direction: row; align-items: baseline; gap: .6rem; }
-  .pub { grid-template-columns: 1fr; gap: .5rem; }
+  .pub, .paper { grid-template-columns: 1fr; gap: .5rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {
