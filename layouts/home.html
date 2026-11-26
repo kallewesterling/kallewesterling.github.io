@@ -30,18 +30,11 @@
 
 <section id="courses" class="section wrap" data-accent="sun">
   {{- $c := hugo.Data.courses }}
-  {{- $paths := where $c.items "type" "path" }}
-  {{- $courses := where $c.items "type" "course" }}
   <div class="feature">
     <div class="feature-text">
       <p class="eyebrow">01 · Featured</p>
       <h2><a href="{{ $c.url }}">{{ $c.name }}</a></h2>
       <p class="section-sub">{{ $c.summary }}</p>
-      <ul class="feature-stats">
-        <li><span class="stat-n">{{ len $courses }}</span><span class="stat-l">courses</span></li>
-        <li><span class="stat-n">{{ len $paths }}</span><span class="stat-l">learning paths</span></li>
-        <li><span class="stat-n">Free</span><span class="stat-l">and self-paced</span></li>
-      </ul>
       <a class="btn btn-primary" href="{{ $c.url }}">Browse the catalog<span aria-hidden="true">↗</span></a>
     </div>
     <ul class="course-list">
@@ -96,7 +89,6 @@
       <p class="card-kind">{{ .role }}</p>
       <h3 class="card-title"><a href="{{ or .site .docs .repo }}">{{ .name }}</a></h3>
       <p class="card-body">{{ .summary }}</p>
-      <ul class="stack"><li>{{ .commits }} commits</li></ul>
       <p class="card-links">
         {{- with .site }}<a href="{{ . }}">Website<span class="arrow" aria-hidden="true">↗</span></a>{{ end }}
         {{- with .docs }}<a href="{{ . }}">Docs<span class="arrow" aria-hidden="true">↗</span></a>{{ end }}

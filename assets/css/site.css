@@ -208,9 +208,7 @@ a:hover { color: var(--accent); }
 .feature h2 { margin: 0; font: 800 clamp(2rem, 1.3rem + 2.6vw, 3.2rem)/1.02 var(--font-display); letter-spacing: -.03em; }
 .feature h2 a { text-decoration: none; }
 .feature h2 a:hover { color: var(--coral); }
-.feature-stats { list-style: none; padding: 0; margin: 1.6rem 0 1.8rem; display: flex; flex-wrap: wrap; gap: 1.75rem; }
-.feature-stats li { display: flex; flex-direction: column; gap: .2rem; }
-.feature-stats .stat-n { color: color-mix(in srgb, var(--coral) 80%, var(--text)); font-size: 2.2rem; }
+.feature .btn { margin-top: 1.75rem; }
 .course-list { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; }
 .course-item a {
   display: flex; flex-direction: column; gap: .2rem; padding: .7rem 1rem; border-radius: 12px; text-decoration: none;
@@ -250,6 +248,7 @@ a:hover { color: var(--accent); }
 .card-links { position: relative; z-index: 1; display: flex; gap: 1.1rem; margin: 1rem 0 0; padding-top: .9rem; border-top: 1px solid var(--line); font-size: .9rem; font-weight: 600; }
 .card-links a { text-decoration: none; color: color-mix(in srgb, var(--c) 80%, var(--text)); }
 .card-links a:hover .arrow { transform: translate(3px, -3px); }
+.card-body + .card-links { margin-top: auto; }
 .stack { list-style: none; padding: 0; margin: auto 0 0; display: flex; flex-wrap: wrap; gap: .4rem; position: relative; z-index: 1; }
 .stack li { font: 500 .72rem/1 var(--font-mono); padding: .35rem .55rem; border-radius: 6px; background: var(--surface-2); color: var(--muted); }
 

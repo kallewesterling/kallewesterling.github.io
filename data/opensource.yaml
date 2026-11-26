@@ -13,7 +13,6 @@ software:
       of digitised maps. Winner of the 2023 Roy Rosenzweig Prize for Innovation
       in Digital History.
     role: Documentation and community
-    commits: 95
     repo: https://github.com/maps-as-data/MapReader
     docs: https://mapreader.readthedocs.io/en/latest/
 
@@ -23,7 +22,6 @@ software:
       A Python package for semi-automated emulation of complex simulations,
       built for digital twin research.
     role: Contributor
-    commits: 49
     repo: https://github.com/alan-turing-institute/autoemulate
 
   - name: TEA Platform
@@ -33,7 +31,6 @@ software:
       building structured arguments that an AI system was developed
       responsibly.
     role: Contributor
-    commits: 83
     repo: https://github.com/alan-turing-institute/AssurancePlatform
     site: https://assuranceplatform.turing.ac.uk/
 
