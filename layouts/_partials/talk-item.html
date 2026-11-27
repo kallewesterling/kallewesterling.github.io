@@ -1,16 +1,22 @@
 {{- $t := .talk }}
+{{- $yt := "" }}
+{{- with $t.url }}{{ with findRESubmatch `(?:youtube\.com/watch\?v=|youtu\.be/|youtube\.com/embed/)([\w-]{11})` . 1 }}{{ $yt = index (index . 0) 1 }}{{ end }}{{ end }}
+{{- $tr := "" }}
+{{- with and $yt (index (hugo.Data.transcripts | default dict) $yt) }}
+  {{- $tr = (resources.FromString (printf "transcripts/%s.json" $yt) (jsonify .) | fingerprint).RelPermalink }}
+{{- end }}
 <li class="talk{{ if $t.upcoming }} is-upcoming{{ end }}">
   <span class="talk-when">
     <span class="talk-year">{{ .label }}</span>
     {{- with $t.date }}<span class="talk-month">{{ (time .).Format (cond $t.monthOnly "January" "Jan 2") }}</span>{{ end }}
   </span>
   <div class="talk-main">
-    <p class="talk-title">{{ if $t.url }}<a href="{{ $t.url }}">{{ $t.title }}<span class="arrow" aria-hidden="true">↗</span></a>{{ else }}{{ $t.title }}{{ end }}</p>
+    <p class="talk-title">{{ if $t.url }}<a href="{{ $t.url }}"{{ if $yt }} data-video="{{ $yt }}" data-title="{{ $t.title }}"{{ with $tr }} data-transcript="{{ . }}"{{ end }}{{ else }} target="_blank" rel="noopener"{{ end }}>{{ $t.title }}<span class="arrow" aria-hidden="true">{{ if $yt }}▶{{ else }}↗{{ end }}</span></a>{{ else }}{{ $t.title }}{{ end }}</p>
     <p class="talk-event">{{ $t.event }}</p>
   </div>
   <span class="talk-tags">
     {{- if $t.upcoming }}<span class="tag tag-upcoming">Upcoming</span>{{ end }}
-    {{- if $t.recording }}<a class="tag tag-recording" href="{{ $t.url }}">▶ Recording</a>{{ end }}
+    {{- if $t.recording }}<a class="tag tag-recording" href="{{ $t.url }}"{{ if $yt }} data-video="{{ $yt }}" data-title="{{ $t.title }}"{{ with $tr }} data-transcript="{{ . }}"{{ end }}{{ else }} target="_blank" rel="noopener"{{ end }}>▶ {{ if $yt }}Watch{{ else }}Recording{{ end }}</a>{{ end }}
     {{- with $t.role }}<span class="tag tag-role">{{ . }}</span>{{ end }}
     <span class="tag tag-{{ lower $t.kind }}">{{ $t.kind }}</span>
   </span>

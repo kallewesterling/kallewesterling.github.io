@@ -1,0 +1,117 @@
+#!/usr/bin/env -S uv run --script
+# /// script
+# requires-python = ">=3.10"
+# dependencies = ["youtube-transcript-api>=1.0", "pyyaml"]
+# ///
+"""Fetch YouTube transcripts for talks in data/talks.yaml.
+
+Writes data/transcripts/<video-id>.json, which the talk player shows next to
+the embedded video. Existing files are kept; pass --force to refetch.
+
+    bin/fetch-transcripts [--force]
+"""
+
+import json
+import re
+import sys
+from pathlib import Path
+
+import yaml
+from youtube_transcript_api import YouTubeTranscriptApi
+
+ROOT = Path(__file__).resolve().parent.parent
+OUT = ROOT / "data" / "transcripts"
+ID_RE = re.compile(r"(?:youtube\.com/watch\?v=|youtu\.be/|youtube\.com/embed/)([\w-]{11})")
+
+
+# Misheard names and products in YouTube's auto-captions. Applied to every video
+# unless keyed by video id.
+FIXES = [
+    (r"\b(?:Kayla|Calla|Kala|Kale)(?= Westerling)", "Kalle"),
+    (r"\bKala\b", "Kalle"),
+    (r"\bKa's joining us\b", "Kalle's joining us"),
+    (r"\b[Cc]hain ?[Gg]uard\b", "Chainguard"),
+    (r"\bOSBO\b", "OSPO"),
+    (r"\bcuriosity to curious\b", "curiosity to CURIOSS"),
+    (r"\bMike Woodridge\b", "Mike Wooldridge"),
+]
+VIDEO_FIXES = {
+    "rOvg73Ek1UA": [
+        (r"\bdigital human Humanities\b", "Digital Humanities"),
+        (r"\bThe eling Institute\b", "the Turing Institute"),
+        (r"\bk westering\b", "Kalle Westerling"),
+        (r"\bAllen tur Institute\b", "Alan Turing Institute"),
+    ],
+    "hE962TtlLTA": [(r"\bcursor\b", "Cursor"), (r"\bchain control\b", "chainctl")],
+}
+
+FILLER = re.compile(r"(?:^|(?<=[\s,.!?]))(?:u+h+m*|u+m+|e+r+m+|mhm+|a+h+)[,.]?(?=\s|$)", re.I)
+STUTTER = re.compile(r"\b(?!(?:had|that|is|do|very|no|bye)\b)([\w']+)(?:\s+\1\b)+", re.I)
+
+
+def clean(text, vid, sentence_start=True):
+    text = text.replace(">>", " ")
+    text = FILLER.sub(" ", text)
+    text = STUTTER.sub(r"\1", text)
+    for pat, rep in FIXES + VIDEO_FIXES.get(vid, []):
+        text = re.sub(pat, rep, text)
+    text = re.sub(r"\s+([,.!?])", r"\1", text)        # space before punctuation
+    text = re.sub(r"([,.!?])(?:\s*,)+", r"\1", text)  # ", ," and ". ," left by removed fillers
+    text = re.sub(r"^[,.\s]+", "", text)
+    text = " ".join(text.split())
+    # Capitalise sentence starts that a removed "Um," left lower-case.
+    text = re.sub(r"([.!?]\s+)([a-z])", lambda m: m.group(1) + m.group(2).upper(), text)
+    if sentence_start:
+        text = text[:1].upper() + text[1:]
+    return text
+
+
+def merge(snippets, vid, max_chars=220):
+    """Join YouTube's short caption fragments into readable, sentence-ish chunks."""
+    out, cur = [], None
+    for s in snippets:
+        text = " ".join(s.text.replace("\n", " ").split())
+        if not text or text.startswith("[") and text.endswith("]"):
+            continue
+        if cur is None:
+            cur = {"start": round(s.start, 1), "text": text}
+            continue
+        cur["text"] += " " + text
+        if len(cur["text"]) >= max_chars or (cur["text"][-1:] in ".?!" and len(cur["text"]) > 80):
+            out.append(cur)
+            cur = None
+    if cur:
+        out.append(cur)
+    prev = "."
+    for c in out:
+        c["text"] = clean(c["text"], vid, sentence_start=prev[-1:] in ".?!")
+        prev = c["text"] or prev
+    return [c for c in out if c["text"]]
+
+
+def main():
+    force = "--force" in sys.argv
+    OUT.mkdir(parents=True, exist_ok=True)
+    talks = yaml.safe_load((ROOT / "data" / "talks.yaml").read_text())
+    api = YouTubeTranscriptApi()
+    for talk in talks:
+        m = ID_RE.search(talk.get("url") or "")
+        if not m:
+            continue
+        vid = m.group(1)
+        dest = OUT / f"{vid}.json"
+        if dest.exists() and not force:
+            print(f"skip  {vid}  (exists)")
+            continue
+        try:
+            transcript = api.list(vid).find_transcript(["en", "en-GB", "en-US"]).fetch()
+        except Exception as e:  # no captions, disabled, or blocked
+            print(f"fail  {vid}  {type(e).__name__}", file=sys.stderr)
+            continue
+        lines = merge(transcript, vid)
+        dest.write_text(json.dumps(lines, ensure_ascii=False, indent=1) + "\n")
+        print(f"ok    {vid}  {len(lines)} lines  {talk['title']}")
+
+
+if __name__ == "__main__":
+    main()

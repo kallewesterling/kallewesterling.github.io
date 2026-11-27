@@ -144,6 +144,24 @@
     </ol>
   </details>
   {{- end }}
+  <dialog class="player" aria-labelledby="player-title">
+    <div class="player-head">
+      <p class="eyebrow">Recording</p>
+      <h3 id="player-title" class="player-title"></h3>
+      <a class="player-yt" href="#" target="_blank" rel="noopener">Open on YouTube ↗</a>
+      <button class="player-close" type="button" aria-label="Close video">✕</button>
+    </div>
+    <div class="player-body">
+      <div class="player-video"><div id="player-frame"></div></div>
+      <aside class="player-transcript" aria-label="Transcript">
+        <div class="transcript-head">
+          <span>Transcript</span>
+          <span class="transcript-note">Auto-generated · click a line to jump</span>
+        </div>
+        <ol class="transcript-lines"></ol>
+      </aside>
+    </div>
+  </dialog>
 </section>
 
 <section id="experience" class="section wrap" data-accent="teal">
