@@ -19,13 +19,6 @@ intro2: >-
   design learning the same way: start from where people get stuck, and remove
   that step.
 
-focus:
-  - Developer education
-  - Supply chain security
-  - Containers
-  - Hands-on labs
-  - Docs as code
-  - Python
 
 social:
   - name: GitHub

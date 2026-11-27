@@ -15,6 +15,25 @@ disableKinds = ["taxonomy", "term"]
 [outputFormats.RSS]
   baseName = "feed"
 
+# Plain-text and Markdown versions of the site for language models.
+[outputFormats.llms]
+  mediaType = "text/plain"
+  baseName = "llms"
+  isPlainText = true
+  notAlternative = true
+[outputFormats.llmsfull]
+  mediaType = "text/plain"
+  baseName = "llms-full"
+  isPlainText = true
+  notAlternative = true
+[outputFormats.markdown]
+  mediaType = "text/markdown"
+  baseName = "index"
+  isPlainText = true
+
+[outputs]
+  home = ["html", "rss", "llms", "llmsfull"]
+
 [pagination]
   pagerSize = 20
 

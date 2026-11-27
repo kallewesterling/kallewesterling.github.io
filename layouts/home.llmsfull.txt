@@ -1,0 +1,106 @@
+{{- $p := hugo.Data.profile -}}
+{{- $xp := hugo.Data.experience -}}
+# {{ $p.name }}
+
+> {{ $p.shortBio }}
+
+Website: {{ site.Home.Permalink }}
+Role: {{ $p.role }} at {{ $p.company }} ({{ $p.companyURL }})
+Contact: {{ $p.email }}. {{ $p.contactBlurb }}
+
+## About
+
+{{ $p.intro }}
+
+{{ $p.intro2 }}
+
+{{ $p.fullBio }}
+
+## Courses
+
+{{ hugo.Data.courses.name }} ({{ hugo.Data.courses.url }}): {{ hugo.Data.courses.summary }}
+{{ range hugo.Data.courses.items }}
+- {{ cond (eq .type "path") "Learning path" "Course" }}: [{{ .title }}]({{ hugo.Data.courses.url }}/{{ .slug }})
+{{- end }}
+
+## Tools I build
+{{ range hugo.Data.projects }}
+### {{ .name }}
+
+{{ .kind }}. {{ .summary }}
+{{ with .stack }}Stack: {{ delimit . ", " }}.{{ end }}
+{{- with .app }}
+App: {{ . }}{{ end }}
+{{- with .docs }}
+Docs: {{ . }}{{ end }}
+{{- with .repo }}
+Code: {{ . }}{{ end }}
+{{ end }}
+## Research software
+
+{{ hugo.Data.opensource.intro }}
+{{ range hugo.Data.opensource.software }}
+- [{{ .name }}]({{ or .site .docs .repo }}), {{ .role }}: {{ .summary }}
+{{- end }}
+
+Papers:
+{{ range hugo.Data.opensource.papers }}
+- [{{ .title }}]({{ .url }}). {{ .venue }}, {{ .year }}.
+{{- end }}
+
+## Capture the flag and games
+
+{{ hugo.Data.ctf.intro }}
+{{ range hugo.Data.ctf.why }}
+- {{ .title }}: {{ .body }}
+{{- end }}
+{{ range hugo.Data.ctf.formats }}
+### {{ .name }}
+
+{{ .kind }}. {{ .summary }}{{ with .editions }} Editions: {{ delimit . ", " }}.{{ end }}{{ with .played }} Played in {{ . }}.{{ end }}
+{{ end }}
+{{ hugo.Data.ctf.cta }}
+
+## Talks and workshops
+
+Topics: {{ delimit (apply hugo.Data.topics "index" "." "name") ", " }}.
+{{ $talks := sort (partial "talks-sorted.html" .) "key" "desc" }}
+{{- range $talks }}
+- {{ partial "talk-line.txt" . }}
+{{- end }}
+{{ with hugo.Data.events }}
+Also at these conferences in {{ .year }}: {{ $ev := slice }}{{ range .items }}{{ $ev = $ev | append (printf "%s (%s)" .name .city) }}{{ end }}{{ delimit $ev ", " }}.
+{{- end }}
+
+## Experience
+{{ range $xp.chapters }}
+### {{ .name }} ({{ .years }})
+{{ range .roles }}
+**{{ .title }}**, {{ .org }}{{ with .years }} ({{ . }}){{ end }}
+{{ range .highlights }}
+- {{ . }}
+{{- end }}
+{{ end }}
+{{- end }}
+## Education
+{{ range $xp.education }}
+- {{ .degree }}, {{ .org }}{{ with .years }}, {{ . }}{{ end }}
+{{- end }}
+{{ with $xp.languages }}
+Languages: {{ delimit . ", " }}.
+{{- end }}
+{{ with site.GetPage "/now" }}
+## Now (updated {{ (time .Params.updated).Format "January 2, 2006" }})
+
+{{ .RawContent }}
+{{- end }}
+{{ with site.GetPage "/uses" }}
+## Uses
+
+{{ .RawContent }}
+{{- end }}
+
+## Elsewhere
+{{ range $p.social }}
+- [{{ .name }}]({{ .url }})
+{{- end }}

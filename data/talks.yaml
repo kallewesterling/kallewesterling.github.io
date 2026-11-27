@@ -1,42 +1,50 @@
 # One-off events use `date` (add `monthOnly: true` if the day isn't known). Recurring series use `from` and `to` (years).
 # Sorted on the page by end year, then start year, then date, all descending.
 # url: event page or recording. recording: true marks a video.
-# role: e.g. Moderator. earlier: true moves a talk under "See more talks".
+# role: e.g. Moderator.
 # kind: Talk | Demo | Workshop | Webinar | Panel | Keynote | Activation
+# topics: ids from data/topics.yaml; they drive the filter above the list.
 - date: 2026-12-17
   title: "Learning Lab: Fewer CVEs in agent-built code"
+  topics: [ai, supply-chain]
   event: Chainguard Learning Labs · Online
   kind: Workshop
   upcoming: true
 
 - date: 2026-11-19
   title: "Learning Lab: Secure-by-default agent workflows"
+  topics: [ai, supply-chain]
   url: https://www.chainguard.dev/events/learning-labs-secure-by-default-agent-workflows
   event: Chainguard Learning Labs · Online
   kind: Workshop
 
 - date: 2026-11-12
   title: "Faithful by Default: a capture-the-flag workshop"
+  topics: [ctf, supply-chain]
   event: Chainguard × Somerford · London
   kind: Workshop
 
 - date: 2026-11-10
   title: "Operation Lockdown CTF, advanced edition"
+  topics: [ctf, containers]
   event: SVA partner event · Dresden
   kind: Workshop
 
 - date: 2026-10-22
   title: Fixing a critical CVE without the major-version upgrade
+  topics: [supply-chain, open-source]
   event: JFrog swampUP Europe · Barcelona
   kind: Talk
 
 - date: 2026-10-19
   title: Operation Lockdown CTF
+  topics: [ctf, containers]
   event: Customer event · Paris
   kind: Workshop
 
 - date: 2026-10-14
   title: "From source to agent: building a secure AI development pipeline"
+  topics: [ai, supply-chain]
   url: https://www.youtube.com/watch?v=hE962TtlLTA
   recording: true
   event: Chainguard Assemble · London, with Peter Fitch (Cursor)
@@ -44,17 +52,20 @@
 
 - date: 2026-10-01
   title: "When AI becomes the attack surface: securing your ML pipeline"
+  topics: [ai, supply-chain]
   url: https://www.pmi-live.com/events/when-ai-becomes-the-attack-surface-securing-your-ml-pipeline/
   event: BTMI webinar · Online
   kind: Webinar
 
 - date: 2026-09-30
   title: "Start coding safely: an Operation Lockdown CTF"
+  topics: [ctf, containers]
   event: Chainguard × Tjejer Kodar · Stockholm
   kind: Workshop
 
 - date: 2026-09-15
   title: Build apps without CVEs and malware
+  topics: [containers, supply-chain]
   url: https://www.chainguard.dev/events/20-minute-demo-build-apps-without-cves-and-malware
   event: Chainguard 20-Minute Demo · Online
   kind: Demo
@@ -62,24 +73,28 @@
 - date: 2026-08-07
   monthOnly: true
   title: Cards Against Vulnerabilities
+  topics: [ctf, supply-chain]
   event: DEF CON 34 · Las Vegas, about 200 players
   kind: Activation
 
 - date: 2026-08-04
   monthOnly: true
   title: "Attacker Shift Left: developer workstations as the new attack surface"
+  topics: [supply-chain]
   event: Black Hat USA, AWS theater · Las Vegas
   kind: Demo
 
 - date: 2026-03-24
   monthOnly: true
   title: Cards Against Vulnerabilities, first edition
+  topics: [ctf, supply-chain]
   event: RSA Conference 2026, AppSec Village · San Francisco
   kind: Activation
 
 - date: 2026-02-05
   monthOnly: true
   title: Building and consuming open source securely
+  topics: [open-source, supply-chain]
   event: NOSIS, Open Ireland Network · Dublin
   kind: Keynote
   url: https://www.youtube.com/watch?v=kRH4sJKXh6I
@@ -88,11 +103,13 @@
 - date: 2026-02-05
   monthOnly: true
   title: Open source in financial services
+  topics: [open-source]
   event: NOSIS · Dublin, with NatWest and Fidelity
   kind: Panel
 
 - date: 2026-02-05
   title: Governance for academic open source
+  topics: [open-source, research]
   event: CURIOSS Gathering · Dublin, with the Eclipse Foundation and UC Santa Cruz OSPO
   kind: Panel
   url: https://www.youtube.com/watch?v=UgHGbp6yn1o
@@ -101,39 +118,40 @@
 - from: 2025
   to: 2026
   title: Hands-on workshops on hardened container images
+  topics: [containers, supply-chain]
   event: Chainguard customer and partner workshops · EMEA
   kind: Workshop
 
-# Research and academic talks, shown under "See more talks".
+# Research and academic talks.
 - date: 2026-03-31
   title: "Cultural heritage under attack: saving cultural data in times of crisis"
+  topics: [research]
   event: School of Advanced Study, The Fragile Record series · Online, with Michael Weinberg (NYU) and Pakhee Kumar (UCL)
   kind: Seminar
   url: https://www.sas.ac.uk/digital-humanities-research-hub/events/cultural-heritage-under-attack-saving-cultural-data-times-crisis
-  earlier: true
 
 - date: 2024-09-25
   title: "MapReader workshop: using machine learning to analyse large collections of digitised maps"
+  topics: [research, ai]
   event: Spatial Humanities 2024 · Bamberg, with Katherine McDonough and Rosie Wood
   kind: Workshop
   url: https://pretalx.com/spathum24/speaker/HWJKS7/
-  earlier: true
 
 - date: 2024-03-01
   monthOnly: true
   title: "Imagined futures: how will society, science and AI shape tomorrow?"
+  topics: [research, ai]
   event: AI UK 2024, Alan Turing Institute · London
   kind: Panel
   role: Moderator
   url: https://www.youtube.com/watch?v=XMpg_s5ZrdM
   recording: true
-  earlier: true
 
 - date: 2024-03-01
   monthOnly: true
   title: Queer representations of AI
+  topics: [research, ai]
   event: School of Advanced Study, AI UK Fringe · London
   kind: Panel
   url: https://www.youtube.com/watch?v=rOvg73Ek1UA
   recording: true
-  earlier: true

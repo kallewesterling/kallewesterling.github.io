@@ -1,0 +1,3 @@
+{{- $t := .talk -}}
+{{ .label }}{{ with $t.date }}-{{ (time .).Format "01" }}{{ end }} · {{ $t.kind }}{{ with $t.role }} ({{ . }}){{ end }}: {{ if $t.url }}[{{ $t.title }}]({{ $t.url }}){{ else }}{{ $t.title }}{{ end }}, {{ $t.event }}{{ if $t.upcoming }} (upcoming){{ end }}{{ if $t.recording }} (recording){{ end }}
+{{- /* trim */ -}}

@@ -15,6 +15,29 @@
   <meta property="og:image" content="{{ $og.Permalink }}">
   {{- end }}
   <link rel="canonical" href="{{ .Permalink }}">
+  {{- range .AlternativeOutputFormats }}
+  <link rel="alternate" type="{{ .MediaType.Type }}" href="{{ .Permalink }}">
+  {{- end }}
+  <link rel="alternate" type="text/plain" title="llms.txt" href="{{ "llms.txt" | absURL }}">
+  {{- if .IsHome }}
+  {{- $p := hugo.Data.profile }}
+  {{- $same := slice }}{{ range $p.social }}{{ $same = $same | append .url }}{{ end }}
+  {{- $ld := dict
+    "@context" "https://schema.org"
+    "@type" "Person"
+    "name" $p.name
+    "url" site.Home.Permalink
+    "email" (printf "mailto:%s" $p.email)
+    "jobTitle" $p.role
+    "worksFor" (dict "@type" "Organization" "name" $p.company "url" $p.companyURL)
+    "description" $p.shortBio
+    "knowsAbout" (apply hugo.Data.topics "index" "." "name")
+    "knowsLanguage" hugo.Data.experience.languages
+    "alumniOf" (dict "@type" "CollegeOrUniversity" "name" "The Graduate Center, CUNY")
+    "sameAs" $same }}
+  {{- with resources.Get $p.headshot }}{{ $ld = merge $ld (dict "image" (.Fill "720x720 Smart q85 jpg").Permalink) }}{{ end }}
+  <script type="application/ld+json">{{ $ld | jsonify | safeJS }}</script>
+  {{- end }}
   <script>
     (function () {
       var t = localStorage.getItem("theme");

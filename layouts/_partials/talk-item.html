@@ -5,7 +5,7 @@
 {{- with and $yt (index (hugo.Data.transcripts | default dict) $yt) }}
   {{- $tr = (resources.FromString (printf "transcripts/%s.json" $yt) (jsonify .) | fingerprint).RelPermalink }}
 {{- end }}
-<li class="talk{{ if $t.upcoming }} is-upcoming{{ end }}">
+<li class="talk{{ if $t.upcoming }} is-upcoming{{ end }}" data-topics="{{ delimit ($t.topics | default slice) " " }}">
   <span class="talk-when">
     <span class="talk-year">{{ .label }}</span>
     {{- with $t.date }}<span class="talk-month">{{ (time .).Format (cond $t.monthOnly "January" "Jan 2") }}</span>{{ end }}

@@ -5,7 +5,7 @@
 
 <section class="hero wrap">
   <div class="hero-text">
-    <p class="status"><span class="pulse" aria-hidden="true"></span>{{ $p.status }}</p>
+    <a class="status" href="/now/"><span class="pulse" aria-hidden="true"></span>{{ $p.status }}<span class="status-more">Now<span aria-hidden="true"> →</span></span></a>
     <h1 class="display">{{ $p.name }}</h1>
     <p class="role">
       {{ $p.role }} at <a href="{{ $p.companyURL }}">{{ $p.company }}</a>
@@ -15,11 +15,6 @@
       <a class="btn btn-primary" href="#contact">Get in touch</a>
       <a class="btn btn-ghost" href="#courses">See what I build</a>
     </div>
-    <ul class="chips" aria-label="Focus areas">
-      {{- range $i, $f := $p.focus }}
-      <li class="chip c{{ mod $i 5 }}">{{ $f }}</li>
-      {{- end }}
-    </ul>
   </div>
   <figure class="hero-photo">
     {{- with $photo }}{{ $sq := .Fill "720x720 Smart q85 webp" }}
@@ -121,10 +116,16 @@
     <p class="section-sub">Live demos, hands-on workshops and the occasional capture-the-flag event.</p>
   </header>
   {{- $talks := sort (partial "talks-sorted.html" .) "key" "desc" }}
-  {{- $recent := where $talks "talk.earlier" "!=" true }}
-  {{- $earlier := where $talks "talk.earlier" true }}
+  <div class="topic-filter" role="group" aria-label="Filter talks by topic">
+    <button class="topic is-active" type="button" data-topic="" aria-pressed="true">All<span class="topic-n">{{ len $talks }}</span></button>
+    {{- range hugo.Data.topics }}
+    {{- $id := .id }}{{ $n := 0 }}
+    {{- range $talks }}{{ if in (.talk.topics | default slice) $id }}{{ $n = add $n 1 }}{{ end }}{{ end }}
+    <button class="topic" type="button" data-topic="{{ $id }}" data-color="{{ .color }}" aria-pressed="false">{{ .name }}<span class="topic-n">{{ $n }}</span></button>
+    {{- end }}
+  </div>
   <ol class="talks">
-    {{- range $recent }}{{ partial "talk-item.html" . }}{{ end }}
+    {{- range $talks }}{{ partial "talk-item.html" . }}{{ end }}
   </ol>
   {{- with hugo.Data.events }}
   <div class="circuit">
@@ -135,14 +136,6 @@
       {{- end }}
     </ul>
   </div>
-  {{- end }}
-  {{- with $earlier }}
-  <details class="more-talks">
-    <summary>See more talks: research and academia <span class="more-count">{{ len . }}</span></summary>
-    <ol class="talks">
-      {{- range . }}{{ partial "talk-item.html" . }}{{ end }}
-    </ol>
-  </details>
   {{- end }}
   <dialog class="player" aria-labelledby="player-title">
     <div class="player-head">
@@ -164,9 +157,38 @@
   </dialog>
 </section>
 
+<section id="games" class="section wrap" data-accent="sun">
+  {{- $g := hugo.Data.ctf }}
+  <header class="section-head">
+    <p class="eyebrow">05 · Games</p>
+    <h2>Capture the flag, and other ways to learn by breaking things</h2>
+    <p class="section-sub">{{ $g.intro }}</p>
+  </header>
+  <ul class="why">
+    {{- range $i, $w := $g.why }}
+    <li><span class="why-n">0{{ add $i 1 }}</span><h3>{{ $w.title }}</h3><p>{{ $w.body }}</p></li>
+    {{- end }}
+  </ul>
+  <ul class="cards">
+    {{- range $g.formats }}
+    <li class="card" data-color="{{ .color }}">
+      <p class="card-kind">{{ .kind }}</p>
+      <h3 class="card-title">{{ .name }}</h3>
+      <p class="card-body">{{ .summary }}</p>
+      {{- with .editions }}<ul class="stack">{{ range . }}<li>{{ . }} edition</li>{{ end }}</ul>{{ end }}
+      {{- with .played }}<p class="card-links"><span class="played">Played in {{ . }}</span></p>{{ end }}
+    </li>
+    {{- end }}
+  </ul>
+  <div class="ctf-cta">
+    <p>{{ $g.cta }}</p>
+    <a class="btn btn-primary" href="#contact">Bring a CTF to your event</a>
+  </div>
+</section>
+
 <section id="experience" class="section wrap" data-accent="teal">
   <header class="section-head">
-    <p class="eyebrow">05 · Experience</p>
+    <p class="eyebrow">06 · Experience</p>
     <h2>From the classroom to developer relations</h2>
     <p class="section-sub">{{ $p.intro2 }}</p>
   </header>
@@ -234,7 +256,7 @@
 
 <section id="archive" class="section wrap" data-accent="sun">
   <header class="section-head">
-    <p class="eyebrow">06 · Before DevRel</p>
+    <p class="eyebrow">07 · Before DevRel</p>
     <h2>The academic archive</h2>
     <p class="section-sub">Research on drag, burlesque and queer performance history, digital humanities pedagogy, and a decade of teaching. It all still lives here.</p>
   </header>
@@ -244,7 +266,7 @@
 <section id="contact" class="section wrap" data-accent="sky">
   <div class="contact">
     <header class="section-head">
-      <p class="eyebrow">07 · Contact</p>
+      <p class="eyebrow">08 · Contact</p>
       <h2>Let's talk</h2>
       <p class="section-sub">{{ $p.contactBlurb }}</p>
     </header>
@@ -265,6 +287,14 @@
       {{- with $photo }}{{ $dl := .Resize "1600x q85 jpg" }}
       <p class="bio-photo"><a href="{{ $dl.RelPermalink }}" download="kalle-westerling-headshot.jpg">Download headshot (JPG, 1600px)</a></p>
       {{- end }}
+    </div>
+    <div class="more-me">
+      <p class="eyebrow">More about me</p>
+      <ul>
+        <li><a href="/now/"><strong>Now</strong><span>What I'm working on at the moment</span></a></li>
+        <li><a href="/uses/"><strong>Uses</strong><span>The hardware and tools I build and demo with</span></a></li>
+        <li><a href="/llms.txt"><strong>llms.txt</strong><span>This site as plain text, for language models</span></a></li>
+      </ul>
     </div>
   </div>
 </section>

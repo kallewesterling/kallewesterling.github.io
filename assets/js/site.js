@@ -126,3 +126,51 @@ document.querySelectorAll(".copy").forEach((btn) => {
     player?.pauseVideo?.();
   });
 })();
+
+// Talk topic filter: hide talks that don't match the chosen topic.
+(() => {
+  const bar = document.querySelector(".topic-filter");
+  if (!bar) return;
+  const section = bar.closest("section");
+  const circuit = section.querySelector(".circuit");
+  bar.addEventListener("click", (e) => {
+    const b = e.target.closest(".topic");
+    if (!b) return;
+    const topic = b.dataset.topic;
+    bar.querySelectorAll(".topic").forEach((x) => {
+      x.classList.toggle("is-active", x === b);
+      x.setAttribute("aria-pressed", x === b);
+    });
+    section.querySelectorAll(".talk").forEach((li) => {
+      li.hidden = !!topic && !li.dataset.topics.split(" ").includes(topic);
+    });
+    if (circuit) circuit.hidden = !!topic;
+  });
+})();
+
+// Highlight the menu link for the section in view: the last section whose
+// top has passed 40% of the way down the viewport.
+(() => {
+  const pairs = [];
+  document.querySelectorAll('.nav a[href*="#"]:not(.nav-cta)').forEach((a) => {
+    const sec = document.getElementById(a.hash.slice(1));
+    if (sec) pairs.push([sec, a]);
+  });
+  if (!pairs.length) return;
+  const update = () => {
+    const line = innerHeight * 0.4;
+    let current = null;
+    for (const [sec, a] of pairs) if (sec.getBoundingClientRect().top <= line) current = a;
+    // Past the last section's end (e.g. in Contact), nothing is current.
+    const [lastSec] = pairs[pairs.length - 1];
+    if (current === pairs[pairs.length - 1][1] && lastSec.getBoundingClientRect().bottom < line) current = null;
+    for (const [, a] of pairs) {
+      a.classList.toggle("is-current", a === current);
+      if (a === current) a.setAttribute("aria-current", "location");
+      else a.removeAttribute("aria-current");
+    }
+  };
+  addEventListener("scroll", update, { passive: true });
+  addEventListener("resize", update);
+  update();
+})();

@@ -3,6 +3,9 @@
   <div class="wrap footer-inner">
     <p>© {{ now.Year }} {{ $p.name }}</p>
     <ul class="footer-links">
+      <li><a href="/now/">Now</a></li>
+      <li><a href="/uses/">Uses</a></li>
+      <li><a href="/llms.txt">llms.txt</a></li>
       {{- range $p.social }}
       <li><a href="{{ .url }}" rel="me noopener">{{ .name }}</a></li>
       {{- end }}

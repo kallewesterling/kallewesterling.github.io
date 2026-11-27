@@ -6,6 +6,7 @@
     {{- if and (eq .Section "posts") (not .Date.IsZero) }}
     <p class="meta">{{ .Date.Format "January 2, 2006" }} · {{ .ReadingTime }} min read</p>
     {{- end }}
+    {{- with .Params.updated }}<p class="meta">Updated {{ (time .).Format "January 2, 2006" }}</p>{{ end }}
     {{- with .Params.img }}<img class="page-hero" src="{{ . }}" alt="">{{ end }}
   </header>
   <div class="prose">

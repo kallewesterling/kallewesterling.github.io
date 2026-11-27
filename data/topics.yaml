@@ -1,0 +1,20 @@
+# Talk topics, shown as filters above the talks list. Tag talks with `topics: [id, ...]`.
+# color: violet | coral | teal | sun | sky
+- id: supply-chain
+  name: Supply chain security
+  color: coral
+- id: containers
+  name: Containers
+  color: sky
+- id: ai
+  name: AI and agents
+  color: violet
+- id: ctf
+  name: CTFs and games
+  color: sun
+- id: open-source
+  name: Open source
+  color: teal
+- id: research
+  name: Research and humanities
+  color: violet

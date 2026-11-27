@@ -1,0 +1,27 @@
+{{ define "main" }}
+<section class="notfound wrap">
+  <div class="notfound-text">
+    <p class="eyebrow">404 · Page not found</p>
+    <h1 class="display">Lost the flag.</h1>
+    <p class="lede">There's nothing at <code class="notfound-path">this address</code>. The site was recently rebuilt, so an old link may point somewhere that has moved. One of these will probably get you there.</p>
+    <div class="actions">
+      <a class="btn btn-primary" href="/">Go to the homepage</a>
+      <a class="btn btn-ghost" href="/#contact">Get in touch</a>
+    </div>
+  </div>
+  <ul class="notfound-links">
+    <li><a href="/#courses"><span class="nf-kind">Courses</span>Chainguard Courses, labs and learning paths</a></li>
+    <li><a href="/#projects"><span class="nf-kind">Projects</span>Tools I build for developers and educators</a></li>
+    <li><a href="/#talks"><span class="nf-kind">Talks</span>Talks, workshops and recordings</a></li>
+    <li><a href="/#games"><span class="nf-kind">Games</span>Capture the flag and Cards Against Vulnerabilities</a></li>
+    <li><a href="/now/"><span class="nf-kind">Now</span>What I'm working on right now</a></li>
+    <li><a href="/archive/"><span class="nf-kind">Archive</span>Research, publications, teaching and the old blog</a></li>
+  </ul>
+</section>
+<script>
+  (function () {
+    var el = document.querySelector(".notfound-path");
+    if (el) el.textContent = location.pathname;
+  })();
+</script>
+{{ end }}

@@ -1,0 +1,47 @@
+{{- $p := hugo.Data.profile -}}
+# {{ $p.name }}
+
+> {{ $p.fullBio }}
+
+{{ $p.intro }}
+
+Role: {{ $p.role }} at {{ $p.company }} ({{ $p.companyURL }})
+Topics: {{ delimit (apply hugo.Data.topics "index" "." "name") ", " }}
+Contact: {{ $p.email }}. {{ $p.contactBlurb }}
+
+## Pages
+
+- [Full profile]({{ "llms-full.txt" | absURL }}): everything below in one plain-text file, with all talks, projects and experience.
+- [Home]({{ site.Home.Permalink }}): courses, tools, open source, talks, games and CTFs, experience and contact.
+{{- with site.GetPage "/now" }}
+- [Now]({{ (.OutputFormats.Get "markdown").Permalink }}): {{ .Description }}
+{{- end }}
+{{- with site.GetPage "/uses" }}
+- [Uses]({{ (.OutputFormats.Get "markdown").Permalink }}): {{ .Description }}
+{{- end }}
+- [Academic archive]({{ "archive/" | absURL }}): research on drag, burlesque and queer performance history, and digital humanities teaching.
+
+## Courses
+
+- [{{ hugo.Data.courses.name }}]({{ hugo.Data.courses.url }}): {{ hugo.Data.courses.summary }}
+
+## Tools I build
+{{ range hugo.Data.projects }}
+- [{{ .name }}]({{ or .app .docs .repo site.Home.Permalink }}): {{ .summary }}
+{{- end }}
+
+## Capture the flag and games
+{{ range hugo.Data.ctf.formats }}
+- {{ .name }} ({{ .kind }}): {{ .summary }}{{ with .played }} Played in {{ . }}.{{ end }}
+{{- end }}
+
+## Recent talks and workshops
+{{ $talks := sort (partial "talks-sorted.html" .) "key" "desc" }}
+{{- range first 10 $talks }}
+- {{ partial "talk-line.txt" . }}
+{{- end }}
+
+## Elsewhere
+{{ range $p.social }}
+- [{{ .name }}]({{ .url }})
+{{- end }}

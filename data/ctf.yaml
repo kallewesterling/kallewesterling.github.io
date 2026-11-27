@@ -1,0 +1,49 @@
+# Capture-the-flag and game formats, shown in the "Games" section on the homepage.
+# color: violet | coral | teal | sun | sky
+intro: >-
+  Some security lessons only stick when you do them yourself, against the
+  clock, with a team. So alongside talks and courses I design games: capture
+  the flag events and card games that put developers in the attacker's seat
+  and then hand them the fix.
+
+why:
+  - title: Hands on, not slides
+    body: >-
+      Every challenge ends in something you did yourself, at a terminal or
+      around a table. You don't leave having watched someone else do it.
+  - title: Built for mixed rooms
+    body: >-
+      Beginner, standard and advanced editions, so a room of first-time coders
+      and a room of platform engineers both get a real challenge.
+  - title: Runs anywhere
+    body: >-
+      Customer offices, partner events, community meetups and conference
+      floors, from a small room to a couple of hundred players.
+
+formats:
+  - name: Operation Lockdown
+    kind: Capture the flag
+    color: coral
+    summary: >-
+      A team capture-the-flag on container images and software supply chain
+      security, run for customers and partners.
+    editions: [Standard, Advanced, Beginner]
+    played: Paris · Dresden · Stockholm
+  - name: Faithful by Default
+    kind: Capture the flag
+    color: violet
+    summary: >-
+      A capture-the-flag workshop run together with Somerford.
+    played: London
+  - name: Cards Against Vulnerabilities
+    kind: Card game
+    color: sun
+    summary: >-
+      A security card game I designed for conference floors. First played at
+      the RSA Conference AppSec Village, then scaled to about 200 players at
+      DEF CON 34.
+    played: San Francisco · Las Vegas
+
+cta: >-
+  Want a CTF at your event, meetup or team offsite? I can adapt the format
+  and the difficulty to your room.
