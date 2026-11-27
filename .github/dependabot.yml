@@ -1,0 +1,11 @@
+# Keeps the deploy workflow's actions current. The Hugo version in
+# deploy.yml is pinned by hand: bump `hugo-version` when Hugo releases.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ["*"]
