@@ -1,0 +1,255 @@
+# Kalle Westerling
+
+> Kalle Westerling is a Staff Developer Relations Engineer at Chainguard, where he builds courses, labs and workshops on software supply chain security.
+
+Website: https://westerling.nu/
+Role: Staff Developer Relations Engineer at Chainguard (https://www.chainguard.dev)
+Contact: kallewesterling@gmail.com. For talks, workshops, podcasts and anything about developer education or software supply chain security.
+
+## About
+
+I teach developers how to ship secure software, and I build the tools that make that teaching hold up. At Chainguard I create courses, hands-on labs, workshops and live demos on container images, open-source libraries and software supply chain security.
+
+I came to developer relations by way of the classroom and the research lab: a PhD in digital humanities, coding curricula for faculty across the United States, and research software at the Alan Turing Institute. I still design learning the same way: start from where people get stuck, and remove that step.
+
+Kalle Westerling is a Staff Developer Relations Engineer at Chainguard, where he creates courses, hands-on labs, workshops and live demos that help developers adopt secure container images and open-source libraries. He also builds open-source tools for developer educators, from testing code examples in published courses to pacing live sessions. Before Chainguard he was a research software engineer and research application manager at the Alan Turing Institute, and before that he led national coding and research training programs at CUNY, where he earned a PhD in digital humanities. He still approaches technical education as a teacher first.
+
+## Courses
+
+Chainguard Courses (https://courses.chainguard.dev): Where most of my work happens. Free, self-paced courses, learning paths and certifications for developers, security teams and platform engineers who want to secure their software supply chain with Chainguard Containers, Libraries and VMs.
+
+- Learning path: [Complete guide to Chainguard Containers](https://courses.chainguard.dev/path/linkys-guide-to-chainguard-images-1)
+- Learning path: [Getting started with Chainguard Libraries](https://courses.chainguard.dev/path/getting-started-with-chainguard-libraries)
+- Learning path: [Painless vulnerability management](https://courses.chainguard.dev/path/painless-vulnerability-management)
+- Course: [Chainguard Containers crash course](https://courses.chainguard.dev/linkys-crash-course-on-chainguard-images)
+- Course: [Build safely with AI: securing your agentic engineering](https://courses.chainguard.dev/build-safely-with-ai-securing-your-agentic-engineering)
+- Course: [Securing the AI/ML supply chain](https://courses.chainguard.dev/securing-ai)
+- Course: [Get spicy with SLSA](https://courses.chainguard.dev/get-spicy-with-slsa-securing-your-supply-chain-one-level-at-a-time)
+- Course: [Getting started with Chainguard's FIPS images](https://courses.chainguard.dev/getting-started-with-chainguards-fips-images)
+- Course: [Getting started with Chainguard's Dockerfile Converter](https://courses.chainguard.dev/getting-started-with-chainguards-dockerfile-converter)
+- Course: [Getting started with Chainguard's Custom Assembly](https://courses.chainguard.dev/getting-started-with-chainguards-custom-assembly)
+- Course: [Painless vulnerability management, certification course](https://courses.chainguard.dev/vulnerability-management-certification)
+
+## Tools I build
+
+### cvediff
+
+Security. Compares the known CVEs in two container images side by side in the terminal. Answers one question fast: what changes if we swap this base image for a hardened one?
+Stack: Python, Grype, CLI.
+Code: https://github.com/kallewesterling/cvediff
+
+### errata
+
+Docs quality. Finds broken code examples inside published course content, and keeps a dated record of the ones you can't fix yet. Courses stay live; the code in them shouldn't rot.
+Stack: TypeScript, CI.
+Code: https://github.com/kallewesterling/errata
+
+### CodexMachina
+
+Docs as code. Extracts, runs and lints the code blocks in Markdown and HTML documentation, with output verification, so every example in the docs is one you can trust.
+Stack: Go, Markdown.
+
+### session-pacer
+
+Speaking. A presenter view for timed talks, workshops and demos. Shows the notes for the current section, tells you when you're behind, and suggests what to cut.
+Stack: HTML, JavaScript.
+App: https://westerling.nu/session-pacer/
+Code: https://github.com/kallewesterling/session-pacer
+
+### syncjar
+
+Course ops. Edit, preview and sync Skilljar course content locally, so course authors get a real git workflow instead of a web form.
+Stack: Node.js, Skilljar API.
+Docs: https://westerling.nu/syncjar/
+Code: https://github.com/kallewesterling/syncjar
+
+### credjar
+
+Course ops. Inspect, issue and revoke Credly badges from the command line, for certification programs that outgrow spreadsheets.
+Stack: Node.js, Credly API.
+Docs: https://westerling.nu/credjar/
+Code: https://github.com/kallewesterling/credjar
+
+## Research software
+
+Before Chainguard I spent four years building and maintaining research software at the Alan Turing Institute: open-source Python tools, their documentation, and the communities around them.
+
+- [MapReader](https://mapreader.readthedocs.io/en/latest/), Documentation and community: A computer vision pipeline for exploring and analysing large collections of digitised maps. Winner of the 2023 Roy Rosenzweig Prize for Innovation in Digital History.
+- [AutoEmulate](https://github.com/alan-turing-institute/autoemulate), Contributor: A Python package for semi-automated emulation of complex simulations, built for digital twin research.
+- [TEA Platform](https://assuranceplatform.turing.ac.uk/), Contributor: The Trustworthy and Ethical Assurance platform, a collaborative tool for building structured arguments that an AI system was developed responsibly.
+
+Papers:
+
+- [AutoEmulate: a PyTorch tool for end-to-end emulation workflows](https://doi.org/10.21105/joss.10087). Journal of Open Source Software, 2026.
+- [MapReader: software and principles for computational map studies](https://read.uolpress.co.uk/read/7526964a-e6de-41e8-8769-2b0df46b4a25/section/e85a784b-c363-4478-b92e-bee17c5dc6ff). Living with Machines, University of London Press, 2025.
+- [AutoEmulate: a Python package for semi-automated emulation](https://doi.org/10.21105/joss.07626). Journal of Open Source Software, 2025.
+- [MapReader: open software for the visual analysis of maps](https://doi.org/10.21105/joss.06434). Journal of Open Source Software, 2024.
+- [Fair by design: a sociotechnical approach to justifying the fairness of AI-enabled systems across the lifecycle](https://arxiv.org/abs/2406.09029). arXiv, 2024.
+
+## Capture the flag and games
+
+Some security lessons only stick when you do them yourself, against the clock, with a team. So alongside talks and courses I design games: capture the flag events and card games that put developers in the attacker's seat and then hand them the fix.
+
+- Hands on, not slides: Every challenge ends in something you did yourself, at a terminal or around a table. You don't leave having watched someone else do it.
+- Built for mixed rooms: Beginner, standard and advanced editions, so a room of first-time coders and a room of platform engineers both get a real challenge.
+- Runs anywhere: Customer offices, partner events, community meetups and conference floors, from a small room to a couple of hundred players.
+
+### Operation Lockdown
+
+Capture the flag. A team capture-the-flag in two halves. First you break in: exploit the weaknesses in a container image and its software supply chain. Then you fix them the secure way. Run for customers, partners and communities. Editions: Standard, Advanced, Beginner. Played in Paris · Dresden · Stockholm.
+
+### Faithful by Default
+
+Capture the flag. A themed edition of Operation Lockdown, run together with Somerford. Same attack-then-fix format, new theme. Played in London.
+
+### Cards Against Vulnerabilities
+
+Card game. A security card game I designed for conference floors. First played at the RSA Conference AppSec Village, then scaled to about 200 players at DEF CON 34. Played in San Francisco · Las Vegas.
+
+Want a CTF at your event, meetup or team offsite? I can adapt the format and the difficulty to your room.
+
+## Talks and workshops
+
+Topics: Supply chain security, Containers, AI and agents, CTFs and games, Open source, Research and humanities.
+
+- 2026-12 · Workshop: Learning Lab: Fewer CVEs in agent-built code, Chainguard Learning Labs · Online (upcoming)
+- 2026-11 · Workshop: [Learning Lab: Secure-by-default agent workflows](https://www.chainguard.dev/events/learning-labs-secure-by-default-agent-workflows), Chainguard Learning Labs · Online
+- 2026-11 · Workshop: Faithful by Default: a capture-the-flag workshop, Chainguard × Somerford · London
+- 2026-11 · Workshop: Operation Lockdown CTF, advanced edition, SVA partner event · Dresden
+- 2026-10 · Talk: Fixing a critical CVE without the major-version upgrade, JFrog swampUP Europe · Barcelona
+- 2026-10 · Workshop: Operation Lockdown CTF, Customer event · Paris
+- 2026-10 · Talk: [From source to agent: building a secure AI development pipeline](https://www.youtube.com/watch?v=hE962TtlLTA), Chainguard Assemble · London, with Peter Fitch (Cursor) (recording)
+- 2026-10 · Webinar: [When AI becomes the attack surface: securing your ML pipeline](https://www.pmi-live.com/events/when-ai-becomes-the-attack-surface-securing-your-ml-pipeline/), BTMI webinar · Online
+- 2026-09 · Workshop: Start coding safely: an Operation Lockdown CTF, Chainguard × Tjejer Kodar · Stockholm
+- 2026-09 · Demo: [Build apps without CVEs and malware](https://www.chainguard.dev/events/20-minute-demo-build-apps-without-cves-and-malware), Chainguard 20-Minute Demo · Online
+- 2026-08 · Activation: Cards Against Vulnerabilities, DEF CON 34 · Las Vegas, about 200 players
+- 2026-08 · Demo: Attacker Shift Left: developer workstations as the new attack surface, Black Hat USA, AWS theater · Las Vegas
+- 2026-03 · Seminar: [Cultural heritage under attack: saving cultural data in times of crisis](https://www.sas.ac.uk/digital-humanities-research-hub/events/cultural-heritage-under-attack-saving-cultural-data-times-crisis), School of Advanced Study, The Fragile Record series · Online, with Michael Weinberg (NYU) and Pakhee Kumar (UCL)
+- 2026-03 · Activation: Cards Against Vulnerabilities, first edition, RSA Conference 2026, AppSec Village · San Francisco
+- 2026-02 · Keynote: [Building and consuming open source securely](https://www.youtube.com/watch?v=kRH4sJKXh6I), NOSIS, Open Ireland Network · Dublin (recording)
+- 2026-02 · Panel: Open source in financial services, NOSIS · Dublin, with NatWest and Fidelity
+- 2026-02 · Panel: [Governance for academic open source](https://www.youtube.com/watch?v=UgHGbp6yn1o), CURIOSS Gathering · Dublin, with the Eclipse Foundation and UC Santa Cruz OSPO (recording)
+- 2025–26 · Workshop: Hands-on workshops on hardened container images, Chainguard customer and partner workshops · EMEA
+- 2024-09 · Workshop: [MapReader workshop: using machine learning to analyse large collections of digitised maps](https://pretalx.com/spathum24/speaker/HWJKS7/), Spatial Humanities 2024 · Bamberg, with Katherine McDonough and Rosie Wood
+- 2024-03 · Panel (Moderator): [Imagined futures: how will society, science and AI shape tomorrow?](https://www.youtube.com/watch?v=XMpg_s5ZrdM), AI UK 2024, Alan Turing Institute · London (recording)
+- 2024-03 · Panel: [Queer representations of AI](https://www.youtube.com/watch?v=rOvg73Ek1UA), School of Advanced Study, AI UK Fringe · London (recording)
+
+Also at these conferences in 2026: NOSIS (Dublin), RSA Conference (San Francisco), AWS Summit (Warsaw), AWS Summit (Stockholm), AWS Summit (Hamburg), AWS Summit (Amsterdam), AWS Summit (Madrid), Google Cloud Summit (London), PlatformCon (London), Open Source in Finance Forum (London), WeAreDevelopers (Berlin), Black Hat USA (Las Vegas), DEF CON 34 (Las Vegas), ContainerDays (Hamburg), JFrog swampUP (Barcelona).
+
+## Experience
+
+### Developer relations (2025–now)
+
+**Staff Developer Relations Engineer**, Chainguard (Feb 2025–now)
+
+- Courses, learning paths and certifications on Chainguard Courses, from first draft to badge.
+- Operation Lockdown, a capture-the-flag format run for customers and partners in Paris, Dresden and London.
+- Designed Cards Against Vulnerabilities, a security card game first played at the RSA Conference AppSec Village and scaled to about 200 players at DEF CON 34.
+- Talks, demos and monthly Learning Labs on container images, libraries and secure agent workflows, plus a full 2026 conference circuit across Europe and the U.S.
+- Partner certification paths and hands-on enablement workshops for customers.
+- Convened a cross-company training council to align customer, partner and internal training.
+- Open-source tooling that tests course code and scripts course operations.
+
+### Research software (2021–2025)
+
+**Research Application Manager**, Alan Turing Institute, Data/Culture and Digital Twins research (2023–2025)
+
+- Built sustainable communities around open-source research tools, including MapReader, AutoEmulate and the TEA Platform.
+- Co-authored three papers in the Journal of Open Source Software.
+- Kept the user perspective at the centre of research software development.
+
+**Research Software Engineer**, Living with Machines, British Library and Alan Turing Institute (2021–2023)
+
+- Built four Python packages and documented three of them end to end.
+- Made 40+ data visualisations in JavaScript and D3.
+- Visualisations shown at Leeds City Museum, seen by more than 40,000 visitors.
+
+### Teaching and community (2011–2021)
+
+**Project Manager, Digital Humanities Research Institutes**, The Graduate Center, CUNY (2018–2021)
+
+- Ran the NEH-funded "Expanding Communities of Practice" program for faculty and librarians across the U.S.
+- Co-wrote the open DHRI coding curriculum, with over 2,000 commits.
+
+**Scholars Program Manager and Steering Committee member**, HASTAC
+
+- Managed a fellowship network of graduate students across many universities.
+
+**Instructor**, CUNY, NYU and Villanova University
+
+- Taught theatre history, performance and digital media courses.
+
+## Education
+
+- Ph.D., Digital Humanities, The Graduate Center, CUNY
+
+Languages: Swedish, English, Portuguese, Spanish, French.
+
+## Now (updated November 27, 2026)
+
+
+This is a [now page](https://nownownow.com/about): what I'd tell a friend I hadn't seen in a year.
+
+## Where I am
+
+I live in Madrid, and have for about a year. Before that I lived in Stockholm, New York City, Rio de Janeiro and Reading in the UK.
+
+## At work
+
+I'm a Staff Developer Relations Engineer at [Chainguard](https://www.chainguard.dev), wrapping up a busy 2026 on the conference circuit in Europe and the U.S.
+
+- **Capture the flag season.** In the past few weeks I've run Operation Lockdown in Paris and an advanced edition in Dresden, and Faithful by Default with Somerford in London. [More about the games](/#games).
+- **Learning Labs.** Monthly live workshops on secure agent workflows. The next one, on 17 December, is about getting fewer CVEs into agent-built code.
+- **Courses.** Still writing courses and learning paths for [Chainguard Courses](https://courses.chainguard.dev).
+
+## On the side
+
+I'm building small tools for the friction I hit in my own teaching:
+
+- [session-pacer](/session-pacer/), for keeping live sessions on time.
+- [errata](https://github.com/kallewesterling/errata) and CodexMachina, for catching broken code examples in published courses and docs.
+- [cvediff](https://github.com/kallewesterling/cvediff), for comparing the CVEs in two container images.
+
+And one that goes back to my research roots: a data project on Swedish theatre history.
+
+
+## Uses
+
+
+The setup I write, build and demo with. Inspired by [uses.tech](https://uses.tech).
+
+## Hardware
+
+- **Laptop:** Lenovo ThinkPad T14 Gen 3, AMD Ryzen 5 PRO 6650U, 16 GB RAM.
+
+## Desktop
+
+- **OS:** [Omarchy](https://omarchy.org), an opinionated Arch Linux setup on the [Hyprland](https://hyprland.org) tiling window manager.
+- **Terminal:** [Ghostty](https://ghostty.org).
+- **Notes:** [Obsidian](https://obsidian.md).
+- **Music:** Spotify.
+
+## Building
+
+- **Editor:** VS Code.
+- **Agent:** [Claude Code](https://claude.com/claude-code).
+- **Python:** [uv](https://docs.astral.sh/uv/).
+- **Containers:** Docker.
+
+## Teaching and live demos
+
+- **Recording and streaming:** [OBS Studio](https://obsproject.com).
+- **Pacing live sessions:** my own [session-pacer](/session-pacer/).
+
+## This site
+
+Built with [Hugo](https://gohugo.io) and hosted on GitHub Pages. Most of the content lives in YAML data files. A plain-text version for language models is at [/llms.txt](/llms.txt).
+
+
+## Elsewhere
+
+- [GitHub](https://github.com/kallewesterling)
+- [LinkedIn](https://linkedin.com/in/kallewesterling)
+- [Chainguard Courses](https://courses.chainguard.dev)
+- [Chainguard Academy](https://edu.chainguard.dev)
+- [ORCID](https://orcid.org/0000-0002-2014-332X)

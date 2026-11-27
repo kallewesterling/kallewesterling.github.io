@@ -1,0 +1,57 @@
+# Kalle Westerling
+
+> Kalle Westerling is a Staff Developer Relations Engineer at Chainguard, where he creates courses, hands-on labs, workshops and live demos that help developers adopt secure container images and open-source libraries. He also builds open-source tools for developer educators, from testing code examples in published courses to pacing live sessions. Before Chainguard he was a research software engineer and research application manager at the Alan Turing Institute, and before that he led national coding and research training programs at CUNY, where he earned a PhD in digital humanities. He still approaches technical education as a teacher first.
+
+I teach developers how to ship secure software, and I build the tools that make that teaching hold up. At Chainguard I create courses, hands-on labs, workshops and live demos on container images, open-source libraries and software supply chain security.
+
+Role: Staff Developer Relations Engineer at Chainguard (https://www.chainguard.dev)
+Topics: Supply chain security, Containers, AI and agents, CTFs and games, Open source, Research and humanities
+Contact: kallewesterling@gmail.com. For talks, workshops, podcasts and anything about developer education or software supply chain security.
+
+## Pages
+
+- [Full profile](https://westerling.nu/llms-full.txt): everything below in one plain-text file, with all talks, projects and experience.
+- [Home](https://westerling.nu/): courses, tools, open source, talks, games and CTFs, experience and contact.
+- [Now](https://westerling.nu/now/index.md): What Kalle Westerling is working on and thinking about right now.
+- [Uses](https://westerling.nu/uses/index.md): The hardware, software and tools Kalle Westerling uses for building, teaching and demoing.
+- [Academic archive](https://westerling.nu/archive/): research on drag, burlesque and queer performance history, and digital humanities teaching.
+
+## Courses
+
+- [Chainguard Courses](https://courses.chainguard.dev): Where most of my work happens. Free, self-paced courses, learning paths and certifications for developers, security teams and platform engineers who want to secure their software supply chain with Chainguard Containers, Libraries and VMs.
+
+## Tools I build
+
+- [cvediff](https://github.com/kallewesterling/cvediff): Compares the known CVEs in two container images side by side in the terminal. Answers one question fast: what changes if we swap this base image for a hardened one?
+- [errata](https://github.com/kallewesterling/errata): Finds broken code examples inside published course content, and keeps a dated record of the ones you can't fix yet. Courses stay live; the code in them shouldn't rot.
+- [CodexMachina](https://westerling.nu/): Extracts, runs and lints the code blocks in Markdown and HTML documentation, with output verification, so every example in the docs is one you can trust.
+- [session-pacer](https://westerling.nu/session-pacer/): A presenter view for timed talks, workshops and demos. Shows the notes for the current section, tells you when you're behind, and suggests what to cut.
+- [syncjar](https://westerling.nu/syncjar/): Edit, preview and sync Skilljar course content locally, so course authors get a real git workflow instead of a web form.
+- [credjar](https://westerling.nu/credjar/): Inspect, issue and revoke Credly badges from the command line, for certification programs that outgrow spreadsheets.
+
+## Capture the flag and games
+
+- Operation Lockdown (Capture the flag): A team capture-the-flag in two halves. First you break in: exploit the weaknesses in a container image and its software supply chain. Then you fix them the secure way. Run for customers, partners and communities. Played in Paris · Dresden · Stockholm.
+- Faithful by Default (Capture the flag): A themed edition of Operation Lockdown, run together with Somerford. Same attack-then-fix format, new theme. Played in London.
+- Cards Against Vulnerabilities (Card game): A security card game I designed for conference floors. First played at the RSA Conference AppSec Village, then scaled to about 200 players at DEF CON 34. Played in San Francisco · Las Vegas.
+
+## Recent talks and workshops
+
+- 2026-12 · Workshop: Learning Lab: Fewer CVEs in agent-built code, Chainguard Learning Labs · Online (upcoming)
+- 2026-11 · Workshop: [Learning Lab: Secure-by-default agent workflows](https://www.chainguard.dev/events/learning-labs-secure-by-default-agent-workflows), Chainguard Learning Labs · Online
+- 2026-11 · Workshop: Faithful by Default: a capture-the-flag workshop, Chainguard × Somerford · London
+- 2026-11 · Workshop: Operation Lockdown CTF, advanced edition, SVA partner event · Dresden
+- 2026-10 · Talk: Fixing a critical CVE without the major-version upgrade, JFrog swampUP Europe · Barcelona
+- 2026-10 · Workshop: Operation Lockdown CTF, Customer event · Paris
+- 2026-10 · Talk: [From source to agent: building a secure AI development pipeline](https://www.youtube.com/watch?v=hE962TtlLTA), Chainguard Assemble · London, with Peter Fitch (Cursor) (recording)
+- 2026-10 · Webinar: [When AI becomes the attack surface: securing your ML pipeline](https://www.pmi-live.com/events/when-ai-becomes-the-attack-surface-securing-your-ml-pipeline/), BTMI webinar · Online
+- 2026-09 · Workshop: Start coding safely: an Operation Lockdown CTF, Chainguard × Tjejer Kodar · Stockholm
+- 2026-09 · Demo: [Build apps without CVEs and malware](https://www.chainguard.dev/events/20-minute-demo-build-apps-without-cves-and-malware), Chainguard 20-Minute Demo · Online
+
+## Elsewhere
+
+- [GitHub](https://github.com/kallewesterling)
+- [LinkedIn](https://linkedin.com/in/kallewesterling)
+- [Chainguard Courses](https://courses.chainguard.dev)
+- [Chainguard Academy](https://edu.chainguard.dev)
+- [ORCID](https://orcid.org/0000-0002-2014-332X)
