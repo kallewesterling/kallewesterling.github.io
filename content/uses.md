@@ -14,6 +14,9 @@ The setup I write, build and demo with. Inspired by [uses.tech](https://uses.tec
 ## Desktop
 
 - **OS:** [Omarchy](https://omarchy.org), an opinionated Arch Linux setup on the [Hyprland](https://hyprland.org) tiling window manager.
+- **Terminal:** [Ghostty](https://ghostty.org).
+- **Notes:** [Obsidian](https://obsidian.md).
+- **Music:** Spotify.
 
 ## Building
 
@@ -24,6 +27,7 @@ The setup I write, build and demo with. Inspired by [uses.tech](https://uses.tec
 
 ## Teaching and live demos
 
+- **Recording and streaming:** [OBS Studio](https://obsproject.com).
 - **Pacing live sessions:** my own [session-pacer](/session-pacer/).
 
 ## This site

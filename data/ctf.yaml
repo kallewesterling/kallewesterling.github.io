@@ -25,15 +25,17 @@ formats:
     kind: Capture the flag
     color: coral
     summary: >-
-      A team capture-the-flag on container images and software supply chain
-      security, run for customers and partners.
+      A team capture-the-flag in two halves. First you break in: exploit the
+      weaknesses in a container image and its software supply chain. Then you
+      fix them the secure way. Run for customers, partners and communities.
     editions: [Standard, Advanced, Beginner]
     played: Paris · Dresden · Stockholm
   - name: Faithful by Default
     kind: Capture the flag
     color: violet
     summary: >-
-      A capture-the-flag workshop run together with Somerford.
+      A themed edition of Operation Lockdown, run together with Somerford.
+      Same attack-then-fix format, new theme.
     played: London
   - name: Cards Against Vulnerabilities
     kind: Card game

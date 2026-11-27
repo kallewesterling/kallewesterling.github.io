@@ -7,6 +7,10 @@ outputs: [html, markdown]
 
 This is a [now page](https://nownownow.com/about): what I'd tell a friend I hadn't seen in a year.
 
+## Where I am
+
+I live in Madrid, and have for about a year. Before that I lived in Stockholm, New York City, Rio de Janeiro and Reading in the UK.
+
 ## At work
 
 I'm a Staff Developer Relations Engineer at [Chainguard](https://www.chainguard.dev), wrapping up a busy 2026 on the conference circuit in Europe and the U.S.
@@ -22,3 +26,5 @@ I'm building small tools for the friction I hit in my own teaching:
 - [session-pacer](/session-pacer/), for keeping live sessions on time.
 - [errata](https://github.com/kallewesterling/errata) and CodexMachina, for catching broken code examples in published courses and docs.
 - [cvediff](https://github.com/kallewesterling/cvediff), for comparing the CVEs in two container images.
+
+And one that goes back to my research roots: a data project on Swedish theatre history.
